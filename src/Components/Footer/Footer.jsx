@@ -1,6 +1,7 @@
 import React from "react"
 import "./footer.css"
 import { assets } from "../../assets/asset"
+import { Link } from "react-router-dom"
 
 const Footer = () => {
 	return (
@@ -63,6 +64,10 @@ const Footer = () => {
 						</ul>
 					</div>
 				</div>
+			</div>
+			<div className="copyright">
+				<p>COPYRIGHT © 2024 C9ADS, All Rights Reserved.</p>
+				<p>Designed & Developed by PITAMAAS</p>
 			</div>
 		</div>
 	)

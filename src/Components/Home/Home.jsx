@@ -1,8 +1,11 @@
 import React, { useState } from "react"
 import { assets } from "../../assets/asset"
+import CountUp from "react-countup"
+import ScrollTrigger from "react-scroll-trigger"
 import "./home.css"
 const Home = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
+	const [conterTrigger, setCounterTrigger] = useState(false)
 
 	const handleMouseOver = (index) => {
 		if (activeIndex !== index) {
@@ -155,47 +158,80 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="home-whatsets">
-				<div className="home-whatsets-container">
-					<div className="left-whatsets">
-						{/* <div></div> */}
-						<div className="text-whatsets">
-							<h2 className="text-whatsets-whatsets">WHAT SETS</h2>
-							<div>
-								<h2 className="text-whatsets-us">US</h2>
-								<h2 className="text-apart">APART</h2>
-							</div>
-						</div>
-						<p className="question-mark-small">?</p>
-					</div>
-					<div className="right-whatsets">
-						<p className="question-mark">?</p>
-						<div className="whatsets-orangebg">
-							<div className="whatsets-milestone">
+				<ScrollTrigger
+					onEnter={() => setCounterTrigger(true)}
+					onExit={() => setCounterTrigger(false)}
+				>
+					<div className="home-whatsets-container">
+						<div className="left-whatsets">
+							{/* <div></div> */}
+							<div className="text-whatsets">
+								<h2 className="text-whatsets-whatsets">WHAT SETS</h2>
 								<div>
-									<span>000+</span>
-									<p>Project Completed</p>
-								</div>
-								<div>
-									<span>00+</span>
-									<p>Project Completed</p>
-								</div>
-								<div>
-									<span>00+</span>
-									<p>Project Completed</p>
+									<h2 className="text-whatsets-us">US</h2>
+									<h2 className="text-apart">APART</h2>
 								</div>
 							</div>
-							<p>
-								Our comprehensive services enable the seamless creation of
-								digital products while offering objective problem-solving
-								through strategic planning, advanced technology integration, and
-								rigorous analysis. Moreover, our offerings are visually
-								captivating, characterized by elegant color schemes and
-								minimalist design principles, enhancing their overall appeal and
-								user experience.
-							</p>
+							<p className="question-mark-small">?</p>
+						</div>
+						<div className="right-whatsets">
+							<p className="question-mark">?</p>
+
+							<div className="whatsets-orangebg">
+								<div className="whatsets-milestone">
+									<div>
+										<span>
+											{conterTrigger && (
+												<CountUp
+													start={0}
+													end={295}
+													duration={2.75}
+												></CountUp>
+											)}
+											+
+										</span>
+										<p>Project Completed</p>
+									</div>
+									<div>
+										<span>
+											{conterTrigger && (
+												<CountUp
+													start={0}
+													end={55}
+													duration={2.75}
+												></CountUp>
+											)}
+											+
+										</span>
+										<p>Project Completed</p>
+									</div>
+									<div>
+										<span>
+											{conterTrigger && (
+												<CountUp
+													start={0}
+													end={80}
+													duration={2.75}
+												></CountUp>
+											)}
+											+
+										</span>
+										<p>Project Completed</p>
+									</div>
+								</div>
+								<p>
+									Our comprehensive services enable the seamless creation of
+									digital products while offering objective problem-solving
+									through strategic planning, advanced technology integration,
+									and rigorous analysis. Moreover, our offerings are visually
+									captivating, characterized by elegant color schemes and
+									minimalist design principles, enhancing their overall appeal
+									and user experience.
+								</p>
+							</div>
 						</div>
 					</div>
-				</div>
+				</ScrollTrigger>
 			</div>
 			<div className="home-digitalbrand">
 				<div className="home-digitalbrand-content">
@@ -252,7 +288,7 @@ const Home = () => {
 									alt=""
 								/>
 							</div>
-							<div className="home-feature2">
+							<div className="home-feature2 home-feature4">
 								<div>
 									<h3>Maximizing Social Media ROI for Small Businesses</h3>
 									<p>
