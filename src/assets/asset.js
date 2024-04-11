@@ -13,7 +13,6 @@ import user1 from "./user1.png"
 import tele_logo from "./Telephone logo.png"
 import email_logo from "./Email logo.png"
 import menu_icon from "./menu-icon.png"
-import bgvideo from "./bgGIf.gif"
 
 export const assets = {
 	c9logo,
@@ -31,5 +30,4 @@ export const assets = {
 	tele_logo,
 	email_logo,
 	menu_icon,
-	bgvideo,
 }
