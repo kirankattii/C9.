@@ -55,6 +55,14 @@
    src: local('AmazDooMRight'), url('../src/assets/fonts/AmazDooMRight.woff') format('woff');
  }
 
+
+ @font-face {
+   font-family: 'AfterglowRegular';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Afterglow Regular'), url('../src/assets/fonts/Afterglow-Regular.woff') format('woff');
+ }
+
  a {
    text-decoration: none;
    color: inherit;

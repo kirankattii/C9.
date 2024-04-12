@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./navbar.css"
 import { assets } from "../../assets/asset"
-import { Link, NavLink } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 const Navbar = () => {
 	const [sticky, setSticky] = useState(false)
@@ -28,7 +28,9 @@ const Navbar = () => {
 					<li>
 						<Link to="/">HOME</Link>
 					</li>
-					<li>STORY</li>
+					<li>
+						<Link to="/story">STORY</Link>
+					</li>
 					<li>WORK</li>
 					<li>MENU</li>
 					<li>CONTACT</li>

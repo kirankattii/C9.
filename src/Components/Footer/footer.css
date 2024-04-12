@@ -1,6 +1,9 @@
 .footer {
   background: #212121;
   color: #fff;
+  padding-top: 50px;
+  width: 100%;
+  /* bottom: 0; */
 }
 
 .footer-container {
@@ -8,6 +11,7 @@
   align-items: start;
   padding: 20px 150px;
   gap: 100px;
+
   justify-content: space-between;
 
 }

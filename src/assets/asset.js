@@ -13,6 +13,12 @@ import user1 from "./user1.png"
 import tele_logo from "./Telephone logo.png"
 import email_logo from "./Email logo.png"
 import menu_icon from "./menu-icon.png"
+import storyBg from "./storybg.png"
+import studioDesign1 from "./studioDesign1.png"
+import studioDesign2 from "./studioDesign2.png"
+import studioDesign3 from "./studioDesign3.png"
+import studioDesign4 from "./studioDesign4.png"
+import studioDesign5 from "./studioDesign5.png"
 
 export const assets = {
 	c9logo,
@@ -30,4 +36,10 @@ export const assets = {
 	tele_logo,
 	email_logo,
 	menu_icon,
+	studioDesign1,
+	studioDesign2,
+	studioDesign3,
+	studioDesign4,
+	studioDesign5,
+	storyBg,
 }

@@ -158,6 +158,13 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="home-whatsets">
+				{/* <div className="whatsets-bg-text">
+					<h2>Data-driven</h2>
+					<h2>Results-oriented</h2>
+					<h2>Innovation</h2>
+					<h2>Creativity</h2>
+					<h2>Customization</h2>
+				</div> */}
 				<ScrollTrigger
 					onEnter={() => setCounterTrigger(true)}
 					onExit={() => setCounterTrigger(false)}
