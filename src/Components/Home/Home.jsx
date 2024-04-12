@@ -317,6 +317,12 @@ const Home = () => {
 							<h2 className="text-freedback">feedback</h2>
 						</div>
 					</div>
+					<div className="home-testimonials-text2">
+						<h2>
+							Delving into customer journeys insights through invaluable
+							<span> feedback</span>
+						</h2>
+					</div>
 					<div className="home-testimonial-exp1">
 						<div className="home-testimonial-exp1-img">
 							<img
