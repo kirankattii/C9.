@@ -1120,6 +1120,7 @@
   background: #1E1E1E;
   color: #fff;
   display: flex;
+  padding-top: 180px;
   justify-content: center;
 }
 
@@ -1305,6 +1306,7 @@
 @media(max-width:1255px) {
   .home-whatsets {
     margin-top: -180px;
+    padding-top: 0;
   }
 
   .home-whatsets-container {
@@ -1479,6 +1481,31 @@
     text-align: center;
 
   }
+
+  .right-whatsets {
+    display: flex;
+    align-items: center;
+    width: 95%;
+
+  }
+
+  .whatsets-orangebg {
+    padding-left: 0;
+    border-radius: 0;
+    padding-right: 0;
+    margin-bottom: 80px;
+    padding: 25px;
+    margin-left: 0px;
+    margin-right: 0;
+    height: 100%;
+  }
+
+  .whatsets-milestone {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
 }
 
 @media(max-width:450px) {
@@ -1952,28 +1979,31 @@
     flex-direction: column;
   }
 
+  .home-testimonials-text {
+    display: none;
+  }
 
-
-  /* 
   .home-testimonials-text2 {
-    display: flex;
+    display: block;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 18px;
     letter-spacing: 8px;
     line-height: 1;
     text-align: center;
     font-weight: 400;
-    letter-spacing: 8px;
+    letter-spacing: 4px;
     padding: 0;
     margin: 0;
     width: 100%;
-  } */
+    padding-bottom: 30px;
+  }
 
 
 
   .home-testimonials-container {
     width: 100%;
   }
+
 }
 
 
@@ -2030,4 +2060,19 @@ form button {
   background: #EF4523;
   color: #fff;
   cursor: pointer;
+}
+
+@media(max-width:450px) {
+
+  .home-contact {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+
+  .home-contact-content p {
+
+    font-size: 21px;
+    margin: 10px 0;
+  }
 }

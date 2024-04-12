@@ -54,3 +54,8 @@
    font-weight: normal;
    src: local('AmazDooMRight'), url('../src/assets/fonts/AmazDooMRight.woff') format('woff');
  }
+
+ a {
+   text-decoration: none;
+   color: inherit;
+ }

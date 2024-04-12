@@ -67,6 +67,10 @@
   justify-content: space-between;
 }
 
+.copyright a {
+  text-decoration: underline;
+}
+
 @media(max-width:1000px) {
   .footer-container {
     display: flex;

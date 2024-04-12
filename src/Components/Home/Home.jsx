@@ -318,10 +318,8 @@ const Home = () => {
 						</div>
 					</div>
 					<div className="home-testimonials-text2">
-						<h2>
-							Delving into customer journeys insights through invaluable
-							<span> feedback</span>
-						</h2>
+						<h3>Delving into customer journeys </h3>
+						<h3>insights through invaluable feedback</h3>
 					</div>
 					<div className="home-testimonial-exp1">
 						<div className="home-testimonial-exp1-img">
@@ -376,9 +374,10 @@ const Home = () => {
 							<textarea
 								id=""
 								rows="04"
-							>
-								Your Meassage
-							</textarea>
+								placeholder="Your Message"
+								// defaultValue="Some initial value"
+							/>
+
 							<button>Submit</button>
 						</form>
 					</div>

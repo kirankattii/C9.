@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react"
 import "./navbar.css"
 import { assets } from "../../assets/asset"
-import { Link } from "react-router-dom"
+import { Link, NavLink } from "react-router-dom"
+
 const Navbar = () => {
 	const [sticky, setSticky] = useState(false)
 	useEffect(() => {
@@ -24,7 +25,9 @@ const Navbar = () => {
 					alt=""
 				/>
 				<ul className={moblieMenu ? "" : "hide-mobile-menu "}>
-					<li>HOME</li>
+					<li>
+						<Link to="/">HOME</Link>
+					</li>
 					<li>STORY</li>
 					<li>WORK</li>
 					<li>MENU</li>
