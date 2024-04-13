@@ -540,6 +540,7 @@
   .story-parallex-content div img {
     width: 400px;
     height: 70vh;
+
   }
 
   .story-design1, .story-design2, .story-design3, .story-design4, .story-design5, .story-designp, .story-design6 {
@@ -555,4 +556,24 @@
     display: flex;
     flex-direction: column-reverse;
   }
+}
+
+@media(max-width:450px) {
+  .story-parallex-content div img {
+    width: 350px;
+    height: 65vh;
+    padding: 20px;
+
+  }
+
+}
+
+@media(max-width:400px) {
+  .story-parallex-content div img {
+    width: 320px;
+    height: 60vh;
+    padding: 20px;
+
+  }
+
 }

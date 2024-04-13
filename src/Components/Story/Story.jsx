@@ -10,6 +10,18 @@ import Footer from "../Footer/Footer"
 import Navbar from "../Navbar/Navbar"
 const Story = () => {
 	const containerRef = useRef(null)
+
+	useEffect(() => {
+		const scroll = new locomotiveScroll({
+			el: document.querySelector("[data-scroll-container]"),
+			smooth: true,
+			smartphone: { smooth: true },
+			tablet: { smooth: true },
+		})
+		return () => {
+			if (scroll) scroll.destroy()
+		}
+	}, [])
 	const calculateScrollSpeed = () => {
 		const screenWidth = window.innerWidth
 		if (screenWidth >= 1300) {

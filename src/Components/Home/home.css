@@ -105,6 +105,28 @@
   padding: 10px;
 }
 
+/* animation */
+.home-text {
+  /* Your existing styles */
+}
+
+.wave-animation {
+  animation: wave 1s ease infinite alternate;
+  /* Adjust duration and timing function as needed */
+}
+
+@keyframes wave {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-10px);
+    /* Adjust the wave height as needed */
+  }
+}
+
+
 @media(max-width:1000px) {
   .home-content {
     padding: 0 10px;

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useEffect, useState } from "react"
 import { assets } from "../../assets/asset"
 import CountUp from "react-countup"
 import ScrollTrigger from "react-scroll-trigger"
@@ -12,11 +12,21 @@ const Home = () => {
 			setActiveIndex(index)
 		}
 	}
+	const [waveAnimation, setWaveAnimation] = useState(false)
+
+	useEffect(() => {
+		const timeout = setTimeout(() => {
+			setWaveAnimation(true)
+		}, 1000) // Delay for the animation to start after 1 second
+
+		return () => clearTimeout(timeout)
+	}, [])
+
 	return (
 		<div>
 			<div className="home">
 				<div className="home-content">
-					<div className="home-text">
+					<div className={`home-text ${waveAnimation ? "wave-animation" : ""}`}>
 						<h1 className="text-discover">Discover</h1>
 						<div className="text-out-artistry">
 							<span>OUR</span>
