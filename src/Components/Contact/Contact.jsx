@@ -64,8 +64,30 @@ const Contact = () => {
 				<div className="contact-address-form">
 					{/* <div className="contact-address"> */}
 					<div className="contact-our-address">
-						<div className="address-border"></div>
-						<div className="contact-two-address">
+						<motion.div
+							initial={{ x: 100, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 1 }}
+							transition={{
+								// delay: 0.2,
+								x: { type: "spring", stiffness: 60 },
+								opacity: { duration: 1 },
+								ease: "easeIn",
+								duration: 1,
+							}}
+							className="address-border"
+						></motion.div>
+						<motion.div
+							initial={{ x: -100, opacity: 0 }}
+							whileInView={{ x: 0, opacity: 1 }}
+							transition={{
+								// delay: 0.2,
+								x: { type: "spring", stiffness: 60 },
+								opacity: { duration: 1 },
+								ease: "easeIn",
+								duration: 1,
+							}}
+							className="contact-two-address"
+						>
 							<div className="contact-address-one">
 								<div className="contact-address-name">
 									<h2>Akshtam Maini</h2>
@@ -102,7 +124,7 @@ const Contact = () => {
 									<p className="contact-address-pno">+44 (0)7425819099</p>
 								</div>
 							</div>
-						</div>
+						</motion.div>
 					</div>
 					{/* </div> */}
 					<div className="contact-form">
