@@ -26,10 +26,10 @@ const App = () => {
 					path="/story"
 					element={<Story />}
 				/>
-				{/* <Route
+				<Route
 					path="/contact"
 					element={<Contact />}
-				/> */}
+				/>
 			</Routes>
 			{!isStoryPage && <Footer />}
 		</div>

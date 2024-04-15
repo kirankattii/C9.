@@ -500,7 +500,10 @@ const Home = () => {
 						<p>Please feel free to forward them to us.</p>
 					</div>
 					<div className="home-contact-inputs">
-						<form action="">
+						<form
+							action=""
+							className="home-form"
+						>
 							<div>
 								<input
 									type="text"

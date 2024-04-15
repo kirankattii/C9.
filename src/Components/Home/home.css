@@ -2109,20 +2109,20 @@
   font-size: 26px;
 }
 
-form {
+.home-form {
   display: flex;
   flex-direction: column;
   gap: 10px;
   width: 100%;
 }
 
-form div {
+.home-form div {
   display: flex;
   gap: 15px;
 }
 
-form input,
-form textarea {
+.home-form input,
+.home-form textarea {
   width: 100%;
   padding: 6px 10px;
   border: 2px solid #EF4523;

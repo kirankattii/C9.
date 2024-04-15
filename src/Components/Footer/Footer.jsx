@@ -67,10 +67,10 @@ const Footer = () => {
 			</div>
 			<div className="copyright">
 				<p>COPYRIGHT © 2024 C9ADS, All Rights Reserved.</p>
-				<p>
+				{/* <p>
 					Designed & Developed by{" "}
 					<Link to="https://www.pitamaas.com/">PITAMAAS</Link>
-				</p>
+				</p> */}
 			</div>
 		</div>
 	)
