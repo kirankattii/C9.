@@ -3,6 +3,28 @@ import { assets } from "../../assets/asset"
 import CountUp from "react-countup"
 import ScrollTrigger from "react-scroll-trigger"
 import "./home.css"
+import { motion } from "framer-motion"
+const container = (delay) => ({
+	hidden: { x: -100, opacity: 0 },
+	visible: {
+		x: 0,
+		opacity: 1,
+		transition: { duration: 0.5, delay: delay },
+	},
+})
+// whileInView={{ opacity: 1, x: 0 }}
+// 				initial={{ opacity: 0, x: -100 }}
+// 				transition={{ duration: 0.5 }}
+
+const container1 = (delay) => ({
+	hidden: { x: -100, opacity: 0 },
+	visible: {
+		x: 0,
+		opacity: 1,
+		transition: { duration: 0.5, delay: delay },
+	},
+})
+
 const Home = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
 	const [conterTrigger, setCounterTrigger] = useState(false)
@@ -26,39 +48,70 @@ const Home = () => {
 		<div>
 			<div className="home">
 				<div className="home-content">
-					<div className={`home-text ${waveAnimation ? "wave-animation" : ""}`}>
-						<h1 className="text-discover">Discover</h1>
-						<div className="text-out-artistry">
+					{/* <div className={`home-text ${waveAnimation ? "wave-animation" : ""}`}> */}
+					<div className="home-text">
+						<motion.h1
+							variants={container(0)}
+							initial="hidden"
+							animate="visible"
+							className="text-discover"
+						>
+							Discover
+						</motion.h1>
+						<motion.div
+							variants={container(0.5)}
+							initial="hidden"
+							animate="visible"
+							className="text-out-artistry"
+						>
 							<span>OUR</span>
 							<h1>artistry</h1>
-						</div>
+						</motion.div>
 					</div>
-					<img
+					<motion.img
+						initial={{ opacity: 0 }}
+						animate={{ opacity: 1 }}
+						transition={{ duration: 1, delay: 1.2 }}
 						className="homepage-img"
 						src={assets.homeImg1}
 						alt=""
 					/>
 				</div>
-				<div className="home-bottom">
+				<motion.div
+					variants={container(1)}
+					initial="hidden"
+					animate="visible"
+					className="home-bottom"
+				>
 					<p>KNOW MORE</p>
 					<img
 						src={assets.elevating_asthetics}
 						alt="elevating_asthetics"
 					/>
-				</div>
+				</motion.div>
 			</div>
 			<div className="home-ourdesign">
 				<div className="home-orange-bg"></div>
 				<div className="home-white-bg"></div>
 				<div className="home-ourdesign-content">
-					<div className="left-ourdesign">
+					<motion.div
+						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, x: -100 }}
+						transition={{ duration: 0.5 }}
+						className="left-ourdesign"
+					>
 						<div>
 							<h1 className="text-our">OUR</h1>
 							<h1 className="text-design">DESIGN</h1>
 						</div>
 						<h1 className="text-odyssey">ODYSSEY</h1>
-					</div>
-					<div className="right-ourdesign">
+					</motion.div>
+					<motion.div
+						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, x: 100 }}
+						transition={{ duration: 0.5 }}
+						className="right-ourdesign"
+					>
 						<p>
 							Welcome to our Australian design studio, where we specialize in
 							creating stunning branding solutions for businesses of all sizes.
@@ -72,8 +125,11 @@ const Home = () => {
 							impression. Contact us today to discuss your project and discover
 							the power of great design.
 						</p>
-					</div>
-					<img
+					</motion.div>
+					<motion.img
+						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, x: 200 }}
+						transition={{ duration: 0.8 }}
 						src={assets.ourdesign}
 						alt="ourdesign"
 					/>
@@ -83,13 +139,32 @@ const Home = () => {
 				<div className="home-ourpride-content">
 					<div className="our-pride-text">
 						<div className="text-ourpride">
-							<div className="text-ourideas">
+							<motion.div
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -100 }}
+								transition={{ duration: 0.8 }}
+								className="text-ourideas"
+							>
 								<h2>OUR</h2>
 								<p>Bringing Ideas</p>
-							</div>
-							<h2 className="text-pride">Pride</h2>
+							</motion.div>
+							<motion.h2
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -100 }}
+								transition={{ duration: 0.6 }}
+								className="text-pride"
+							>
+								Pride
+							</motion.h2>
 						</div>
-						<p className="text-throughdesign">to Life Through Design</p>
+						<motion.p
+							whileInView={{ opacity: 1, x: 0 }}
+							initial={{ opacity: 0, x: -100 }}
+							transition={{ duration: 0.8 }}
+							className="text-throughdesign"
+						>
+							to Life Through Design
+						</motion.p>
 					</div>
 					<div className="ourpride-lists">
 						{/* <div className="design-list">
@@ -133,7 +208,10 @@ const Home = () => {
 							/>
 						</div> */}
 						{[1, 2, 3, 4, 5].map((num, index) => (
-							<div
+							<motion.div
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -100 }}
+								transition={{ duration: 0.8 }}
 								className={`design-list ${
 									activeIndex === index ? "active" : ""
 								}`}
@@ -146,7 +224,7 @@ const Home = () => {
 									src={assets.right_arrow}
 									alt=""
 								/>
-							</div>
+							</motion.div>
 						))}
 					</div>
 					<div className="our-price-para">
@@ -182,19 +260,36 @@ const Home = () => {
 					<div className="home-whatsets-container">
 						<div className="left-whatsets">
 							{/* <div></div> */}
-							<div className="text-whatsets">
+							<motion.div
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -100 }}
+								transition={{ duration: 1 }}
+								className="text-whatsets"
+							>
 								<h2 className="text-whatsets-whatsets">WHAT SETS</h2>
 								<div>
 									<h2 className="text-whatsets-us">US</h2>
 									<h2 className="text-apart">APART</h2>
 								</div>
-							</div>
-							<p className="question-mark-small">?</p>
+							</motion.div>
+							<motion.p
+								whileInView={{ opacity: 1, y: 0 }}
+								initial={{ opacity: 0, y: -100 }}
+								transition={{ duration: 1 }}
+								className="question-mark-small"
+							>
+								?
+							</motion.p>
 						</div>
 						<div className="right-whatsets">
 							<p className="question-mark">?</p>
 
-							<div className="whatsets-orangebg">
+							<motion.div
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: 100 }}
+								transition={{ duration: 1 }}
+								className="whatsets-orangebg"
+							>
 								<div className="whatsets-milestone">
 									<div>
 										<span>
@@ -245,20 +340,30 @@ const Home = () => {
 									minimalist design principles, enhancing their overall appeal
 									and user experience.
 								</p>
-							</div>
+							</motion.div>
 						</div>
 					</div>
 				</ScrollTrigger>
 			</div>
 			<div className="home-digitalbrand">
 				<div className="home-digitalbrand-content">
-					<div className="home-digitalbrand-heading">
+					<motion.div
+						whileInView={{ opacity: 1, y: 0 }}
+						initial={{ opacity: 0, y: -100 }}
+						transition={{ duration: 0.8 }}
+						className="home-digitalbrand-heading"
+					>
 						<h1>Catapult your brand to digital stardom</h1>
 						<p>with our game-changing marketing wizardry</p>
-					</div>
+					</motion.div>
 					<div className="home-features">
 						<div className="top-home-features">
-							<div className="home-feature1">
+							<motion.div
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: 100 }}
+								transition={{ duration: 1 }}
+								className="home-feature1"
+							>
 								<img
 									src={assets.homefeatures1}
 									alt=""
@@ -272,8 +377,13 @@ const Home = () => {
 										social media channels....................
 									</p>
 								</div>
-							</div>
-							<div className="home-feature1 home-feature3">
+							</motion.div>
+							<motion.div
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -100 }}
+								transition={{ duration: 1 }}
+								className="home-feature1 home-feature3"
+							>
 								<img
 									src={assets.homefeatures2}
 									alt=""
@@ -287,10 +397,15 @@ const Home = () => {
 										social media channels....................
 									</p>
 								</div>
-							</div>
+							</motion.div>
 						</div>
 						<div className="bottom-home-features">
-							<div className="home-feature2">
+							<motion.div
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: 100 }}
+								transition={{ duration: 1 }}
+								className="home-feature2"
+							>
 								<div>
 									<h3>Maximizing Social Media ROI for Small Businesses</h3>
 									<p>
@@ -304,8 +419,13 @@ const Home = () => {
 									src={assets.homefeatures3}
 									alt=""
 								/>
-							</div>
-							<div className="home-feature2 home-feature4">
+							</motion.div>
+							<motion.div
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -100 }}
+								transition={{ duration: 1 }}
+								className="home-feature2 home-feature4"
+							>
 								<div>
 									<h3>Maximizing Social Media ROI for Small Businesses</h3>
 									<p>
@@ -319,7 +439,7 @@ const Home = () => {
 									src={assets.homefeatures4}
 									alt=""
 								/>
-							</div>
+							</motion.div>
 						</div>
 					</div>
 					<button className="home-featured-btn">FEATURED</button>
@@ -327,25 +447,38 @@ const Home = () => {
 			</div>
 			<div className="home-testimonials">
 				<div className="home-testimonials-container">
-					<div className="home-testimonials-text">
+					<motion.div
+						whileInView={{ opacity: 1, y: 0 }}
+						initial={{ opacity: 0, y: -100 }}
+						transition={{ duration: 0.8 }}
+						className="home-testimonials-text"
+					>
 						<h1 className="text-custjourny">Delving into customer journeys</h1>
 						<div>
 							<h2 className="text-insights">insights through invaluable</h2>
 							<h2 className="text-freedback">feedback</h2>
 						</div>
-					</div>
+					</motion.div>
 					<div className="home-testimonials-text2">
 						<h3>Delving into customer journeys </h3>
 						<h3>insights through invaluable feedback</h3>
 					</div>
 					<div className="home-testimonial-exp1">
 						<div className="home-testimonial-exp1-img">
-							<img
+							<motion.img
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -100 }}
+								transition={{ duration: 0.8 }}
 								src={assets.user1}
 								alt=""
 							/>
 						</div>
-						<div className="home-testimonial-exp1-content">
+						<motion.div
+							whileInView={{ opacity: 1, x: 0 }}
+							initial={{ opacity: 0, x: 100 }}
+							transition={{ duration: 0.8 }}
+							className="home-testimonial-exp1-content"
+						>
 							<p>
 								Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
 								eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
@@ -355,7 +488,7 @@ const Home = () => {
 								torquent per conubia nostra, per inceptos himenaeos.
 							</p>
 							<span>SIMON COLE</span>
-						</div>
+						</motion.div>
 					</div>
 				</div>
 				<h2 className="home-testimonal-btn">TESTIMONALS</h2>
@@ -395,7 +528,7 @@ const Home = () => {
 								// defaultValue="Some initial value"
 							/>
 
-							<button>Submit</button>
+							<button className="home-submit-btn">Submit</button>
 						</form>
 					</div>
 				</div>

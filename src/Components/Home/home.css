@@ -118,6 +118,7 @@
 @keyframes wave {
   from {
     transform: translateY(0);
+    animation-delay: 2s;
   }
 
   to {
@@ -1164,7 +1165,7 @@
   background: #1E1E1E;
   color: #fff;
   display: flex;
-
+  overflow: hidden;
   justify-content: center;
   position: relative;
 }
@@ -1660,6 +1661,7 @@
   color: #fff;
   padding: 0 30px;
   padding-top: 80px;
+  overflow: hidden;
   background-image: url('../../assets/homebg2.png');
 }
 
@@ -1830,6 +1832,7 @@
   padding-top: 70px;
   background: #1E1E1E;
   color: #fff;
+  overflow: hidden;
   position: relative;
 }
 
@@ -2127,7 +2130,7 @@ form textarea {
 
 }
 
-form button {
+.home-submit-btn {
   border: 0;
   outline: 0;
   padding: 10px;
@@ -2136,6 +2139,28 @@ form button {
   color: #fff;
   cursor: pointer;
 }
+
+.home-submit-btn:hover {
+  box-shadow: inset -8.5em 0 0 0 #1E1E1E, inset 8.5em 0 0 0 #1E1E1E;
+  transition: ease-in-out 0.6s;
+
+}
+
+/* 
+.home-submit-btn::after {
+  position: absolute;
+  height: 0;
+  left: 0;
+  top: 0;
+  transition-duration: 0.6s;
+  width: 100%;
+  color: #000;
+}
+
+.home-submit-btn::after {
+  color: #000;
+  height: 100%;
+} */
 
 @media(max-width:450px) {
 

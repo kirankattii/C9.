@@ -33,7 +33,9 @@ const Navbar = () => {
 					</li>
 					<li>WORK</li>
 					<li>MENU</li>
-					<li>CONTACT</li>
+					<li>
+						<Link to="/contact">CONTACT</Link>
+					</li>
 				</ul>
 				<img
 					src={assets.menu_icon}

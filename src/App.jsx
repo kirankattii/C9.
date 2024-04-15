@@ -6,6 +6,7 @@ import Footer from "./Components/Footer/Footer"
 import Story from "./Components/Story/Story"
 
 import "locomotive-scroll/dist/locomotive-scroll.css"
+import Contact from "./Components/Contact/Contact"
 
 const App = () => {
 	const location = useLocation()
@@ -25,6 +26,10 @@ const App = () => {
 					path="/story"
 					element={<Story />}
 				/>
+				{/* <Route
+					path="/contact"
+					element={<Contact />}
+				/> */}
 			</Routes>
 			{!isStoryPage && <Footer />}
 		</div>
