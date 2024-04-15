@@ -30,9 +30,9 @@ const Home = () => {
 	const [conterTrigger, setCounterTrigger] = useState(false)
 
 	const handleMouseOver = (index) => {
-		if (activeIndex !== index) {
-			setActiveIndex(index)
-		}
+		// if (activeIndex !== index) {
+		setActiveIndex(index)
+		// }
 	}
 	const [waveAnimation, setWaveAnimation] = useState(false)
 
@@ -91,8 +91,23 @@ const Home = () => {
 				</motion.div>
 			</div>
 			<div className="home-ourdesign">
-				<div className="home-orange-bg"></div>
-				<div className="home-white-bg"></div>
+				<div className="home-orange-bg">
+					<p>
+						Welcome to our Australian design studio, where we specialize in
+						creating stunning branding solutions for businesses of all sizes.
+						From logo design to product packaging, we elevate brands with
+						creativity and strategic insight. Our collaborative approach ensures
+						designs that
+					</p>
+				</div>
+				<div className="home-white-bg">
+					<p>
+						resonate with your audience and stand out in the market. Let us help
+						you craft a memorable brand identity that makes a lasting
+						impression. Contact us today to discuss your project and discover
+						the power of great design.
+					</p>
+				</div>
 				<div className="home-ourdesign-content">
 					<motion.div
 						whileInView={{ opacity: 1, x: 0 }}
