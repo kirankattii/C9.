@@ -7,6 +7,8 @@ import Story from "./Components/Story/Story"
 
 import "locomotive-scroll/dist/locomotive-scroll.css"
 import Contact from "./Components/Contact/Contact"
+import Services from "./Components/Services/Services"
+import Animate from "./Components/Animate"
 
 const App = () => {
 	const location = useLocation()
@@ -27,8 +29,16 @@ const App = () => {
 					element={<Story />}
 				/>
 				<Route
+					path="/services"
+					element={<Services />}
+				/>
+				<Route
 					path="/contact"
 					element={<Contact />}
+				/>
+				<Route
+					path="/animate"
+					element={<Animate />}
 				/>
 			</Routes>
 			{!isStoryPage && <Footer />}
