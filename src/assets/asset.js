@@ -25,6 +25,21 @@ import social_media_marketing from "./social-media-marketing.png"
 import seo from "./seo.png"
 import logo_design from "./logo-design.png"
 import packaging_design from "./packaging-design.png"
+import logo1 from "./logo1.png"
+import logo2 from "./logo2.png"
+import logo3 from "./logo3.png"
+import logo4 from "./logo4.png"
+import logo5 from "./logo5.png"
+import logo6 from "./logo6.png"
+import logo7 from "./logo7.png"
+import packaging1 from "./packaging1.png"
+import packaging2 from "./packaging2.png"
+import packaging3 from "./packaging3.png"
+import packaging4 from "./packaging4.png"
+import packaging5 from "./packaging5.png"
+import packaging6 from "./packaging6.png"
+import packaging7 from "./packaging7.png"
+import packaging8 from "./packaging8.png"
 
 export const assets = {
 	c9logo,
@@ -54,4 +69,19 @@ export const assets = {
 	seo,
 	logo_design,
 	packaging_design,
+	logo1,
+	logo2,
+	logo3,
+	logo4,
+	logo5,
+	logo6,
+	logo7,
+	packaging1,
+	packaging2,
+	packaging3,
+	packaging4,
+	packaging5,
+	packaging6,
+	packaging7,
+	packaging8,
 }

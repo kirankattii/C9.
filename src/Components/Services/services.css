@@ -15,7 +15,7 @@
   padding: 0 50px;
   /* padding-top: 20vh; */
   font-family: 'AmazDooMLeft';
-
+  overflow: hidden;
   color: #fff;
   align-items: center;
   gap: 10px;
@@ -330,6 +330,7 @@
   align-items: center;
   justify-content: center;
   padding: 0 21%;
+  overflow: hidden;
 }
 
 .services-content img {
@@ -427,6 +428,7 @@
   /* padding: 0 50px; */
   padding-top: 20px;
   position: relative;
+  overflow: hidden;
 }
 
 .timeline-content {

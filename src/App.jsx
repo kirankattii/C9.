@@ -9,12 +9,17 @@ import "locomotive-scroll/dist/locomotive-scroll.css"
 import Contact from "./Components/Contact/Contact"
 import Services from "./Components/Services/Services"
 import Animate from "./Components/Animate"
+import LogoWork from "./Components/LogoWork/LogoWork"
+import Packaging from "./Components/Packaging/Packaging"
+// import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
 const App = () => {
 	const location = useLocation()
 
 	// Check if the current location is the Story page
 	const isStoryPage = location.pathname === "/story"
+	const isLogoWorkPage = location.pathname === "/work"
+	const isPackagingPage = location.pathname === "/packaging"
 
 	return (
 		<div>
@@ -37,11 +42,20 @@ const App = () => {
 					element={<Contact />}
 				/>
 				<Route
+					path="/work"
+					element={<LogoWork />}
+				/>
+				<Route
+					path="/packaging"
+					element={<Packaging />}
+				/>
+				<Route
 					path="/animate"
 					element={<Animate />}
 				/>
 			</Routes>
-			{!isStoryPage && <Footer />}
+			{/* {!isStoryPage && <Footer />} */}
+			{!isStoryPage && !isLogoWorkPage && !isPackagingPage && <Footer />}
 		</div>
 	)
 }

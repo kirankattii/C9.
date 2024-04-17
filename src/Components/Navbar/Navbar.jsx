@@ -15,6 +15,14 @@ const Navbar = () => {
 	const toggleMenu = () => {
 		moblieMenu ? setMobileMenu(false) : setMobileMenu(true)
 	}
+	const [dropdownOpen, setDropdownOpen] = useState(false)
+	const toggleDropdown = () => {
+		setDropdownOpen(!dropdownOpen)
+	}
+
+	const closeDropdown = () => {
+		setDropdownOpen(false)
+	}
 
 	return (
 		<div className="navbar">
@@ -31,7 +39,18 @@ const Navbar = () => {
 					<li>
 						<Link to="/story">STORY</Link>
 					</li>
-					<li>WORK</li>
+					<li
+						onMouseEnter={toggleDropdown}
+						onMouseLeave={closeDropdown}
+					>
+						<Link>WORK</Link>
+						{dropdownOpen && (
+							<div className="dropdown-menu">
+								<Link to="/work">Logo</Link>
+								<Link to="/packaging">Packaging</Link>
+							</div>
+						)}
+					</li>
 					<li>MENU</li>
 					<li>
 						<Link to="/services">SERVICES</Link>

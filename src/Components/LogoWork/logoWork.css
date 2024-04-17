@@ -1,0 +1,673 @@
+.logo-work {
+  width: 100%;
+  /* margin-top: 10vh; */
+  min-height: 100vh;
+  position: relative;
+  background: #1e1e1e;
+  /* background: url('../../assets/LOGO.svg'); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  /* overflow-x: hidden; */
+
+}
+
+.work-logo {
+  background: #1e1e1e;
+
+  position: fixed;
+  font-size: 700px;
+  display: flex;
+  padding-top: 6vh;
+  letter-spacing: 50px;
+  align-items: center;
+  width: 100%;
+  padding-left: 30px;
+  font-family: 'AmazDooMLeft';
+  z-index: -1;
+  color: #c63e23;
+
+  justify-content: center;
+}
+
+.logo-work-container {
+  width: 100%;
+  padding-top: 20px;
+  min-height: 100vh;
+  /* overflow-y: auto; */
+
+  color: #fff;
+  z-index: 10;
+  position: relative;
+}
+
+.logo-work-container div {
+  /* background-color: rgba(0, 0, 0, 0.); */
+  z-index: 20;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+
+}
+
+.logo-work-container div h2 {
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* bottom: 150px; */
+  color: #4d4d4d;
+  /* color: #000; */
+  font-family: 'AfterglowRegular';
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.logo-work-container div img {
+  /* z-index: 10; */
+  /* position: absolute; */
+  /* width: 280px; */
+}
+
+.logo-work-container p {
+  color: #fff;
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  font-family: 'AfterglowRegular';
+  line-height: 1.3;
+}
+
+.logo-content1 {
+  top: 45%;
+  right: 10%;
+  width: 55%;
+  text-align: justify;
+}
+
+.logo-content2 {
+  top: 135%;
+  width: 28%;
+  right: 5%;
+}
+
+.logo-content3 {
+  top: 162%;
+  width: 50%;
+  left: 16%;
+  text-align: justify;
+}
+
+.logo-content4 {
+  top: 220%;
+  width: 30%;
+  right: 2%;
+}
+
+.logo-content5 {
+  top: 250%;
+  width: 60%;
+  right: 2%;
+  padding: 100px 50px;
+}
+
+.logo1 {
+  /* right: 250px; */
+  right: 15%;
+}
+
+.logo1 img {
+  width: 450px;
+}
+
+.logo1 h2 {
+  bottom: 225px;
+}
+
+.logo2 {
+  /* top: 210px; */
+  /* left: 100px; */
+  top: 35%;
+  left: 6%;
+}
+
+.logo2 img {
+  width: 410px;
+}
+
+.logo2 h2 {
+  bottom: 205px;
+}
+
+.logo3 {
+  /* top: 600px;
+  right: 50px; */
+  right: 5%;
+  top: 65%
+}
+
+.logo3 img {
+  width: 450px;
+}
+
+.logo3 h2 {
+  bottom: 270px
+}
+
+.logo4 {
+  top: 105%;
+  left: 30%;
+}
+
+.logo4 h2 {
+  bottom: 150px;
+}
+
+.logo4 img {
+  width: 500px;
+}
+
+.logo5 {
+  top: 150%;
+  right: 5%;
+}
+
+.logo5 img {
+  width: 380px;
+}
+
+.logo5 h2 {
+  bottom: 155px;
+}
+
+.logo6 {
+  top: 220%;
+  left: 3%;
+}
+
+.logo6 img {
+  width: 450px;
+}
+
+.logo6 h2 {
+  bottom: 155px;
+}
+
+.logo7 {
+  top: 205%;
+  left: 35%;
+}
+
+.logo7 img {
+  width: 450px;
+}
+
+.logo7 h2 {
+  bottom: 150px;
+}
+
+@media(max-width:1300px) {
+  .logo-content1 {
+    top: 45%;
+    right: 05%;
+    width: 45%;
+
+  }
+
+  .logo4 {
+    top: 105%;
+    left: 10%;
+  }
+
+  .logo5 {
+    top: 160%;
+    right: 5%;
+  }
+
+  .logo-content3 {
+    top: 155%;
+    width: 40%;
+    left: 16%;
+    text-align: justify;
+  }
+
+  .logo6 {
+    top: 250%;
+    left: 3%;
+  }
+
+  .logo7 {
+    top: 205%;
+    left: 20%;
+  }
+
+
+}
+
+@media(max-width:1000px) {
+  .logo-work-container div h2 {
+    font-size: 18px;
+  }
+
+  .logo1 {
+    /* right: 250px; */
+    right: 1%;
+  }
+
+  .logo1 img {
+    width: 400px;
+  }
+
+  .logo1 h2 {
+    bottom: 200px;
+  }
+
+  .logo2 {
+    /* top: 210px; */
+    /* left: 100px; */
+    top: 35%;
+    left: 1%;
+  }
+
+  .logo2 img {
+    width: 360px;
+  }
+
+  .logo2 h2 {
+    bottom: 180px;
+  }
+
+  .logo3 {
+    overflow: hidden;
+    top: 80%
+  }
+
+  .logo3 img {
+    width: 450px;
+    margin-right: -90px;
+  }
+
+  .logo3 h2 {
+    bottom: 270px;
+    margin-left: 80px;
+  }
+
+  .logo4 {
+    top: 100%;
+    left: 1%;
+  }
+
+  .logo4 h2 {
+    bottom: 150px;
+  }
+
+  .logo4 img {
+    width: 400px;
+  }
+
+  .logo5 {
+    top: 220%;
+    right: 1%;
+  }
+
+  .logo5 img {
+    width: 340px;
+  }
+
+  .logo5 h2 {
+    bottom: 140px;
+  }
+
+  .logo6 {
+    top: 250%;
+    left: 1%;
+  }
+
+  .logo6 img {
+    width: 400px;
+  }
+
+  .logo6 h2 {
+    bottom: 120px;
+  }
+
+  .logo7 {
+    top: 200%;
+    left: 1%;
+  }
+
+  .logo7 img {
+    width: 380px;
+  }
+
+  .logo7 h2 {
+    bottom: 150px;
+  }
+
+  .logo-content2 {
+    top: 190%;
+    width: 35%;
+    right: 5%;
+  }
+
+  .logo-content3 {
+    top: 160%;
+    width: 80%;
+    left: 10%;
+    text-align: justify;
+  }
+
+  .logo-content4 {
+    top: 270%;
+    width: 40%;
+    right: 2%;
+  }
+
+  .logo-content5 {
+    top: 310%;
+    width: 95%;
+    right: 2%;
+    text-align: justify;
+    padding: 100px 50px;
+  }
+
+}
+
+
+
+@media(max-width:700px) {
+  .logo-work-container div h2 {
+    font-size: 14px;
+  }
+
+  .logo-work-container {
+    padding-top: 80px;
+  }
+
+  .logo-work-container p {
+    font-size: 18px;
+    /* text-align: ; */
+  }
+
+  .logo1 {
+    /* right: 250px; */
+    right: 1%;
+  }
+
+  .logo1 img {
+    width: 250px;
+  }
+
+  .logo1 h2 {
+    bottom: 120px;
+  }
+
+  .logo2 {
+    /* top: 210px; */
+    /* left: 100px; */
+    top: 35%;
+    left: 1%;
+  }
+
+  .logo2 img {
+    width: 250px;
+  }
+
+  .logo2 h2 {
+    bottom: 180px;
+  }
+
+  .logo3 {
+    overflow: hidden;
+    top: 87%
+  }
+
+  .logo3 img {
+    width: 300px;
+    margin-right: -50px;
+  }
+
+  .logo3 h2 {
+    bottom: 180px;
+    margin-left: 50px;
+  }
+
+  .logo4 {
+    top: 100%;
+    left: 1%;
+  }
+
+  .logo4 h2 {
+    bottom: 80px;
+  }
+
+  .logo4 img {
+    width: 280px;
+  }
+
+  .logo5 {
+    top: 200%;
+    right: 1%;
+  }
+
+  .logo5 img {
+    width: 250px;
+  }
+
+  .logo5 h2 {
+    bottom: 100px;
+  }
+
+  .logo6 {
+    top: 210%;
+    left: 1%;
+  }
+
+  .logo6 img {
+    width: 250px;
+  }
+
+  .logo6 h2 {
+    bottom: 85px;
+  }
+
+  .logo7 {
+    top: 170%;
+    left: 1%;
+  }
+
+  .logo7 img {
+    width: 250px;
+  }
+
+  .logo7 h2 {
+    bottom: 85px;
+  }
+
+  .logo-content2 {
+    top: 170%;
+    width: 35%;
+    right: 5%;
+  }
+
+  .logo-content3 {
+    top: 140%;
+    width: 80%;
+    left: 10%;
+    text-align: justify;
+  }
+
+  .logo-content4 {
+    top: 230%;
+    width: 40%;
+    right: 2%;
+  }
+
+  .logo-content5 {
+    top: 250%;
+    width: 95%;
+    right: 2%;
+    text-align: justify;
+    padding: 100px 50px;
+  }
+
+}
+
+
+
+
+@media(max-width:500px) {
+  .logo-work-container div h2 {
+    font-size: 14px;
+  }
+
+  .logo-work-container {
+    padding-top: 80px;
+  }
+
+  .logo-work-container p {
+    font-size: 15px;
+    /* text-align: ; */
+  }
+
+  .logo1 {
+    /* right: 250px; */
+    right: 0%;
+  }
+
+  .logo1 img {
+    width: 290px;
+  }
+
+  .logo1 h2 {
+    bottom: 140px;
+  }
+
+  .logo2 {
+    /* top: 210px; */
+    /* left: 100px; */
+    top: 40%;
+    left: -5%;
+  }
+
+  .logo2 img {
+    width: 300px;
+  }
+
+  .logo2 h2 {
+    bottom: 180px;
+  }
+
+  .logo-content1 {
+    top: 80%;
+    right: 5%;
+    width: 85%;
+    text-align: end;
+  }
+
+  .logo3 {
+    overflow: hidden;
+    top: 98%
+  }
+
+  .logo3 img {
+    width: 330px;
+    margin-right: -80px;
+  }
+
+  .logo3 h2 {
+    bottom: 200px;
+    margin-left: 70px;
+  }
+
+  .logo4 {
+    top: 165%;
+    right: 0%;
+    overflow: hidden;
+  }
+
+  .logo4 h2 {
+    bottom: 80px;
+    margin-left: 35%;
+  }
+
+  .logo4 img {
+    width: 280px;
+    margin-left: 33%;
+  }
+
+  .logo5 {
+    top: 215%;
+    left: -30%;
+  }
+
+  .logo5 img {
+    width: 290px;
+  }
+
+  .logo5 h2 {
+    bottom: 120px;
+  }
+
+  .logo6 {
+    top: 320%;
+    right: 0%;
+    overflow: hidden;
+  }
+
+  .logo6 img {
+    width: 250px;
+    margin-left: 45%;
+  }
+
+  .logo6 h2 {
+    bottom: 85px;
+    margin-left: 45%;
+  }
+
+  .logo7 {
+    top: 265%;
+    left: -4%;
+  }
+
+  .logo7 img {
+    width: 290px;
+  }
+
+  .logo7 h2 {
+    bottom: 95px;
+  }
+
+  .logo-content2 {
+    top: 147%;
+    width: 80%;
+    left: 5%;
+  }
+
+  .logo-content3 {
+    top: 195%;
+    width: 90%;
+    left: 05%;
+    text-align: justify;
+  }
+
+  .logo-content4 {
+    top: 248%;
+    width: 80%;
+    text-align: end;
+    right: 2%;
+  }
+
+  .logo-content5 {
+    top: 280%;
+    width: 100%;
+    right: 0%;
+    text-align: justify;
+    padding: 100px 30px;
+  }
+
+}

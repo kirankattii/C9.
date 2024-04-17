@@ -22,6 +22,8 @@ nav ul li {
   list-style: none;
   margin: 5px 20px;
   font-size: 16px;
+  font-family: 'AfterglowRegular';
+  letter-spacing: 1.5px;
 
 }
 
@@ -71,5 +73,51 @@ nav ul li {
 
   .hide-mobile-menu {
     right: -200px;
+  }
+}
+
+.navbar {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  /* top: 65%; */
+
+  left: auto;
+  width: 150px;
+  background-color: #1e1e1e;
+  z-index: 100;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.dropdown-menu a:first-child {
+  margin-top: 10px;
+}
+
+
+
+
+.dropdown-menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0;
+  font-size: 18px;
+  padding-left: 10px;
+  font-family: 'AfterglowRegular';
+  letter-spacing: 1.5px;
+}
+
+.dropdown-menu a:hover {
+  background-color: #333;
+}
+
+@media (max-width: 600px) {
+  .dropdown-menu {
+    display: none;
   }
 }
