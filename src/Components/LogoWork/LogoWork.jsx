@@ -3,6 +3,7 @@ import "./logoWork.css"
 import Lenis from "@studio-freight/lenis"
 
 import { assets } from "../../assets/asset"
+import Footer from "../Footer/Footer"
 const LogoWork = () => {
 	useEffect(() => {
 		const lenis = new Lenis()
@@ -102,6 +103,9 @@ const LogoWork = () => {
 					designs not only enhance product visibility but also communicate your
 					brand's message effectively.
 				</p>
+			</div>
+			<div className="logo-footer">
+				<Footer />
 			</div>
 		</div>
 	)

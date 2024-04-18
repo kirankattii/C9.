@@ -1,16 +1,17 @@
 import React, { useEffect, useRef } from "react"
 import "./packaging.css"
 import { assets } from "../../assets/asset"
-import { useTransform, useScroll, motion } from "framer-motion"
+// import { useTransform, useScroll, motion } from "framer-motion"
 import Lenis from "@studio-freight/lenis"
+import Footer from "../Footer/Footer"
 
 const Packaging = () => {
-	const container = useRef(null)
-	const { scrollYProgress } = useScroll({
-		target: container,
-		offset: ["start end", "end start"],
-	})
-	const sm = useTransform(scrollYProgress, [0, 1], [0, 0])
+	// const container = useRef(null)
+	// const { scrollYProgress } = useScroll({
+	// 	target: container,
+	// 	offset: ["start end", "end start"],
+	// })
+	// const sm = useTransform(scrollYProgress, [0, 1], [0, 0])
 
 	useEffect(() => {
 		const lenis = new Lenis()
@@ -28,11 +29,11 @@ const Packaging = () => {
 	}, [])
 
 	return (
-		<div
-			className="packaging"
-			ref={container}
-		>
+		<div className="packaging">
 			<div className="packaging-text">PACKAGING</div>
+			<div className="packaging-text packaging-text-br">
+				PACK <br /> AGING
+			</div>
 			<div className="packaging-container">
 				<div
 					// style={{ y: sm }}
@@ -122,6 +123,9 @@ const Packaging = () => {
 						<h3>YOUR BITE</h3>
 					</span>
 				</div>
+			</div>
+			<div className="packaging-footer ">
+				<Footer />
 			</div>
 		</div>
 	)

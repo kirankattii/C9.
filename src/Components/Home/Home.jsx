@@ -92,21 +92,29 @@ const Home = () => {
 			</div>
 			<div className="home-ourdesign">
 				<div className="home-orange-bg">
-					<p>
+					<motion.p
+						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, x: 100 }}
+						transition={{ duration: 0.5 }}
+					>
 						Welcome to our Australian design studio, where we specialize in
 						creating stunning branding solutions for businesses of all sizes.
 						From logo design to product packaging, we elevate brands with
 						creativity and strategic insight. Our collaborative approach ensures
 						designs that
-					</p>
+					</motion.p>
 				</div>
 				<div className="home-white-bg">
-					<p>
+					<motion.p
+						whileInView={{ opacity: 1, x: 0 }}
+						initial={{ opacity: 0, x: 100 }}
+						transition={{ duration: 0.5 }}
+					>
 						resonate with your audience and stand out in the market. Let us help
 						you craft a memorable brand identity that makes a lasting
 						impression. Contact us today to discuss your project and discover
 						the power of great design.
-					</p>
+					</motion.p>
 				</div>
 				<div className="home-ourdesign-content">
 					<motion.div
@@ -261,17 +269,17 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="home-whatsets">
-				{/* <div className="whatsets-bg-text">
-					<h2>Data-driven</h2>
-					<h2>Results-oriented</h2>
-					<h2>Innovation</h2>
-					<h2>Creativity</h2>
-					<h2>Customization</h2>
-				</div> */}
 				<ScrollTrigger
 					onEnter={() => setCounterTrigger(true)}
 					onExit={() => setCounterTrigger(false)}
 				>
+					{/* <div className="whatsets-bg-text"> */}
+					<h2 className="whatsets-bg-text1">Data-driven</h2>
+					<h2 className="whatsets-bg-text2">Results-oriented</h2>
+					<h2 className="whatsets-bg-text3">Innovation</h2>
+					<h2 className="whatsets-bg-text4">Creativity</h2>
+					<h2 className="whatsets-bg-text5">Customization</h2>
+					{/* </div> */}
 					<div className="home-whatsets-container">
 						<div className="left-whatsets">
 							{/* <div></div> */}

@@ -11,6 +11,7 @@ import Services from "./Components/Services/Services"
 import Animate from "./Components/Animate"
 import LogoWork from "./Components/LogoWork/LogoWork"
 import Packaging from "./Components/Packaging/Packaging"
+import Values from "./Components/Values/Values"
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
 const App = () => {
@@ -48,6 +49,10 @@ const App = () => {
 				<Route
 					path="/packaging"
 					element={<Packaging />}
+				/>{" "}
+				<Route
+					path="/values"
+					element={<Values />}
 				/>
 				<Route
 					path="/animate"

@@ -40,6 +40,7 @@ import packaging5 from "./packaging5.png"
 import packaging6 from "./packaging6.png"
 import packaging7 from "./packaging7.png"
 import packaging8 from "./packaging8.png"
+import values_reacangle from "./valuesRectangle.png"
 
 export const assets = {
 	c9logo,
@@ -84,4 +85,5 @@ export const assets = {
 	packaging6,
 	packaging7,
 	packaging8,
+	values_reacangle,
 }

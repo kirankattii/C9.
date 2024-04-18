@@ -15,11 +15,12 @@
 
 .work-logo {
   background: #1e1e1e;
+  height: 100vh;
 
   position: fixed;
   font-size: 700px;
   display: flex;
-  padding-top: 6vh;
+  padding-top: 35vh;
   letter-spacing: 50px;
   align-items: center;
   width: 100%;
@@ -137,6 +138,20 @@
 
 .logo2 img {
   width: 410px;
+
+}
+
+.logo2 img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Adjust the values as needed */
+  z-index: 1;
+  /* Set z-index to place the shadow on top */
 }
 
 .logo2 h2 {
@@ -210,7 +225,20 @@
   bottom: 150px;
 }
 
+.logo-footer {
+  position: absolute;
+  top: 310%;
+  width: 100%;
+}
+
 @media(max-width:1300px) {
+  .logo-footer {
+    position: absolute;
+    top: 340%;
+    width: 100%;
+
+  }
+
   .logo-content1 {
     top: 45%;
     right: 05%;
@@ -245,10 +273,42 @@
     left: 20%;
   }
 
+  .work-logo {
+    letter-spacing: 30px;
+    padding-left: 50px;
+  }
+
 
 }
 
 @media(max-width:1000px) {
+  .work-logo {
+    background: #1e1e1e;
+    height: 100vh;
+
+    position: fixed;
+    font-size: 500px;
+
+    display: flex;
+    padding-top: 35vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 20px;
+    padding-left: 50px;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 355%;
+    width: 100%;
+  }
+
   .logo-work-container div h2 {
     font-size: 18px;
   }
@@ -273,9 +333,7 @@
     left: 1%;
   }
 
-  .logo2 img {
-    width: 360px;
-  }
+  .logo2 img {}
 
   .logo2 h2 {
     bottom: 180px;
@@ -380,6 +438,32 @@
 
 
 @media(max-width:700px) {
+  .work-logo {
+    background: #1e1e1e;
+
+    position: fixed;
+    font-size: 400px;
+    height: 100vh;
+    display: flex;
+    padding-top: 13vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 10px;
+    padding-left: 35px;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 300%;
+    width: 100%;
+  }
+
   .logo-work-container div h2 {
     font-size: 14px;
   }
@@ -521,6 +605,32 @@
 
 
 @media(max-width:500px) {
+  .work-logo {
+    background: #1e1e1e;
+
+    position: fixed;
+    font-size: 280px;
+    height: 100vh;
+    display: flex;
+    padding-top: 13vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 10px;
+    padding-left: 25px;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 370%;
+    width: 100%;
+  }
+
   .logo-work-container div h2 {
     font-size: 14px;
   }
@@ -670,4 +780,27 @@
     padding: 100px 30px;
   }
 
+}
+
+
+@media(max-width:400px) {
+  .work-logo {
+    background: #1e1e1e;
+
+    position: fixed;
+    font-size: 250px;
+    height: 100vh;
+    display: flex;
+    padding-top: 13vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 10px;
+    padding-left: 25px;
+    justify-content: center;
+  }
 }
