@@ -369,7 +369,7 @@
   .services-content img {
     width: 300px;
     height: 450px;
-    opacity: 0.8;
+
   }
 
   .services-content p {
@@ -391,7 +391,7 @@
   .services-content img {
     width: 300px;
     height: 450px;
-    opacity: 0.8;
+
     margin-left: -150px;
   }
 
@@ -458,6 +458,7 @@
   justify-content: center;
   align-items: center;
   /* z-index: -10; */
+
 }
 
 .services-slides div h2 {
@@ -470,6 +471,7 @@
   font-size: 16px;
   letter-spacing: 1px;
   text-align: justify;
+
 }
 
 .timeline-content img {
@@ -694,6 +696,7 @@
     margin-top: -150px;
     width: 100%;
     padding: 15px;
+    margin-bottom: 150px;
   }
 
   .services-slides div p {

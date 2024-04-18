@@ -118,6 +118,6 @@ nav ul li {
 
 @media (max-width: 600px) {
   .dropdown-menu {
-    display: none;
+    /* display: none; */
   }
 }

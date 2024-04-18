@@ -1,14 +1,45 @@
-import React from "react"
+import React, { useEffect, useRef } from "react"
 import "./packaging.css"
 import { assets } from "../../assets/asset"
+import { useTransform, useScroll, motion } from "framer-motion"
+import Lenis from "@studio-freight/lenis"
 
 const Packaging = () => {
+	const container = useRef(null)
+	const { scrollYProgress } = useScroll({
+		target: container,
+		offset: ["start end", "end start"],
+	})
+	const sm = useTransform(scrollYProgress, [0, 1], [0, 0])
+
+	useEffect(() => {
+		const lenis = new Lenis()
+
+		lenis.on("scroll", (e) => {
+			console.log(e)
+		})
+
+		function raf(time) {
+			lenis.raf(time)
+			requestAnimationFrame(raf)
+		}
+
+		requestAnimationFrame(raf)
+	}, [])
+
 	return (
-		<div className="packaging">
+		<div
+			className="packaging"
+			ref={container}
+		>
 			<div className="packaging-text">PACKAGING</div>
 			<div className="packaging-container">
-				<div className="package1">
+				<div
+					// style={{ y: sm }}
+					className="package1"
+				>
 					<img
+						// style={{ y: sm }}
 						src={assets.packaging1}
 						alt=""
 					/>

@@ -23,6 +23,16 @@ const Navbar = () => {
 	const closeDropdown = () => {
 		setDropdownOpen(false)
 	}
+	// const [showMobileDropdown, setShowMobileDropdown] = useState(false)
+	// const toggleMobileDropdown = () => {
+	// 	setShowMobileDropdown(!showMobileDropdown)
+	// }
+
+	// const handleWorkClick = () => {
+	// 	if (window.innerWidth < 600) {
+	// 		toggleMobileDropdown()
+	// 	}
+	// }
 
 	return (
 		<div className="navbar">

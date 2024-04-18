@@ -1,7 +1,23 @@
-import React from "react"
+import React, { useEffect } from "react"
 import "./logoWork.css"
+import Lenis from "@studio-freight/lenis"
+
 import { assets } from "../../assets/asset"
 const LogoWork = () => {
+	useEffect(() => {
+		const lenis = new Lenis()
+
+		lenis.on("scroll", (e) => {
+			console.log(e)
+		})
+
+		function raf(time) {
+			lenis.raf(time)
+			requestAnimationFrame(raf)
+		}
+
+		requestAnimationFrame(raf)
+	}, [])
 	return (
 		<div className="logo-work">
 			<div className="work-logo">LOGO</div>

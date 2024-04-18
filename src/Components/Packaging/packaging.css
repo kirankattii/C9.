@@ -9,6 +9,7 @@
   background-position: center;
   background-repeat: no-repeat;
   z-index: -2;
+
   /* overflow-x: hidden; */
 
 }
@@ -41,6 +42,7 @@
   z-index: 10;
   position: relative;
   /* background: #fff; */
+  padding-bottom: 250px;
 }
 
 .packaging-container div {
@@ -183,7 +185,7 @@
 .package8 {
   top: 300%;
   right: 5%;
-  /* padding-bottom: 100px; */
+  padding-bottom: 100px;
 }
 
 .package8 img {
