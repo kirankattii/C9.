@@ -1983,6 +1983,29 @@
   }
 }
 
+/* =========================== */
+
+
+.home-sliders {
+  width: 100%;
+  min-height: 100vh;
+  background: #1E1E1E;
+  display: flex;
+  overflow: none;
+}
+
+.service-sliders {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-image img {
+  width: 50%;
+
+}
 
 /* ======================= */
 

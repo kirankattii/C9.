@@ -87,3 +87,26 @@ export const assets = {
 	packaging8,
 	values_reacangle,
 }
+
+export const homeCorosal = [
+	{
+		id: 1,
+		title: "WEB DEVELOPMENT",
+		image: "./whitebgreat.png",
+	},
+	{
+		id: 2,
+		title: "SOCIAL MEDIA MARKETING",
+		image: "./whitebgreat.png",
+	},
+	{
+		id: 3,
+		title: "SEARCH ENGINE OPTIMIZATION",
+		image: "./whitebgreat.png",
+	},
+	{
+		id: 4,
+		title: "LOGO AND PACKAGING DESIGN",
+		image: "./whitebgreat.png",
+	},
+]

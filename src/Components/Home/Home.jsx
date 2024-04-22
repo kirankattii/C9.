@@ -4,6 +4,8 @@ import CountUp from "react-countup"
 import ScrollTrigger from "react-scroll-trigger"
 import "./home.css"
 import { motion } from "framer-motion"
+import HomeSlides from "../HomeSlides/HomeSlides"
+
 const container = (delay) => ({
 	hidden: { x: -100, opacity: 0 },
 	visible: {
@@ -468,6 +470,7 @@ const Home = () => {
 					<button className="home-featured-btn">FEATURED</button>
 				</div>
 			</div>
+			<HomeSlides />
 			<div className="home-testimonials">
 				<div className="home-testimonials-container">
 					<motion.div
