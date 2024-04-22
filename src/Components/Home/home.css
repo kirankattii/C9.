@@ -876,7 +876,7 @@
   /* width: 100px; */
   font-size: 30px;
   margin-left: 20px;
-  bottom: 0;
+
 }
 
 .text-throughdesign {
@@ -901,7 +901,7 @@
   padding: 15px 30px;
   justify-content: center;
   transition: opacity 0.3s ease, background 0.3s ease;
-
+  cursor: pointer;
 }
 
 
@@ -918,7 +918,7 @@
 
 
 .design-list img {
-  height: 50px;
+  height: 55px;
 
 }
 
@@ -950,10 +950,11 @@
   border: 0;
   outline: 0;
   background: #fff;
-  color: #EF4523;
+  /* color: #EF4523; */
   font-size: 18px;
   padding: 15px;
   cursor: pointer;
+
 }
 
 
@@ -969,7 +970,7 @@
 .design-list:hover p,
 .design-list:hover img {
   display: flex;
-  background: #EF4523;
+  /* background: #EF4523; */
 
 
   opacity: 0;
@@ -979,7 +980,7 @@
 
 .design-list.active p,
 .design-list.active img,
-.design-list:hover p,
+/* .design-list:hover p, */
 .design-list.active,
 .design-list:hover img {
   display: flex;
@@ -990,7 +991,31 @@
 
 }
 
+.design-list:hover {
+  opacity: 0.8;
+  /* Adjust opacity as needed */
+  transform: scale(1);
+  /* Adjust scale as needed */
+  transition-duration: 1s;
+  border: 0;
+}
 
+.design-list p {
+  opacity: 0.8;
+  /* Adjust opacity as needed */
+  transform: scale(1.4);
+  /* Adjust scale as needed */
+  transition-duration: 1s;
+}
+
+.design-list p:hover {
+  opacity: 1;
+  /* Adjust opacity as needed */
+  transform: scale(1);
+  background: transparent;
+  /* Adjust scale as needed */
+  transition-duration: 0.5s;
+}
 
 @media(max-width:900px) {
   .design-list {
@@ -1022,11 +1047,17 @@
 @media(max-width:680px) {
   .design-list {
     display: flex;
+    width: 100%;
+    border: 0;
+    justify-content: space-between;
+    text-align: center;
+
   }
 
   .ourpride-lists {
     display: flex;
     flex-direction: column;
+    align-items: start;
   }
 
   .design-list.active p,
@@ -1105,6 +1136,10 @@
 
     padding-top: 40px;
 
+  }
+
+  .design-list:hover p {
+    transform: none;
   }
 
   .text-ourideas {
@@ -1195,6 +1230,11 @@
     padding: 10px 25px;
     justify-content: center;
     transition: padding 0.3s ease;
+    display: flex;
+    width: 100%;
+    border: 0;
+    justify-content: space-between;
+    text-align: center;
   }
 
 

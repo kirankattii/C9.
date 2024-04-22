@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { assets } from "../../assets/asset"
+import { assets, ourPride } from "../../assets/asset"
 import CountUp from "react-countup"
 import ScrollTrigger from "react-scroll-trigger"
 import "./home.css"
@@ -192,47 +192,7 @@ const Home = () => {
 						</motion.p>
 					</div>
 					<div className="ourpride-lists">
-						{/* <div className="design-list">
-							<span>.1</span>
-							<p>Web development</p>
-							<img
-								src={assets.right_arrow}
-								alt=""
-							/>
-						</div>
-						<div className="design-list">
-							<span>.2</span>
-							<p>Web development</p>
-							<img
-								src={assets.right_arrow}
-								alt=""
-							/>
-						</div>
-						<div className="design-list">
-							<span>.3</span>
-							<p>Web development</p>
-							<img
-								src={assets.right_arrow}
-								alt=""
-							/>
-						</div>
-						<div className="design-list">
-							<span>.4</span>
-							<p>Web development</p>
-							<img
-								src={assets.right_arrow}
-								alt=""
-							/>
-						</div>
-						<div className="design-list">
-							<span>.5</span>
-							<p>Web development</p>
-							<img
-								src={assets.right_arrow}
-								alt=""
-							/>
-						</div> */}
-						{[1, 2, 3, 4, 5].map((num, index) => (
+						{ourPride.map((num, index) => (
 							<motion.div
 								whileInView={{ opacity: 1, x: 0 }}
 								initial={{ opacity: 0, x: -100 }}
@@ -241,10 +201,17 @@ const Home = () => {
 									activeIndex === index ? "active" : ""
 								}`}
 								key={index}
+								whileHover={{ opacity: 0.8 }}
 								onMouseOver={() => handleMouseOver(index)}
 							>
-								<span className="ourpride-list-no">.{num}</span>
-								<p className="ourpride-list-name">Web development</p>
+								<span className="ourpride-list-no">.{num.id}</span>
+								<motion.p
+									// whileHover={{ duration: 0.8 }}
+									whileHover={{ scale: 1.1 }}
+									className="ourpride-list-name"
+								>
+									{num.title}
+								</motion.p>
 								<img
 									src={assets.right_arrow}
 									alt=""

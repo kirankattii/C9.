@@ -1,7 +1,8 @@
 import React from "react"
 import "./footer.css"
-import { assets } from "../../assets/asset"
+import { assets, questionnarie, quickLinks, work } from "../../assets/asset"
 import { Link } from "react-router-dom"
+import { MdOutlineKeyboardArrowLeft } from "react-icons/md"
 
 const Footer = () => {
 	return (
@@ -37,30 +38,34 @@ const Footer = () => {
 					<div>
 						<h2>Quick Links</h2>
 						<ul>
-							<li>Home</li>
-							<li>Story</li>
-							<li>Work</li>
-							<li>Career</li>
-							<li>Get Our Profile</li>
-							<li>Vlogs</li>
-							<li>Reach Us</li>
+							{quickLinks.map((item) => (
+								<div>
+									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
+									<li key={item.id}>{item.name}</li>
+								</div>
+							))}
 						</ul>
 					</div>
 					<div>
 						<h2>Work</h2>
 						<ul>
-							<li>All</li>
-							<li>Packaging</li>
-							<li>Logos</li>
-							<li>Digital Marketing</li>
+							{work.map((item) => (
+								<div>
+									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
+									<li key={item.id}>{item.name}</li>
+								</div>
+							))}
 						</ul>
 					</div>
 					<div>
 						<h2>Questionnaire</h2>
 						<ul>
-							<li>Packaging</li>
-							<li>Logos</li>
-							<li>Digital</li>
+							{questionnarie.map((item) => (
+								<div>
+									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
+									<li key={item.id}>{item.name}</li>
+								</div>
+							))}
 						</ul>
 					</div>
 				</div>

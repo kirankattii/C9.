@@ -41,6 +41,8 @@
   display: flex;
   gap: 10px;
   align-items: center;
+  cursor: pointer;
+
 }
 
 .right-footer div h2 {
@@ -133,5 +135,43 @@
     display: flex;
     gap: 20px;
   }
+
+}
+
+.right-footer ul div {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 2px;
+  cursor: pointer;
+  transition: ease-in 0.5s;
+
+}
+
+.right-footer ul div hr {}
+
+.footer-rightIcon {
+  display: none;
+
+
+
+}
+
+.right-footer ul div:hover .footer-rightIcon {
+  position: absolute;
+  display: block;
+  margin-left: -18px;
+
+  transform: rotate(180deg);
+
+  color: #c63e23;
+
+
+}
+
+.right-footer ul div:hover {
+  color: #c63e23;
+  transition-duration: 0.2s;
 
 }

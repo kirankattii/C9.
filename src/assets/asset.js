@@ -110,3 +110,91 @@ export const homeCorosal = [
 		image: "./whitebgreat.png",
 	},
 ]
+
+export const ourPride = [
+	{
+		id: 1,
+		title: "Web Development",
+	},
+	{
+		id: 2,
+		title: "Social Media Marketing",
+	},
+	{
+		id: 3,
+		title: "Search Engine Optimization",
+	},
+	{
+		id: 4,
+		title: "Logo Design",
+	},
+	{
+		id: 5,
+		title: "Packaging Design",
+	},
+]
+
+export const quickLinks = [
+	{
+		id: 1,
+		name: "Home",
+	},
+	{
+		id: 2,
+		name: "Story",
+	},
+	{
+		id: 3,
+		name: "Work",
+	},
+	{
+		id: 4,
+		name: "Career",
+	},
+	{
+		id: 5,
+		name: "Get Our Profile",
+	},
+	{
+		id: 6,
+		name: "Vlogs",
+	},
+	{
+		id: 7,
+		name: "Reach",
+	},
+]
+
+export const work = [
+	{
+		id: 1,
+		name: "All",
+	},
+	{
+		id: 2,
+		name: "Packaging",
+	},
+	{
+		id: 3,
+		name: "Logos",
+	},
+	{
+		id: 4,
+		name: "Digital Marketing",
+	},
+]
+
+export const questionnarie = [
+	{
+		id: 1,
+		name: "Packaging",
+	},
+	{
+		id: 2,
+		name: "Logos",
+	},
+	{
+		id: 3,
+		name: "Digital",
+	},
+]
