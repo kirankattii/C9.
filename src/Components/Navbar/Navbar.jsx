@@ -43,29 +43,47 @@ const Navbar = () => {
 					alt=""
 				/>
 				<ul className={moblieMenu ? "" : "hide-mobile-menu "}>
-					<li>
+					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/">HOME</Link>
 					</li>
-					<li>
+					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/story">STORY</Link>
 					</li>
 					<li
+						className="work-nav-link"
 						onMouseEnter={toggleDropdown}
 						onMouseLeave={closeDropdown}
 					>
 						<Link>WORK</Link>
 						{dropdownOpen && (
+							<div className="media-dropdown">
+								<Link
+									onClick={() => setMobileMenu(false)}
+									to="/work"
+								>
+									LOGO
+								</Link>
+								<Link
+									onClick={() => setMobileMenu(false)}
+									to="/packaging"
+								>
+									PACKAGING
+								</Link>
+							</div>
+						)}
+						{dropdownOpen && (
 							<div className="dropdown-menu">
+								<hr />
 								<Link to="/work">Logo</Link>
 								<Link to="/packaging">Packaging</Link>
 							</div>
 						)}
 					</li>
 
-					<li>
+					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/services">SERVICES</Link>
 					</li>
-					<li>
+					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/contact">CONTACT</Link>
 					</li>
 				</ul>

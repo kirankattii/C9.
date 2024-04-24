@@ -985,10 +985,14 @@
 .design-list:hover img {
   display: flex;
   opacity: 1;
-  background: #EF4523;
+  /* background: #EF4523; */
   border: none;
 
 
+}
+
+.design-list.active, .design-list:hover {
+  background: #EF4523;
 }
 
 .design-list:hover {
@@ -1001,18 +1005,18 @@
 }
 
 .design-list p {
-  opacity: 0.8;
+  /* opacity: 0.8; */
   /* Adjust opacity as needed */
-  transform: scale(1.4);
+  /* transform: scale(1.4); */
   /* Adjust scale as needed */
-  transition-duration: 1s;
+  /* transition-duration: 1s; */
 }
 
 .design-list p:hover {
   opacity: 1;
   /* Adjust opacity as needed */
-  transform: scale(1);
-  background: transparent;
+  /* transform: scale(1); */
+  /* background: transparent; */
   /* Adjust scale as needed */
   transition-duration: 0.5s;
 }
