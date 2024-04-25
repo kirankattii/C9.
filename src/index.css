@@ -63,6 +63,13 @@
    src: local('Afterglow Regular'), url('../src/assets/fonts/Afterglow-Regular.woff') format('woff');
  }
 
+ @font-face {
+   font-family: 'AllerDisplay';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Aller Display'), url('../src/assets/fonts/Aller Display.ttf') format('ttf');
+ }
+
  a {
    text-decoration: none;
    color: inherit;

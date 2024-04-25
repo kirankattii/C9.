@@ -1,0 +1,9 @@
+.fancyCarousel {
+  /* width: 250px; */
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  gap: 50px;
+  margin-bottom: 150px;
+}

@@ -86,7 +86,6 @@
 
 .text-boundless {}
 
-
 @media(max-width:950px) {
   .story-landing {
     background-position: center;
@@ -380,6 +379,9 @@
   font-family: 'AfterglowRegular';
   letter-spacing: 1.5px;
   word-spacing: 1.5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .story-parallex-content div p:nth-child(5) {}
@@ -392,7 +394,15 @@
   min-height: 100vh;
 }
 
+.story-design5 {}
 
+.story-courasal {
+  /* position: absolute; */
+  /* top: 50px; */
+  right: 30%;
+  bottom: 50px;
+  display: flex;
+}
 
 @media(max-width:1300px) {
   .story-parallex-content {

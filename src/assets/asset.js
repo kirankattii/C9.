@@ -41,6 +41,14 @@ import packaging6 from "./packaging6.png"
 import packaging7 from "./packaging7.png"
 import packaging8 from "./packaging8.png"
 import values_reacangle from "./valuesRectangle.png"
+import aboutcontent1 from "./aboutcontent1.png"
+import aboutcontent2 from "./aboutcontent2.png"
+import aboutcontent3 from "./aboutcontent3.png"
+import aboutService1 from "./about Service1.png"
+import aboutService2 from "./about Service2.png"
+import aboutService3 from "./about Service3.png"
+import aboutService4 from "./about Service4.png"
+import aboutService5 from "./about Service5.png"
 
 export const assets = {
 	c9logo,
@@ -86,6 +94,14 @@ export const assets = {
 	packaging7,
 	packaging8,
 	values_reacangle,
+	aboutcontent1,
+	aboutcontent2,
+	aboutcontent3,
+	aboutService1,
+	aboutService2,
+	aboutService3,
+	aboutService4,
+	aboutService5,
 }
 
 export const homeCorosal = [

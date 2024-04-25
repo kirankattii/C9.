@@ -8,6 +8,7 @@ import { LocomotiveScrollProvider } from "react-locomotive-scroll"
 import { Link } from "react-router-dom"
 import Footer from "../Footer/Footer"
 import Navbar from "../Navbar/Navbar"
+import CircularSlide from "../CircularSlide/CircularSlide"
 const Story = () => {
 	const containerRef = useRef(null)
 
@@ -33,7 +34,7 @@ const Story = () => {
 		} else if (screenWidth >= 650) {
 			return 2
 		} else {
-			return 2
+			return 0
 		}
 	}
 	const calculateScrollSpeed2 = () => {
@@ -106,19 +107,23 @@ const Story = () => {
 								src={assets.studioDesign1}
 								alt="studioDesign"
 							/>
+							{/* <div> */}
+
 							<p
 								data-scroll
 								data-scroll-speed={calculateScrollSpeed2()}
 								// data-scroll-position="top"
 								data-scroll-direction="horizontal"
 							>
-								Step into the vibrant world of C9, a design studio nestled in
-								the heart of Australia, where we specialize in crafting
-								captivating branding solutions tailored for businesses of all
-								scales. Our array of design services spans from crafting iconic
-								logos to designing alluring product packaging, aimed at
-								propelling your brand to new heights.
+								<h3>OUR ORIGIN STORY</h3>
+								Located in the vibrant heart of Perth, C9 Ads is a digital
+								marketing powerhouse founded in 2020 with a singular mission: to
+								empower businesses through exceptional digital marketing
+								services. As a forward-thinking agency, we blend advanced
+								digital strategies with creative solutions to ensure that every
+								brand we touch not only meets but exceeds its online potential.
 							</p>
+							{/* </div> */}
 						</div>
 						<div
 							className="story-design2"
@@ -130,14 +135,14 @@ const Story = () => {
 								data-scroll-speed={calculateScrollSpeed2()}
 								data-scroll-direction="top"
 							>
-								Embracing a collaborative ethos, our seasoned designers engage
-								closely with clients to unravel their needs, aspirations, and
-								brand essence. We recognize that impactful design transcends
-								mere aesthetics; it hinges on a profound grasp of marketing
-								dynamics and consumer psychology. Thus, we delve deep into
-								researching your target demographics and competitive landscape,
-								ensuring that our designs not only captivate but also
-								strategically resonate.
+								<h3>Our Commitment to Innovation and Excellence</h3>
+								At C9 Ads, we recognize that the digital landscape is constantly
+								evolving. That's why we're committed to staying ahead of the
+								curve, ensuring our clients benefit from the latest marketing
+								innovations. Whether it's through cutting-edge SEO techniques,
+								compelling social media campaigns, or impactful web design, our
+								goal is to set your brand apart in the competitive digital
+								arena.
 							</p>{" "}
 							<img
 								src={assets.studioDesign2}
@@ -160,25 +165,35 @@ const Story = () => {
 								data-scroll-speed={calculateScrollSpeed2()}
 								data-scroll-direction="horizontal"
 							>
-								Logo design stands as a cornerstone service, where we appreciate
-								the pivotal role of a memorable and cohesive logo in brand
-								representation. Our team meticulously crafts logos that mirror
-								your brand's ethos, ensuring versatility and instant recognition
-								across diverse platforms.
+								<span> Our Services</span>: Designed to Elevate Our services are
+								meticulously crafted to cover every aspect of digital marketing:{" "}
+								<br />
+								<br />
+								<span> SEO & SMO</span>: We elevate your brand's online
+								presence, ensuring top rankings in search engine results and
+								enhanced social media engagement.
 							</p>
 						</div>
 						<div className="story-design4">
-							<p
-								data-scroll
-								data-scroll-speed={calculateScrollSpeed2()}
-								data-scroll-direction="horizontal"
-							>
-								Beyond logos, our expertise extends to crafting enchanting
-								product packaging designs that seamlessly blend visual appeal
-								with brand narrative. We strive to create packaging that not
-								only catches the eye but also narrates your brand's story and
-								unique value propositions effectively.
-							</p>{" "}
+							<div className="story-2phara">
+								<p
+									data-scroll
+									data-scroll-speed={calculateScrollSpeed2()}
+									data-scroll-direction="horizontal"
+								>
+									Web Design and Development: From aesthetic design to backend
+									development, our websites are built to impress and perform.{" "}
+									<br />
+									<br />
+									<br />
+									<span style={{ textAlign: "right" }}>
+										{" "}
+										Product Packaging Design: We create visually appealing
+										packaging that resonates with consumers and amplifies brand
+										identity.
+									</span>
+								</p>{" "}
+							</div>
 							<img
 								src={assets.studioDesign4}
 								alt="studioDesign"
@@ -192,12 +207,12 @@ const Story = () => {
 							data-scroll
 							data-scroll-speed={calculateScrollSpeed()}
 						>
-							At C9, we are committed to delivering design excellence that
-							surpasses expectations. Our hallmark lies in meticulous attention
-							to detail, boundless creativity, and unwavering dedication to
-							client satisfaction. Continuously evolving with the latest design
-							trends, we stand poised to elevate your brand identity to
-							unparalleled heights.
+							{/* <h3>A Team Like No Other</h3> */}
+							The strength of C9 Ads lies in our team’s expertise and passion.
+							Each team member brings a unique set of skills, ensuring that
+							specialists handle all aspects of your digital marketing strategy.
+							From strategists and designers to developers and marketers, our
+							team works in harmony to deliver unparalleled results.
 						</p>
 						{/* </div> */}
 						<div className="story-design5">
@@ -207,17 +222,22 @@ const Story = () => {
 								data-scroll
 								data-scroll-speed={calculateScrollSpeed()}
 							/>
+							{/* <div> */}
 							<p
 								data-scroll
 								data-scroll-speed={calculateScrollSpeed2()}
 								data-scroll-direction="bottom"
 							>
+								<h3>Building Brands with a Purpose</h3>
 								If you seek a design partner in Australia who can infuse magic
 								into your branding journey, look no further than our passionate
 								team of designers. Reach out to us today, and let's embark on a
 								transformative design voyage together.
 							</p>
+
+							{/* </div> */}
 						</div>
+						<div className="story-courasal">{/* <CircularSlide /> */}</div>
 					</div>
 					<div className="story-footer">
 						<Footer />

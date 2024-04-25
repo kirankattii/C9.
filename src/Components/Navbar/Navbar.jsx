@@ -47,6 +47,9 @@ const Navbar = () => {
 						<Link to="/">HOME</Link>
 					</li>
 					<li onClick={() => setMobileMenu(false)}>
+						<Link to="/about-us">ABOUT US</Link>
+					</li>
+					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/story">STORY</Link>
 					</li>
 					<li

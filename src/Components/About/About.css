@@ -1,0 +1,640 @@
+.about {
+  background: #1e1e1e url('../../assets/storybg.png') left/contain no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+.background-cover {
+  background-size: cover !important;
+  /* background-color: red; */
+  /* Debugging: Change background color to red */
+}
+
+.about-landing {
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  /* padding-top: 200px; */
+  justify-content: center;
+  line-height: 1;
+  padding-right: 25px;
+}
+
+.about-landing div {
+  display: flex;
+  gap: 20px;
+  align-items: start;
+  margin-top: -15px;
+}
+
+.about-landing span {
+  display: flex;
+  flex-direction: column;
+  line-height: 0.9;
+  margin-top: 20px;
+  gap: 5px;
+  align-items: end;
+}
+
+.about-joutney {
+  font-size: 200px;
+  font-family: 'AllerDisplay';
+}
+
+.about-in {
+  font-size: 150px;
+}
+
+.about-ink {
+  font-size: 200px;
+}
+
+.about-span1 {
+  font-size: 50px;
+}
+
+.about-span2 {
+  font-size: 30px;
+}
+
+.about-content {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* ==============about-content=========== */
+
+.about-content {
+  color: #fff;
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.about-click-functionality {
+  display: flex;
+  padding: 0 40px;
+  gap: 50px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-click-functionality-title {
+  font-size: 30px;
+}
+
+.about-btns {
+  display: flex;
+  gap: 5px;
+  font-size: 20px;
+  padding-right: 50px;
+}
+
+.about-btns p {
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 18px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+}
+
+.about-btns p:first-child {
+  border-radius: 25px 0 0 25px;
+}
+
+.about-btns p:last-child {
+  border-radius: 0px 25px 25px 0px;
+  align-items: end;
+}
+
+.about-click-content {
+  display: flex;
+  flex-direction: column;
+  padding: 0 40px;
+  gap: 20px;
+
+}
+
+.about-click-content h2 {
+  font-size: 40px;
+}
+
+.about-click-content p {
+  font-size: 20px;
+  padding-right: 30px;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+}
+
+.about-banner-content {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background: #1e1e1e;
+  padding: 20px 50px;
+}
+
+.about-banner-content div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.about-banner-content div h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-banner-content div img {
+  width: 100px;
+}
+
+.about-banner-content div p {
+  width: 70%;
+  text-align: center;
+  font-size: 17px;
+}
+
+
+/* =======about-our-services============ */
+
+.about-our-services {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  padding-bottom: 80px;
+  margin-top: 100px;
+
+}
+
+.about-our-services img {
+  width: 120px;
+}
+
+.about-service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+  justify-content: center;
+}
+
+.about-service-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.about-service-content h3 {
+  font-size: 24px;
+  text-align: center;
+}
+
+.about-service-content p {
+  text-align: center;
+  width: 85%;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.3;
+}
+
+.about-service-img {
+  display: flex;
+  gap: 100px;
+}
+
+.about-service-img img {
+  width: 100px;
+}
+
+/* =============building brand============ */
+
+.building-brand {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 150px;
+  padding-bottom: 20px;
+}
+
+.building-brand div {
+  padding: 30px 50px;
+  z-index: 50;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+}
+
+.building-brand div h2 {
+  font-size: 40px;
+
+}
+
+.building-brand div p {
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.4;
+  width: 50%;
+}
+
+.building-brand-bg {
+  position: absolute;
+  width: 100%;
+  background: #1e1e1e;
+  height: 100%;
+  top: 0;
+  z-index: 5;
+}
+
+@media(max-width:1300px) {
+  .about-our-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 400px);
+    /* This will repeat columns with a width of 250px */
+    grid-gap: 80px;
+    justify-content: center;
+    /* Adjust the gap between grid items as needed */
+  }
+
+  .building-brand div p {
+
+    width: 60%;
+  }
+}
+
+@media(max-width:1150px) {
+
+  .about-joutney {
+    font-size: 160px;
+    font-family: 'AllerDisplay';
+  }
+
+  .about-in {
+    font-size: 120px;
+  }
+
+  .about-ink {
+    font-size: 160px;
+  }
+
+  .about-span1 {
+    font-size: 50px;
+  }
+
+  .about-span2 {
+    font-size: 30px;
+  }
+
+  .about-content {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .about-landing {
+
+    padding-right: 5px;
+  }
+
+}
+
+@media(max-width:900px) {
+  .about-our-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 500px);
+    /* This will repeat columns with a width of 250px */
+    grid-gap: 80px;
+    justify-content: center;
+    /* Adjust the gap between grid items as needed */
+  }
+
+  .about-banner-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: space-between;
+    background: #1e1e1e;
+    padding: 50px;
+  }
+
+  .about-btns {
+    /* margin-right: 0px; */
+    padding-right: 0;
+  }
+
+  .about-click-functionality-title {
+    /* font-size: 24px; */
+    text-align: center;
+  }
+
+  .about-click-functionality {
+    display: flex;
+    padding: 0 40px;
+    gap: 20px;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .building-brand div p {
+
+    width: 90%;
+  }
+
+
+
+  .about-joutney {
+    font-size: 100px;
+    font-family: 'AllerDisplay';
+  }
+
+  .about-in {
+    font-size: 100px;
+  }
+
+  .about-ink {
+    font-size: 100px;
+  }
+
+  .about-span1 {
+    font-size: 30px;
+  }
+
+  .about-span2 {
+    font-size: 20px;
+  }
+
+  .about-content {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .about-landing {
+
+    padding-right: 5px;
+  }
+
+
+}
+
+@media(max-width:600px) {
+
+
+  .about-joutney {
+    font-size: 80px;
+    font-family: 'AllerDisplay';
+  }
+
+  .about-in {
+    font-size: 80px;
+    margin-right: -165px;
+    margin-top: 10px;
+  }
+
+  .about-ink {
+    font-size: 80px;
+    margin-top: 80px;
+  }
+
+  .about-span1 {
+    font-size: 30px;
+  }
+
+  .about-span2 {
+    font-size: 20px;
+  }
+
+  .about-content {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+  .about-landing {
+
+    padding-right: 5px;
+  }
+
+}
+
+@media(max-width:500px) {
+  .about-btns {
+    display: flex;
+    gap: 5px;
+    font-size: 18px;
+
+  }
+
+  .about-btns p {
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 15px;
+    padding: 10px;
+    width: 130px;
+    text-align: center;
+  }
+
+  .about-btns p:first-child {
+    width: 110px;
+  }
+
+  .about-btns p:last-child {
+    width: 100px;
+
+  }
+
+  .about-click-functionality {
+    display: flex;
+    padding: 0 10px;
+    /* gap: 50px; */
+    font-size: 16px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .about-click-content {
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+    gap: 20px;
+
+  }
+
+  .about-click-content h2 {
+    font-size: 35px;
+  }
+
+  .about-click-content p {
+    font-size: 18px;
+    width: 100%;
+    padding-right: 10px;
+    letter-spacing: 0.8px;
+    line-height: 1.4;
+  }
+
+  .about-banner-content {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background: #1e1e1e;
+    padding: 20px;
+    padding-bottom: 50px;
+  }
+
+  .about-banner-content div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .about-banner-content div h3 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .about-banner-content div img {
+    width: 100px;
+  }
+
+  .about-banner-content div p {
+    width: 90%;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  /* ========service============ */
+
+  .about-our-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 380px);
+    /* This will repeat columns with a width of 250px */
+    grid-gap: 80px;
+    justify-content: center;
+    /* Adjust the gap between grid items as needed */
+  }
+
+  .building-brand div p {
+
+    width: 100%;
+  }
+
+  .building-brand div {
+    padding: 30px;
+    z-index: 50;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+  }
+
+
+  .about-joutney {
+    font-size: 70px;
+    font-family: 'AllerDisplay';
+  }
+
+  .about-in {
+    font-size: 70px;
+    margin-right: -150px;
+    margin-top: 14px;
+  }
+
+  .about-ink {
+    font-size: 70px;
+    margin-top: 80px;
+  }
+
+  .about-span1 {
+    font-size: 30px;
+  }
+
+  .about-span2 {
+    font-size: 20px;
+  }
+
+  .about-content {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+}
+
+@media(max-width:400px) {
+
+  .about-joutney {
+    font-size: 60px;
+    font-family: 'AllerDisplay';
+  }
+
+  .about-in {
+    font-size: 60px;
+    margin-right: -130px;
+    margin-top: 14px;
+  }
+
+  .about-ink {
+    font-size: 60px;
+    margin-top: 80px;
+  }
+
+  .about-span1 {
+    font-size: 30px;
+  }
+
+  .about-span2 {
+    font-size: 20px;
+  }
+
+  .about-content {
+    width: 100%;
+    min-height: 100vh;
+  }
+
+}
+
+@media(max-width:380px) {
+  .about-btns p {
+    border: 1px solid #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px;
+    width: 120px;
+    text-align: center;
+  }
+
+  .about-btns p:first-child {
+    width: 95px;
+  }
+
+  .about-btns p:last-child {
+    width: 95px;
+
+  }
+
+  .about-banner-content div p {
+    width: 100%;
+    text-align: center;
+  }
+
+
+
+}

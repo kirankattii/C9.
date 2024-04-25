@@ -12,6 +12,7 @@ import Animate from "./Components/Animate"
 import LogoWork from "./Components/LogoWork/LogoWork"
 import Packaging from "./Components/Packaging/Packaging"
 import Values from "./Components/Values/Values"
+import About from "./Components/About/About"
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
 	const isStoryPage = location.pathname === "/story"
 	const isLogoWorkPage = location.pathname === "/work"
 	const isPackagingPage = location.pathname === "/packaging"
+	const isAboutPage = location.pathname === "/about-us"
 
 	return (
 		<div>
@@ -29,6 +31,10 @@ const App = () => {
 				<Route
 					index
 					element={<Home />}
+				/>
+				<Route
+					path="/about-us"
+					element={<About />}
 				/>
 				<Route
 					path="/story"
@@ -60,7 +66,9 @@ const App = () => {
 				/>
 			</Routes>
 			{/* {!isStoryPage && <Footer />} */}
-			{!isStoryPage && !isLogoWorkPage && !isPackagingPage && <Footer />}
+			{!isStoryPage && !isLogoWorkPage && !isPackagingPage && !isAboutPage && (
+				<Footer />
+			)}
 		</div>
 	)
 }
