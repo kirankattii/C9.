@@ -14,7 +14,7 @@ const Story = () => {
 	useEffect(() => {
 		const scroll = new locomotiveScroll({
 			el: document.querySelector("[data-scroll-container]"),
-			smooth: true,
+			// smooth: true,
 			smartphone: { smooth: true },
 			tablet: { smooth: true },
 		})
@@ -33,7 +33,7 @@ const Story = () => {
 		} else if (screenWidth >= 650) {
 			return 2
 		} else {
-			return 0
+			return 2
 		}
 	}
 	const calculateScrollSpeed2 = () => {
