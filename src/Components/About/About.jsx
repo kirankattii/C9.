@@ -16,6 +16,11 @@ const About = () => {
 		return () => clearTimeout(timeout) // Clear the timeout on component unmount
 	}, []) // Empty dependency array to run effect only once
 
+	const [activeTab, setActiveTab] = useState(0)
+
+	const handleTabClick = (index) => {
+		setActiveTab(index)
+	}
 	return (
 		<div className={`about ${isBackgroundCover ? "background-cover" : ""}`}>
 			<div className="about-landing">
@@ -35,22 +40,69 @@ const About = () => {
 						Welcome to C9 Ads: Crafting Digital Excellence in Perth
 					</p>
 					<div className="about-btns">
-						<p>ABOUT US</p>
-						<p>COMMITMENT</p>
-						<p>TEAM</p>
+						<p
+							className={activeTab === 0 ? "active" : ""}
+							onClick={() => handleTabClick(0)}
+						>
+							{activeTab === 0 ? "ABOUT US" : ""}
+						</p>
+						<p
+							className={activeTab === 1 ? "active" : ""}
+							onClick={() => handleTabClick(1)}
+						>
+							{activeTab === 1 ? "COMMITMENT" : ""}
+						</p>
+						<p
+							className={activeTab === 2 ? "active" : ""}
+							onClick={() => handleTabClick(2)}
+						>
+							{activeTab === 2 ? "TEAM" : ""}
+						</p>
 					</div>
 				</div>
-				<motion.div className="about-click-content">
-					<h2>Our Origin Story</h2>
-					<p>
-						Located in the vibrant heart of Perth, C9 Ads is a digital marketing
-						powerhouse founded in 2020 with a singular mission: to empower
-						businesses through exceptional digital marketing services. As a
-						forward-thinking agency, we blend advanced digital strategies with
-						creative solutions to ensure that every brand we touch not only
-						meets but exceeds its online potential.
-					</p>
-				</motion.div>
+				<div className="about-slide-tabs">
+					<div
+						className="about-click-content"
+						style={{ display: activeTab === 0 ? "block" : "none" }}
+					>
+						<h2>Our Origin Story</h2>
+						<p>
+							Located in the vibrant heart of Perth, C9 Ads is a digital
+							marketing powerhouse founded in 2020 with a singular mission: to
+							empower businesses through exceptional digital marketing services.
+							As a forward-thinking agency, we blend advanced digital strategies
+							with creative solutions to ensure that every brand we touch not
+							only meets but exceeds its online potential.
+						</p>
+					</div>
+					<div
+						className="about-click-content"
+						style={{ display: activeTab === 1 ? "block" : "none" }}
+					>
+						<h2>Our Commitment to Innovation and Excellence</h2>
+						<p>
+							At C9 Ads, we recognize that the digital landscape is constantly
+							evolving. That's why we're committed to staying ahead of the
+							curve, ensuring our clients benefit from the latest marketing
+							innovations. Whether it's through cutting-edge SEO techniques,
+							compelling social media campaigns, or impactful web design, our
+							goal is to set your brand apart in the competitive digital arena
+						</p>
+					</div>
+					<div
+						className="about-click-content"
+						style={{ display: activeTab === 2 ? "block" : "none" }}
+					>
+						<h2>A Team Like No Other</h2>
+						<p>
+							The strength of C9 Ads lies in our team’s expertise and passion.
+							Each team member brings a unique set of skills, ensuring that
+							specialists handle all aspects of your digital marketing strategy.
+							From strategists and designers to developers and marketers, our
+							team works in harmony to deliver unparalleled results.
+						</p>
+					</div>
+				</div>
 				<div className="about-banner-content">
 					<motion.div
 						whileInView={{ opacity: 1, y: 0 }}
@@ -98,6 +150,9 @@ const About = () => {
 						</p>
 					</motion.div>
 				</div>
+				<h2 className="about-Designed-Elevate">
+					Our Services: Designed to Elevate
+				</h2>
 				<div className="about-our-services">
 					<div className="about-service">
 						<motion.div
