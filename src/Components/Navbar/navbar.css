@@ -11,6 +11,7 @@ nav {
   justify-content: space-between;
   z-index: 8000;
   background: #1e1e1e;
+  /* transition: 1s; */
 }
 
 .logo {
@@ -34,7 +35,7 @@ nav ul li:after {
   position: absolute;
   background: #EF4523;
   width: 0;
-  height: 2px;
+  height: 3px;
   bottom: -10px;
   left: 0;
   transition: 0.3s;
@@ -48,6 +49,11 @@ nav ul li:hover:after {
   display: none;
 }
 
+.navhover-transition {
+  transition: 0.5s ease-in;
+  display: block;
+}
+
 @media (max-width:600px) {
   .logo {
     width: 80px;
@@ -55,6 +61,10 @@ nav ul li:hover:after {
 
   nav ul li {
     margin: 10px 15px;
+  }
+
+  .navhover-transition {
+    display: none;
   }
 }
 
@@ -101,13 +111,15 @@ nav ul li:hover:after {
   position: absolute;
   /* top: 65%; */
 
-  left: auto;
-  width: 150px;
+  /* left: auto; */
+  right: -300%;
+  /* width: 150px; */
   background-color: #1e1e1e;
   z-index: 100;
   padding: 10px;
   border-radius: 5px;
-  border: 2px solid #EF4523;
+  /* border: 2px solid #EF4523; */
+  background: #EF4523;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -133,13 +145,22 @@ nav ul li:hover:after {
   z-index: 20;
 }
 
+.dropdown-menu hr:hover {
+  /* background: #EF4523; */
+
+}
+
+nav ul li a {
+  z-index: 20;
+}
+
 .dropdown-menu hr {
   transform: rotate(90deg);
-  height: 80px;
-  top: -40px;
-  left: -10px;
+  height: 70px;
+  top: -35px;
+  right: 130px;
   border: 0;
-  width: 100px;
+  width: 90px;
   background: transparent;
   margin-right: 80px;
   /* margin-top: -80px; */

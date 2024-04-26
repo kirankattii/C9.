@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react"
 import "./navbar.css"
 import { assets } from "../../assets/asset"
 import { Link } from "react-router-dom"
+import NavHover from "./NavHover/NavHover"
 
 const Navbar = () => {
 	const [sticky, setSticky] = useState(false)
@@ -46,11 +47,11 @@ const Navbar = () => {
 					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/">HOME</Link>
 					</li>
-					<li onClick={() => setMobileMenu(false)}>
+					{/* <li onClick={() => setMobileMenu(false)}>
 						<Link to="/about-us">ABOUT US</Link>
-					</li>
+					</li> */}
 					<li onClick={() => setMobileMenu(false)}>
-						<Link to="/story">STORY</Link>
+						<Link to="/about-us">STORY</Link>
 					</li>
 					<li
 						className="work-nav-link"
@@ -77,8 +78,11 @@ const Navbar = () => {
 						{dropdownOpen && (
 							<div className="dropdown-menu">
 								<hr />
-								<Link to="/work">Logo</Link>
-								<Link to="/packaging">Packaging</Link>
+								{/* <Link to="/work">Logo</Link>
+								<Link to="/packaging">Packaging</Link> */}
+								<div className="navhover-transition">
+									<NavHover />
+								</div>
 							</div>
 						)}
 					</li>
