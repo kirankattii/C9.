@@ -54,7 +54,7 @@ nav ul li:hover:after {
   display: block;
 }
 
-@media (max-width:600px) {
+@media (max-width:750px) {
   .logo {
     width: 80px;
   }
@@ -68,7 +68,7 @@ nav ul li:hover:after {
   }
 }
 
-@media (max-width:600px) {
+@media (max-width:750px) {
   nav {
     padding: 15px 0;
   }

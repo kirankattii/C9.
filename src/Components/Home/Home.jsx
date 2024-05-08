@@ -161,6 +161,17 @@ const Home = () => {
 				</div>
 			</div>
 			<div className="home-ourpride">
+				{/* <video
+					autoPlay
+					loop
+					muted
+				>
+					<source
+						src="path_to_your_video.mp4"
+						type="video/mp4"
+					/>
+					
+				</video> */}
 				<div className="home-ourpride-content">
 					<div className="our-pride-text">
 						<div className="text-ourpride">
