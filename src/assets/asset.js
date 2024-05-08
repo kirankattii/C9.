@@ -49,6 +49,7 @@ import aboutService2 from "./about Service2.png"
 import aboutService3 from "./about Service3.png"
 import aboutService4 from "./about Service4.png"
 import aboutService5 from "./about Service5.png"
+import video from "./C9 Video 1 (1).mp4"
 
 export const assets = {
 	c9logo,
@@ -102,6 +103,7 @@ export const assets = {
 	aboutService3,
 	aboutService4,
 	aboutService5,
+	video,
 }
 
 export const homeCorosal = [

@@ -30,6 +30,10 @@ const container1 = (delay) => ({
 const Home = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
 	const [conterTrigger, setCounterTrigger] = useState(false)
+	const [showOurPride, setShowOurPride] = useState(false)
+	const handleClick = () => {
+		setShowOurPride(true)
+	}
 
 	const handleMouseOver = (index) => {
 		// if (activeIndex !== index) {
@@ -160,93 +164,99 @@ const Home = () => {
 					/>
 				</div>
 			</div>
-			<div className="home-ourpride">
-				{/* <video
-					autoPlay
-					loop
-					muted
-				>
-					<source
-						src="path_to_your_video.mp4"
-						type="video/mp4"
-					/>
-					
-				</video> */}
-				<div className="home-ourpride-content">
-					<div className="our-pride-text">
-						<div className="text-ourpride">
-							<motion.div
-								whileInView={{ opacity: 1, x: 0 }}
-								initial={{ opacity: 0, x: -100 }}
-								transition={{ duration: 0.8 }}
-								className="text-ourideas"
-							>
-								<h2>OUR</h2>
-								<p>Bringing Ideas</p>
-							</motion.div>
-							<motion.h2
-								whileInView={{ opacity: 1, x: 0 }}
-								initial={{ opacity: 0, x: -100 }}
-								transition={{ duration: 0.6 }}
-								className="text-pride"
-							>
-								Pride
-							</motion.h2>
-						</div>
-						<motion.p
-							whileInView={{ opacity: 1, x: 0 }}
-							initial={{ opacity: 0, x: -100 }}
-							transition={{ duration: 0.8 }}
-							className="text-throughdesign"
-						>
-							to Life Through Design
-						</motion.p>
-					</div>
-					<div className="ourpride-lists">
-						{ourPride.map((num, index) => (
-							<motion.div
-								whileInView={{ opacity: 1, x: 0 }}
-								initial={{ opacity: 0, x: -100 }}
-								transition={{ duration: 0.8 }}
-								className={`design-list ${
-									activeIndex === index ? "active" : ""
-								}`}
-								key={index}
-								whileHover={{ opacity: 0.8 }}
-								onMouseOver={() => handleMouseOver(index)}
-							>
-								<span className="ourpride-list-no">.{num.id}</span>
+			<div className="video-content">
+				{!showOurPride && (
+					<video
+						autoPlay
+						loop
+						muted
+						onClick={handleClick}
+					>
+						<source
+							src={assets.video}
+							type="video/mp4"
+						/>
+					</video>
+				)}
+				{showOurPride && (
+					<div className="home-ourpride">
+						<div className="home-ourpride-content">
+							<div className="our-pride-text">
+								<div className="text-ourpride">
+									<motion.div
+										whileInView={{ opacity: 1, x: 0 }}
+										initial={{ opacity: 0, x: -100 }}
+										transition={{ duration: 0.8 }}
+										className="text-ourideas"
+									>
+										<h2>OUR</h2>
+										<p>Bringing Ideas</p>
+									</motion.div>
+									<motion.h2
+										whileInView={{ opacity: 1, x: 0 }}
+										initial={{ opacity: 0, x: -100 }}
+										transition={{ duration: 0.6 }}
+										className="text-pride"
+									>
+										Pride
+									</motion.h2>
+								</div>
 								<motion.p
-									// whileHover={{ duration: 0.8 }}
-									whileHover={{ scale: 1.1 }}
-									className="ourpride-list-name"
+									whileInView={{ opacity: 1, x: 0 }}
+									initial={{ opacity: 0, x: -100 }}
+									transition={{ duration: 0.8 }}
+									className="text-throughdesign"
 								>
-									{num.title}
+									to Life Through Design
 								</motion.p>
-								<img
-									src={assets.right_arrow}
-									alt=""
-								/>
-							</motion.div>
-						))}
-					</div>
-					<div className="our-price-para">
-						<p>
-							At C9, we blend creativity and technical expertise to craft
-							exceptional websites that engage audiences and reflect your
-							brand's identity. Our user-centric approach ensures seamless
-							functionality across devices, driving conversions and enhancing
-							user experiences. Whether you need a sleek showcase or a robust
-							e-commerce platform, partner with us to create captivating online
-							experiences that inspire.
-						</p>
-					</div>
-					<div className="explore-new-forntier-btn">
-						<div className="explore-new-forntier-btn-border">
-							<button>Explore New Frontiers</button>
+							</div>
+							<div className="ourpride-lists">
+								{ourPride.map((num, index) => (
+									<motion.div
+										whileInView={{ opacity: 1, x: 0 }}
+										initial={{ opacity: 0, x: -100 }}
+										transition={{ duration: 0.8 }}
+										className={`design-list ${
+											activeIndex === index ? "active" : ""
+										}`}
+										key={index}
+										whileHover={{ opacity: 0.8 }}
+										onMouseOver={() => handleMouseOver(index)}
+									>
+										<span className="ourpride-list-no">.{num.id}</span>
+										<motion.p
+											// whileHover={{ duration: 0.8 }}
+											whileHover={{ scale: 1.1 }}
+											className="ourpride-list-name"
+										>
+											{num.title}
+										</motion.p>
+										<img
+											src={assets.right_arrow}
+											alt=""
+										/>
+									</motion.div>
+								))}
+							</div>
+							<div className="our-price-para">
+								<p>
+									At C9, we blend creativity and technical expertise to craft
+									exceptional websites that engage audiences and reflect your
+									brand's identity. Our user-centric approach ensures seamless
+									functionality across devices, driving conversions and
+									enhancing user experiences. Whether you need a sleek showcase
+									or a robust e-commerce platform, partner with us to create
+									captivating online experiences that inspire.
+								</p>
+							</div>
+							<div className="explore-new-forntier-btn">
+								<div className="explore-new-forntier-btn-border">
+									<button>Explore New Frontiers</button>
+								</div>
+							</div>
 						</div>
 					</div>
-				</div>
+				)}
 			</div>
 			<div className="home-whatsets">
 				<ScrollTrigger

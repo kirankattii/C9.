@@ -825,6 +825,20 @@
   overflow: hidden;
 }
 
+video {
+  /* position: absolute; */
+  z-index: -1;
+  width: auto;
+  height: auto;
+  object-fit: cover;
+  width: 100%;
+
+}
+
+.video-content {
+  width: 100%;
+}
+
 .home-ourpride-content {
   display: flex;
   flex-direction: column;
@@ -833,6 +847,7 @@
   padding-top: 120px;
   padding-left: 60px;
   padding-right: 60px;
+  z-index: 10;
 }
 
 .our-pride-text {
@@ -842,6 +857,9 @@
 
 
 }
+
+
+
 
 .text-ourpride {
   display: flex;
@@ -1048,7 +1066,29 @@
     padding-right: 30px;
   }
 
+  video {
+    /* position: absolute; */
+    z-index: -1;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
 
+  }
+
+}
+
+@media(max-width:800px) {
+  video {
+    /* position: absolute; */
+    z-index: -1;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    /* height: 100vh; */
+
+  }
 }
 
 @media(max-width:680px) {
@@ -1626,6 +1666,7 @@
 }
 
 @media(max-width:800px) {
+  .home-whatsets {}
 
   .our-price-para p {
     padding-bottom: 150px;
