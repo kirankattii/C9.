@@ -5,6 +5,7 @@ import ScrollTrigger from "react-scroll-trigger"
 import "./home.css"
 import { motion } from "framer-motion"
 import HomeSlides from "../HomeSlides/HomeSlides"
+import ProvideCoa from "./ProvideCoa/ProvideCoa"
 
 const container = (delay) => ({
 	hidden: { x: -100, opacity: 0 },
@@ -166,17 +167,19 @@ const Home = () => {
 			</div>
 			<div className="video-content">
 				{!showOurPride && (
-					<video
-						autoPlay
-						loop
-						muted
-						onClick={handleClick}
-					>
-						<source
-							src={assets.video}
-							type="video/mp4"
-						/>
-					</video>
+					<div className="custom-cursor">
+						<video
+							autoPlay
+							loop
+							muted
+							onClick={handleClick}
+						>
+							<source
+								src={assets.video}
+								type="video/mp4"
+							/>
+						</video>
+					</div>
 				)}
 				{showOurPride && (
 					<div className="home-ourpride">
@@ -357,6 +360,9 @@ const Home = () => {
 						</div>
 					</div>
 				</ScrollTrigger>
+			</div>
+			<div className="home-procideCoa">
+				<ProvideCoa />
 			</div>
 			<div className="home-digitalbrand">
 				<div className="home-digitalbrand-content">

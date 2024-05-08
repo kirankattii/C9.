@@ -71,6 +71,14 @@
   z-index: 15;
 }
 
+.home-slides h2 {
+  position: absolute;
+  z-index: 800;
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+}
+
 .arrow-left {
   color: red;
   background: white;

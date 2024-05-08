@@ -13,6 +13,7 @@ import LogoWork from "./Components/LogoWork/LogoWork"
 import Packaging from "./Components/Packaging/Packaging"
 import Values from "./Components/Values/Values"
 import About from "./Components/About/About"
+import SubPage1 from "./Components/Home/SubPage1.jsx/SubPage1"
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
 const App = () => {
@@ -43,6 +44,10 @@ const App = () => {
 				<Route
 					path="/services"
 					element={<Services />}
+				/>
+				<Route
+					path="/our-service"
+					element={<SubPage1 />}
 				/>
 				<Route
 					path="/contact"

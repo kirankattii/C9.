@@ -50,6 +50,12 @@ import aboutService3 from "./about Service3.png"
 import aboutService4 from "./about Service4.png"
 import aboutService5 from "./about Service5.png"
 import video from "./C9 Video 1 (1).mp4"
+import white_rectangle from "./Rectangle 66 (1).png"
+import proenance_verification from "./Provenance Verification.png"
+import increased_Value from "./Increased Value.png"
+import legal_protection from "./Legal Protection.png"
+import collector_Confidence from "./Collector Confidence.png"
+import certigicate_coa from "./certifications.png"
 
 export const assets = {
 	c9logo,
@@ -104,6 +110,12 @@ export const assets = {
 	aboutService4,
 	aboutService5,
 	video,
+	white_rectangle,
+	proenance_verification,
+	increased_Value,
+	legal_protection,
+	collector_Confidence,
+	certigicate_coa,
 }
 
 export const homeCorosal = [

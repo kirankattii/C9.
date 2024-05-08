@@ -839,6 +839,11 @@ video {
   width: 100%;
 }
 
+.custom-cursor {
+  cursor: url('../../assets/C9-Logo.png'), auto;
+  /* width: 20px; */
+}
+
 .home-ourpride-content {
   display: flex;
   flex-direction: column;
@@ -1180,6 +1185,16 @@ video {
 }
 
 @media(max-width:500px) {
+  video {
+    /* position: absolute; */
+    z-index: -1;
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    width: 100%;
+    /* height: 250px; */
+  }
+
   .home-ourpride-content {
 
     padding-top: 40px;
@@ -1666,7 +1681,6 @@ video {
 }
 
 @media(max-width:800px) {
-  .home-whatsets {}
 
   .our-price-para p {
     padding-bottom: 150px;
@@ -1677,7 +1691,8 @@ video {
   }
 
   .home-whatsets {
-    margin-top: -80px;
+    margin-top: 0px;
+    /* padding-top: 0; */
   }
 
   .home-whatsets-container {
@@ -1881,6 +1896,13 @@ video {
     padding-top: 25px;
   }
 }
+
+/* ========================================= */
+
+/* .home-procideCoa {
+  width: 100%;
+  min-height: 100vh;
+} */
 
 /* ================================= */
 .home-digitalbrand {

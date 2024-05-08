@@ -9,7 +9,7 @@ import {
 import "./homeSlides.css"
 import { register } from "swiper/element/bundle"
 register()
-
+import { useNavigate } from "react-router-dom"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
 import "swiper/css/pagination"
@@ -111,6 +111,8 @@ const HomeSlides = () => {
 		Object.assign(swiperContainer, params)
 		swiperContainer.initialize()
 	}, [])
+
+	const navigate = useNavigate()
 	return (
 		// <div>
 		<swiper-container
@@ -135,6 +137,7 @@ const HomeSlides = () => {
 								src={assets.web_development}
 								alt=""
 							/>
+							<h2 onClick={() => navigate("./our-service")}>Click Here</h2>
 							<h1>{item.title}</h1>
 							<div className="slide-border"></div>
 						</div>
