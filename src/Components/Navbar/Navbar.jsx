@@ -3,7 +3,7 @@ import "./navbar.css"
 import { assets } from "../../assets/asset"
 import { Link } from "react-router-dom"
 import NavHover from "./NavHover/NavHover"
-
+import { RiArrowDropDownLine } from "react-icons/ri"
 const Navbar = () => {
 	const [sticky, setSticky] = useState(false)
 	useEffect(() => {
@@ -23,6 +23,11 @@ const Navbar = () => {
 
 	const closeDropdown = () => {
 		setDropdownOpen(false)
+	}
+
+	const [mediaWorkNavOpen, setMediaWorkNavOpen] = useState(false)
+	const toggleMediaWorkNav = () => {
+		setMediaWorkNavOpen(!mediaWorkNavOpen)
 	}
 	// const [showMobileDropdown, setShowMobileDropdown] = useState(false)
 	// const toggleMobileDropdown = () => {
@@ -59,22 +64,10 @@ const Navbar = () => {
 						onMouseLeave={closeDropdown}
 					>
 						<Link>WORK</Link>
-						{dropdownOpen && (
-							<div className="media-dropdown">
-								<Link
-									onClick={() => setMobileMenu(false)}
-									to="/work"
-								>
-									LOGO
-								</Link>
-								<Link
-									onClick={() => setMobileMenu(false)}
-									to="/packaging"
-								>
-									PACKAGING
-								</Link>
-							</div>
-						)}
+						{/* <span className="dropdown-icon">
+							<RiArrowDropDownLine />
+						</span> */}
+
 						{dropdownOpen && (
 							<div className="dropdown-menu">
 								<hr />
@@ -86,7 +79,41 @@ const Navbar = () => {
 							</div>
 						)}
 					</li>
+					<li
+						className="media-work-nav-link"
+						onClick={toggleMediaWorkNav}
+					>
+						<span>WORK</span>
+						<span className={mediaWorkNavOpen ? "rotate" : ""}>
+							<RiArrowDropDownLine />
+						</span>
+						{mediaWorkNavOpen && (
+							<div className="media-dropdown">
+								<Link
+									// onClick={() => setMobileMenu(false)}
+									to="/work"
+								>
+									LOGO
+								</Link>
+								<hr />
+								<Link
+									// onClick={() => setMobileMenu(false)}
+									to="/packaging"
+								>
+									PACKAGING
+									<hr />
+								</Link>
+								<Link>SEO</Link>
+								<hr />
 
+								<Link>Web Development</Link>
+								<hr />
+
+								<Link>Social Media Marketing</Link>
+								<hr />
+							</div>
+						)}
+					</li>
 					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/services">SERVICES</Link>
 					</li>

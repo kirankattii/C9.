@@ -99,6 +99,10 @@ const Home = () => {
 			</div>
 			<div className="home-ourdesign">
 				<div className="home-orange-bg">
+					<div className="home-our-design">
+						<h1 className="text-our">OUR</h1>
+						<h1 className="text-design">DESIGN</h1>
+					</div>
 					<motion.p
 						whileInView={{ opacity: 1, x: 0 }}
 						initial={{ opacity: 0, x: 100 }}
@@ -112,6 +116,7 @@ const Home = () => {
 					</motion.p>
 				</div>
 				<div className="home-white-bg">
+					<h1 className="text-odyssey">ODYSSEY</h1>
 					<motion.p
 						whileInView={{ opacity: 1, x: 0 }}
 						initial={{ opacity: 0, x: 100 }}
@@ -130,11 +135,11 @@ const Home = () => {
 						transition={{ duration: 0.5 }}
 						className="left-ourdesign"
 					>
-						<div>
-							<h1 className="text-our">OUR</h1>
-							<h1 className="text-design">DESIGN</h1>
+						<div className="media-home-our-design">
+							<h1 className="media-text-our">OUR</h1>
+							<h1 className="media-text-design">DESIGN</h1>
 						</div>
-						<h1 className="text-odyssey">ODYSSEY</h1>
+						<h1 className="media-home-our-odyssey">ODYSSEY</h1>
 					</motion.div>
 					<motion.div
 						whileInView={{ opacity: 1, x: 0 }}

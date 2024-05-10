@@ -177,22 +177,58 @@ nav ul li a {
   display: none;
 }
 
+.media-work-nav-link {
+  display: none;
+}
+
 @media (max-width: 600px) {
   .dropdown-menu {
     display: none;
+  }
+
+  .work-nav-link {
+    display: none;
+  }
+
+  .media-work-nav-link {
+    display: block;
   }
 
   .media-dropdown {
     display: flex;
     flex-direction: column;
     margin-left: 10px;
+    transition: max-height 0.3s ease-in-out;
   }
 
   .media-dropdown a {
     margin-top: 10px;
   }
+
+  .media-work-nav-link.media-dropdown {
+    font-size: 16px;
+  }
+
+
 }
 
 .work-nav-link {
   z-index: 250;
+}
+
+.dropdown-icon {
+  margin-left: 5px;
+  /* Adjust as needed */
+  display: inline-block;
+  transition: transform 0.3s ease;
+  font-size: 20px;
+}
+
+.work-nav-link:hover .dropdown-icon {
+  transform: rotate(-180deg);
+}
+
+.rotate {
+  transition: transform 0.3s ease;
+  transform: rotate(180deg);
 }
