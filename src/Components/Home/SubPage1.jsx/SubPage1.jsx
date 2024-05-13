@@ -6,9 +6,9 @@ import { assets } from "../../../assets/asset"
 const SubPage1 = () => {
 	return (
 		<div className="subpage1">
-			<div className="subpage-content1">
+			{/* <div className="subpage-content1">
 				<h2>Scroll Down</h2>
-			</div>
+			</div> */}
 			<div className="subpage-allContent">
 				<div className="subcontent-transforming">
 					<motion.div
