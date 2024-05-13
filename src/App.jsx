@@ -13,7 +13,11 @@ import LogoWork from "./Components/LogoWork/LogoWork"
 import Packaging from "./Components/Packaging/Packaging"
 import Values from "./Components/Values/Values"
 import About from "./Components/About/About"
-import SubPage1 from "./Components/Home/SubPage1.jsx/SubPage1"
+import SubPage1 from "./Components/Home/subpages/SubPage1/SubPage1"
+import SubPage2 from "./Components/Home/subpages/subPage2/SubPage2"
+import SubPage3 from "./Components/Home/subpages/subPage3/SubPage3"
+import SubPage4 from "./Components/Home/subpages/subpage4/subpage4"
+
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
 const App = () => {
@@ -46,8 +50,20 @@ const App = () => {
 					element={<Services />}
 				/>
 				<Route
-					path="/our-service"
+					path="/our-service1"
 					element={<SubPage1 />}
+				/>
+				<Route
+					path="/our-service2"
+					element={<SubPage2 />}
+				/>
+				<Route
+					path="/our-service3"
+					element={<SubPage3 />}
+				/>
+				<Route
+					path="/our-service4"
+					element={<SubPage4 />}
 				/>
 				<Route
 					path="/contact"

@@ -121,23 +121,28 @@ export const assets = {
 export const homeCorosal = [
 	{
 		id: 1,
-		title: "WEB DEVELOPMENT",
+		title: "SOCIAL MEDIA MARKETING",
 		image: "./whitebgreat.png",
+		link: "./our-service1",
 	},
 	{
 		id: 2,
-		title: "SOCIAL MEDIA MARKETING",
+		title: "WEB DEVELOPMENT",
 		image: "./whitebgreat.png",
+		link: "./our-service2",
 	},
+
 	{
 		id: 3,
 		title: "SEARCH ENGINE OPTIMIZATION",
 		image: "./whitebgreat.png",
+		link: "./our-service3",
 	},
 	{
 		id: 4,
 		title: "LOGO AND PACKAGING DESIGN",
 		image: "./whitebgreat.png",
+		link: "./our-service4",
 	},
 ]
 

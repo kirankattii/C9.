@@ -1,7 +1,7 @@
 import React from "react"
 import "./subPage1.css"
 import { motion } from "framer-motion"
-import { assets } from "../../../assets/asset"
+import { assets } from "../../../../assets/asset"
 
 const SubPage1 = () => {
 	return (
@@ -22,8 +22,8 @@ const SubPage1 = () => {
 							duration: 1,
 						}}
 					>
-						<h1>Transforming</h1>
-						<p>Vision into reality</p>
+						<h1>Unleash</h1>
+						<p>Your Brand Potential</p>
 					</motion.div>
 					<img
 						src={assets.white_rectangle}
@@ -32,18 +32,12 @@ const SubPage1 = () => {
 				</div>
 				<div className="subcontent-design">
 					<motion.div
-						initial={{ y: 150, opacity: 0 }}
-						whileInView={{ y: 0, opacity: 1 }}
-						transition={{
-							delay: 1,
-							x: { type: "spring", stiffness: 60 },
-							opacity: { duration: 1 },
-							ease: "easeIn",
-							duration: 1,
-						}}
+						whileInView={{ opacity: 1, y: 0 }}
+						initial={{ opacity: 0, y: 150 }}
+						transition={{ duration: 0.4, delay: 0.5 }}
 					>
-						<h1>Designing</h1>
-						<p>The Future, One Line at a Time</p>
+						<h1>Ignite</h1>
+						<p>Your Social Media Game</p>
 					</motion.div>
 					<img
 						src={assets.white_rectangle}
@@ -51,18 +45,38 @@ const SubPage1 = () => {
 					/>
 				</div>
 				<div className="subcontent-code">
-					<div>
-						<h1>CODE</h1>
-						<p>With purpose</p>
-					</div>
+					<motion.div
+						initial={{ x: -150, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{
+							delay: 3,
+							x: { type: "spring", stiffness: 60 },
+							opacity: { duration: 1 },
+							ease: "easeIn",
+							duration: 1,
+						}}
+					>
+						<h1>Maximize</h1>
+						<p>Your Social Impact</p>
+					</motion.div>
 					<img
 						src={assets.white_rectangle}
 						alt=""
 					/>
-					<div>
-						<h1>Design</h1>
-						<p>With Passion</p>
-					</div>
+					<motion.div
+						initial={{ x: 150, opacity: 0 }}
+						whileInView={{ x: 0, opacity: 1 }}
+						transition={{
+							delay: 3,
+							x: { type: "spring", stiffness: 60 },
+							opacity: { duration: 1 },
+							ease: "easeIn",
+							duration: 1,
+						}}
+					>
+						<h1>Socialize</h1>
+						<p>Your Success Story</p>
+					</motion.div>
 				</div>
 			</div>
 		</div>

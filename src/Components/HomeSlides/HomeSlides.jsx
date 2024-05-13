@@ -113,6 +113,10 @@ const HomeSlides = () => {
 	}, [])
 
 	const navigate = useNavigate()
+
+	const handleClick = () => {
+		window.scrollTo(0, 0)
+	}
 	return (
 		// <div>
 		<swiper-container
@@ -137,7 +141,14 @@ const HomeSlides = () => {
 								src={assets.web_development}
 								alt=""
 							/>
-							<h2 onClick={() => navigate("./our-service")}>Click Here</h2>
+							<h2
+								onClick={() => {
+									navigate(item.link)
+									handleClick()
+								}}
+							>
+								Click Here
+							</h2>
 							<h1>{item.title}</h1>
 							<div className="slide-border"></div>
 						</div>
