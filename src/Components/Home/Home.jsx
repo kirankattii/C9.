@@ -101,10 +101,10 @@ const Home = () => {
 					className="home-bottom"
 				>
 					<p>KNOW MORE</p>
-					<img
+					{/* <img
 						src={assets.elevating_asthetics}
 						alt="elevating_asthetics"
-					/>
+					/> */}
 				</motion.div>
 			</div>
 			<div className="home-ourdesign">
