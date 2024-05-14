@@ -62,12 +62,13 @@
 .home-slides h1 {
   position: absolute;
   color: #EF4523;
-  font-family: 'AmazDooMRight';
+  font-family: 'AllerDisplay';
+  font-weight: 200;
   font-size: 60px;
-  letter-spacing: 5px;
-  font-weight: 400;
-  left: 15%;
-  top: 10%;
+  /* letter-spacing: 5px; */
+
+  left: 10%;
+  top: 19%;
   z-index: 15;
 }
 

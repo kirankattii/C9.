@@ -101,10 +101,17 @@ const Home = () => {
 					className="home-bottom"
 				>
 					<p>KNOW MORE</p>
-					{/* <img
-						src={assets.elevating_asthetics}
-						alt="elevating_asthetics"
-					/> */}
+					<div className="service-tags">
+						<h3>Social Media Marketing</h3>
+						<hr />
+						<h3>Web Development</h3>
+						<hr />
+						<h3>SEO</h3>
+						<hr />
+						<h3>Logo Design</h3>
+						<hr />
+						<h3>Packaging Design</h3>
+					</div>
 				</motion.div>
 			</div>
 			<div className="home-ourdesign">
@@ -147,7 +154,7 @@ const Home = () => {
 					>
 						<div className="media-home-our-design">
 							<h1 className="media-text-our">OUR</h1>
-							<h1 className="media-text-design">DESIGN</h1>
+							<h1 className="media-text-design">design</h1>
 						</div>
 						<h1 className="media-home-our-odyssey">ODYSSEY</h1>
 					</motion.div>
