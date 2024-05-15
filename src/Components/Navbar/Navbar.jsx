@@ -39,7 +39,9 @@ const Navbar = () => {
 	// 		toggleMobileDropdown()
 	// 	}
 	// }
-
+	const handleClick = () => {
+		window.scrollTo(0, 0)
+	}
 	return (
 		<div className="navbar">
 			<nav className={`container ${sticky ? "dark-nav" : ""}`}>
@@ -49,13 +51,23 @@ const Navbar = () => {
 					alt=""
 				/>
 				<ul className={moblieMenu ? "" : "hide-mobile-menu "}>
-					<li onClick={() => setMobileMenu(false)}>
+					<li
+						onClick={() => {
+							setMobileMenu(false)
+							handleClick()
+						}}
+					>
 						<Link to="/">HOME</Link>
 					</li>
 					{/* <li onClick={() => setMobileMenu(false)}>
 						<Link to="/about-us">ABOUT US</Link>
 					</li> */}
-					<li onClick={() => setMobileMenu(false)}>
+					<li
+						onClick={() => {
+							setMobileMenu(false)
+							handleClick()
+						}}
+					>
 						<Link to="/about-us">STORY</Link>
 					</li>
 					<li
@@ -116,6 +128,14 @@ const Navbar = () => {
 					</li>
 					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/services">SERVICES</Link>
+					</li>
+					<li
+						onClick={() => {
+							setMobileMenu(false)
+							handleClick()
+						}}
+					>
+						<Link to="/blogs">BLOG</Link>
 					</li>
 					<li onClick={() => setMobileMenu(false)}>
 						<Link to="/contact">CONTACT</Link>

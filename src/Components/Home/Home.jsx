@@ -102,19 +102,25 @@ const Home = () => {
 				>
 					<p>KNOW MORE</p>
 					<div className="service-tags">
-						<h3>Social Media Marketing</h3>
+						<span>Social Media Marketing</span>
 						<hr />
-						<h3>Web Development</h3>
+						<span>Web Development</span>
 						<hr />
-						<h3>SEO</h3>
+						<span>SEO</span>
 						<hr />
-						<h3>Logo Design</h3>
+						<span>Logo Design</span>
 						<hr />
-						<h3>Packaging Design</h3>
+						<span>Packaging Design</span>
 					</div>
 				</motion.div>
 			</div>
 			<div className="home-ourdesign">
+				<h2 className="ourdesign-bg-text1">VALUES</h2>
+				<h2 className="ourdesign-bg-text2">Vision</h2>
+				<h2 className="ourdesign-bg-text3">Mission</h2>
+				<h2 className="ourdesign-bg-text4">GOALS</h2>
+				<h2 className="ourdesign-bg-text5">TEAM</h2>
+				<h2 className="ourdesign-bg-text6">Achivements</h2>
 				<div className="home-orange-bg">
 					<div className="home-our-design">
 						<h1 className="text-our">OUR</h1>

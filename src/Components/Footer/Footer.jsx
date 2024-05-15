@@ -41,7 +41,10 @@ const Footer = () => {
 							{quickLinks.map((item) => (
 								<div>
 									<MdOutlineKeyboardArrowLeft className="footer-rightIcon" />
-									<li key={item.id}>{item.name}</li>
+
+									<li key={item.id}>
+										<Link to={item.link}>{item.name}</Link>
+									</li>
 								</div>
 							))}
 						</ul>

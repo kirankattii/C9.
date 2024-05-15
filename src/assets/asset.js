@@ -56,6 +56,11 @@ import increased_Value from "./Increased Value.png"
 import legal_protection from "./Legal Protection.png"
 import collector_Confidence from "./Collector Confidence.png"
 import certigicate_coa from "./certifications.png"
+import grid from "./grid.png"
+import grid1 from "./grid1.png"
+import grid2 from "./grid2.png"
+import grid3 from "./grid3.png"
+import grid4 from "./grid4.png"
 
 export const assets = {
 	c9logo,
@@ -116,6 +121,11 @@ export const assets = {
 	legal_protection,
 	collector_Confidence,
 	certigicate_coa,
+	grid,
+	grid1,
+	grid2,
+	grid3,
+	grid4,
 }
 
 export const homeCorosal = [
@@ -173,30 +183,37 @@ export const quickLinks = [
 	{
 		id: 1,
 		name: "Home",
+		link: "/",
 	},
 	{
 		id: 2,
 		name: "Story",
+		link: "/about-us",
 	},
 	{
 		id: 3,
 		name: "Work",
+		link: "#",
 	},
 	{
 		id: 4,
 		name: "Career",
+		link: "#",
 	},
 	{
 		id: 5,
 		name: "Get Our Profile",
+		link: "#",
 	},
 	{
 		id: 6,
-		name: "Vlogs",
+		name: "Blogs",
+		link: "/blogs",
 	},
 	{
 		id: 7,
 		name: "Reach",
+		link: "#",
 	},
 ]
 
