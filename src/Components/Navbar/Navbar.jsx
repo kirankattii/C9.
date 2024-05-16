@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./navbar.css"
 import { assets } from "../../assets/asset"
-import { Link } from "react-router-dom"
+import { Link, useNavigate } from "react-router-dom"
 import NavHover from "./NavHover/NavHover"
 import { RiArrowDropDownLine } from "react-icons/ri"
 const Navbar = () => {
@@ -42,6 +42,8 @@ const Navbar = () => {
 	const handleClick = () => {
 		window.scrollTo(0, 0)
 	}
+
+	const navigate = useNavigate()
 	return (
 		<div className="navbar">
 			<nav className={`container ${sticky ? "dark-nav" : ""}`}>
@@ -49,6 +51,7 @@ const Navbar = () => {
 					className="logo"
 					src={assets.c9logo}
 					alt=""
+					onClick={() => navigate("/")}
 				/>
 				<ul className={moblieMenu ? "" : "hide-mobile-menu "}>
 					<li

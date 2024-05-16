@@ -71,9 +71,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-
-
-
 }
 
 .leftTop-blog-content img {
@@ -95,8 +92,6 @@
 
 .leftTop-blog-content {
   position: relative;
-  background: #000;
-
 }
 
 .leftTop-blog-content::before {
@@ -120,13 +115,16 @@
   position: absolute;
   top: 60%;
   left: 0;
+  color: white;
 }
 
-.blog-left-innerContent {
-  position: absolute;
+.blog-left-innerContent span {
+  font-size: 21px;
+}
 
-  color: white;
-  /* Ensuring text is visible on the overlay */
+.blog-left-innerContent p {
+  font-size: 16px;
+
 }
 
 .blog-left-innerContent img {
@@ -183,9 +181,18 @@
   height: 100%;
 }
 
-
-
-
+#div1 img:first-child {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  z-index: 10;
+  border: 8px solid #1E1E1E;
+  border-radius: 50%;
+  background: #7F1212;
+  cursor: pointer;
+}
 
 #div4 {
   grid-area: 1 / 5 / 4 / 7;
@@ -203,7 +210,7 @@
 
 #div4 img {
   width: 100%;
-  height: 100%;
+  height: 85%;
 }
 
 #div5 {
@@ -259,23 +266,6 @@
   /* overflow: hidden; */
 }
 
-/* #cssportal-grid img {
-  display: block;
-  width: 100%;
-  height: auto;
-} */
-
-/* #cssportal-grid div::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
- 
-  z-index: 1;
-} */
 
 #div5::before {
   content: "";
@@ -321,14 +311,26 @@
 #div4::before {
   content: "";
   position: absolute;
-  top: 0;
+  top: 52px;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: 85%;
   background-color: rgba(0, 0, 0, 0.4);
   /* Adjust the opacity to make it lighter or darker */
   z-index: 1;
-  border-radius: 38px;
+  border-radius: 45px;
+
+}
+
+#div4 h3 {
+  padding: 10px;
+  font-weight: 400;
+  background: #EF4523;
+  margin-bottom: 10px;
+  margin-left: 1px;
+  border-radius: 18px 0 0 18px;
+  padding-left: 50px;
+  margin-right: -50px;
 
 }
 
@@ -428,4 +430,668 @@ ul {
 
 .example-1 .icon-content .link[data-social="telegram"]:hover {
   color: #0088cc;
+}
+
+@media(max-width:1350px) {
+  .blog-left-innerContent {
+    position: absolute;
+    top: 45%;
+    left: 0;
+  }
+
+  #cssportal-grid span {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  #cssportal-grid p {
+    font-weight: 400;
+    font-size: 15px;
+  }
+
+  #div1 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 45%;
+    padding: 0 15px;
+  }
+
+  #div6 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 30%;
+    padding: 0 5px;
+    padding-left: 15px;
+  }
+
+  #div5 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 30%;
+    padding: 0 5px;
+    padding-left: 20px;
+  }
+
+  #div4 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 40%;
+    padding: 0 15px;
+  }
+
+  #div1::before {
+    border-radius: 32px;
+  }
+
+  #div4::before {
+    border-radius: 32px;
+  }
+
+  #div5::before {
+    border-radius: 32px;
+  }
+
+  #div6::before {
+    border-radius: 32px;
+  }
+
+  #div4 img {
+    width: 100%;
+    height: 80%;
+  }
+
+  #div4::before {
+    height: 80.5%;
+  }
+}
+
+@media(max-width:1100px) {
+
+
+  .blog-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* align-items: end; */
+    top: 30%;
+    color: #fff;
+    left: 3%;
+
+  }
+
+  .blog-text h1 {
+    font-family: 'AllerDisplay';
+    font-size: 120px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+
+  .blog-text h2 {
+    font-family: 'AfterglowRegular';
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-size: 80px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: -25px;
+  }
+
+  .blog-text h3 {
+    font-family: 'AfterglowRegular';
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: end;
+  }
+
+
+
+  .blog-left-innerContent {
+    position: absolute;
+    top: 35%;
+    left: 0;
+  }
+
+  .blog-left-innerContent span {
+    font-size: 18px;
+    line-height: 0.8;
+  }
+
+  .blog-left-innerContent p {
+    font-size: 15px;
+  }
+
+  #div1 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 55%;
+    padding: 0 15px;
+  }
+
+  #div6 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 35%;
+    padding: 0 5px;
+    padding-left: 15px;
+  }
+
+  #div5 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 35%;
+    padding: 0 5px;
+    padding-left: 20px;
+  }
+
+  #div4 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 45%;
+    padding: 0 15px;
+  }
+
+  #div5::before {
+    border-radius: 30px;
+  }
+
+  #div6::before {
+    border-radius: 25px;
+  }
+}
+
+@media(max-width:980px) {
+
+  .blog-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* align-items: end; */
+    top: 30%;
+    color: #fff;
+    left: 3%;
+
+  }
+
+  .blog-text h1 {
+    font-family: 'AllerDisplay';
+    font-size: 100px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+
+  .blog-text h2 {
+    font-family: 'AfterglowRegular';
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-size: 70px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: -25px;
+  }
+
+  .blog-text h3 {
+    font-family: 'AfterglowRegular';
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: end;
+  }
+
+
+  .blog-content {
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: -50px;
+  }
+
+
+  .left-blog-content {
+    /* width: 100%; */
+    padding: 0px;
+    padding-right: 0;
+    margin-top: 50px;
+    position: relative;
+    width: 80%;
+  }
+
+
+
+  .blog-left-innerContent {
+    position: absolute;
+    top: 38%;
+    padding: 0 20px;
+  }
+
+  .right-blog-content {
+    padding: 50px;
+    width: 100%;
+  }
+
+  .Top-Wordsmiths {
+    font-size: 40px;
+    font-family: 'AfterglowRegular';
+    color: #fff;
+    letter-spacing: 2px;
+    font-weight: 100;
+    width: 100%;
+    margin: auto;
+  }
+
+  #cssportal-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: 100%;
+    /* height: 60%; */
+    height: 100vh;
+    color: #fff;
+  }
+
+  .blog-left-innerContent {
+    position: absolute;
+    top: 66%;
+    left: 0;
+  }
+
+  #div1 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 38%;
+    padding: 0 15px;
+  }
+
+  #div6 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 25%;
+    padding: 0 5px;
+    padding-left: 15px;
+  }
+
+  #div5 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 25%;
+    padding: 0 5px;
+    padding-left: 20px;
+  }
+
+  #div4 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 30%;
+    padding: 0 15px;
+  }
+
+
+}
+
+@media(max-width:800px) {
+
+  .blog-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* align-items: end; */
+    top: 40%;
+    color: #fff;
+    left: 3%;
+
+  }
+
+  .blog-text h1 {
+    font-family: 'AllerDisplay';
+    font-size: 90px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+
+  .blog-text h2 {
+    font-family: 'AfterglowRegular';
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-size: 58px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: -25px;
+  }
+
+  .blog-text h3 {
+    font-family: 'AfterglowRegular';
+    font-size: 30px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: end;
+  }
+
+}
+
+@media(max-width:650px) {
+
+  .blog-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* align-items: end; */
+    top: 40%;
+    color: #fff;
+    left: 3%;
+
+  }
+
+  .blog-text h1 {
+    font-family: 'AllerDisplay';
+    font-size: 70px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+
+  .blog-text h2 {
+    font-family: 'AfterglowRegular';
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-size: 45px;
+    letter-spacing: 2px;
+    font-weight: 400;
+    margin-top: -20px;
+  }
+
+  .blog-text h3 {
+    font-family: 'AfterglowRegular';
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: end;
+  }
+
+
+
+  .blog-content {
+    gap: 20px;
+  }
+
+  .left-blog-content {
+    gap: 20px;
+    width: 90%;
+  }
+
+  .right-blog-content {
+    /* width: 100%; */
+    padding: 10px;
+    padding-top: 50px;
+
+    /* margin-right: -50px; */
+  }
+
+  #cssportal-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: 100%;
+    /* height: 60%; */
+    height: 80vh;
+    color: #fff;
+  }
+
+  #div1 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 52%;
+    padding: 0 15px;
+  }
+
+  #div6 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 32%;
+    padding: 0 5px;
+    padding-left: 15px;
+  }
+
+  #div5 div {
+
+    /* position: absolute; */
+
+    z-index: 1;
+    bottom: 35%;
+    padding: 0 5px;
+    padding-left: 20px;
+  }
+
+  #div4 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 48%;
+    padding: 0 15px;
+  }
+
+  .blog-left-innerContent {
+    position: absolute;
+    top: 50%;
+    padding: 0 20px;
+  }
+
+  #div4 h3 {
+    padding: 10px;
+    font-weight: 400;
+    background: #EF4523;
+    margin-bottom: 10px;
+    margin-left: 1px;
+    border-radius: 18px 0 0 18px;
+    padding-left: 50px;
+    margin-right: 0px;
+    font-size: 15px;
+    margin-left: 0;
+    padding-left: 10px;
+  }
+
+}
+
+@media(max-width:500px) {
+
+  .blog-text {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    /* align-items: end; */
+    top: 40%;
+    color: #fff;
+    left: 3%;
+
+  }
+
+  .blog-text h1 {
+    font-family: 'AllerDisplay';
+    font-size: 65px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+
+  .blog-text h2 {
+    font-family: 'AfterglowRegular';
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+    font-size: 40px;
+    letter-spacing: 2px;
+    line-height: 01;
+    font-weight: 400;
+    margin-top: -10px;
+  }
+
+  .blog-text h3 {
+    font-family: 'AfterglowRegular';
+    font-size: 23px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: start;
+    margin-top: 3px;
+    padding-right: 5px;
+  }
+
+  .Top-Wordsmiths {
+    font-size: 32px;
+
+  }
+
+  #cssportal-grid span {
+    font-weight: 400;
+    font-size: 18px;
+  }
+
+  #cssportal-grid p {
+    font-weight: 400;
+    font-size: 14px;
+    width: inherit;
+  }
+
+  #cssportal-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+    width: 100%;
+    /* height: 60%; */
+    height: 75vh;
+    color: #fff;
+  }
+
+  #div1 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 78%;
+    padding: 0 10px;
+  }
+
+  #div6 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 50%;
+    padding: 0 5px;
+    padding-left: 10px;
+  }
+
+  #div5 div {
+
+    /* position: absolute; */
+
+    z-index: 1;
+    bottom: 50%;
+    padding: 0 5px;
+    padding-left: 20px;
+  }
+
+  #div4 div {
+
+    /* position: absolute; */
+    z-index: 1;
+    bottom: 65%;
+    padding: 0 2px;
+  }
+
+  #div4::before {}
+
+  #div4 h3 {}
+
+  #div4::before {
+    content: "";
+    position: absolute;
+    top: 45px;
+    left: 0;
+    width: 100%;
+    height: 82%;
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Adjust the opacity to make it lighter or darker */
+    z-index: 1;
+    border-radius: 26px;
+
+  }
+
+  #div5::before {
+    border-radius: 23px;
+  }
+
+  #div6::before {
+    border-radius: 20px;
+  }
+
+  #div1::before {
+    border-radius: 20px;
+  }
+
+  .blog-left-innerContent {
+    position: absolute;
+    top: 35%;
+    padding: 0 15px;
+  }
+
+  .blog-left-innerContent span {
+    font-size: 18px;
+    line-height: 0.8;
+  }
+
+  .blog-left-innerContent p {
+    font-size: 14.5px;
+  }
+}
+
+@media(max-width:400px) {
+  .blog-left-innerContent {
+    position: absolute;
+    top: 25%;
+    padding: 0 15px;
+  }
+
+  .blog-text h1 {
+    font-family: 'AllerDisplay';
+    font-size: 60px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+
+}
+
+
+@media(max-width:370px) {
+  .blog-left-innerContent {
+    position: absolute;
+    top: 25%;
+    padding: 0 15px;
+  }
+
+  .blog-text h1 {
+    font-family: 'AllerDisplay';
+    font-size: 55px;
+    font-weight: 300;
+    text-transform: uppercase;
+
+  }
+
 }

@@ -61,6 +61,7 @@ import grid1 from "./grid1.png"
 import grid2 from "./grid2.png"
 import grid3 from "./grid3.png"
 import grid4 from "./grid4.png"
+import arrow45 from "./Arrow.png"
 
 export const assets = {
 	c9logo,
@@ -126,6 +127,7 @@ export const assets = {
 	grid2,
 	grid3,
 	grid4,
+	arrow45,
 }
 
 export const homeCorosal = [

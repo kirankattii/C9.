@@ -21,9 +21,9 @@ const Blog = () => {
 								alt=""
 							/>
 							<div className="blog-left-innerContent">
-								<h3>
+								<span>
 									Influencer Marketing: Authentic Connections, Real Results
-								</h3>
+								</span>
 								<p>
 									Discover the power of influencer partnerships in building
 									genuine brand connections. Learn to choose the right
@@ -100,6 +100,11 @@ const Blog = () => {
 						<div id="cssportal-grid">
 							<div id="div1">
 								<img
+									src={assets.arrow45}
+									alt=""
+									className="arrow45"
+								/>
+								<img
 									src={assets.grid1}
 									alt=""
 								/>
@@ -114,6 +119,7 @@ const Blog = () => {
 								</div>
 							</div>
 							<div id="div4">
+								<h3>READ BLOG</h3>
 								<img
 									src={assets.grid2}
 									alt=""

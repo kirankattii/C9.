@@ -78,3 +78,14 @@
    text-decoration: none;
    color: inherit;
  }
+
+ ::-moz-selection {
+   /* Code for Firefox */
+   color: black;
+   background: #ef4523;
+ }
+
+ ::selection {
+   color: black;
+   background: #ef4523;
+ }

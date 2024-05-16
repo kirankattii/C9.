@@ -32,7 +32,7 @@ const Contact = () => {
 							duration: 1,
 						}}
 					>
-						<h1 className="text-contact-in">iN</h1>
+						<h1 className="text-contact-in">IN</h1>
 						<h1 className="text-touch">TOUCH</h1>
 					</motion.div>
 					<div className="contact-help-card">
