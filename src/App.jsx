@@ -18,6 +18,7 @@ import SubPage2 from "./Components/Home/subpages/subPage2/SubPage2"
 import SubPage3 from "./Components/Home/subpages/subPage3/SubPage3"
 import SubPage4 from "./Components/Home/subpages/subpage4/subpage4"
 import Blog from "./Components/Blog/Blog"
+import Packaging2 from "./Components/Packaging/Packaging2"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -74,10 +75,14 @@ const App = () => {
 					path="/work"
 					element={<LogoWork />}
 				/>
-				<Route
+				{/* <Route
 					path="/packaging"
 					element={<Packaging />}
-				/>{" "}
+				/> */}
+				<Route
+					path="/packaging2"
+					element={<Packaging2 />}
+				/>
 				<Route
 					path="/values"
 					element={<Values />}

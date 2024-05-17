@@ -692,6 +692,17 @@
 
 }
 
+.home-orange-bg p::selection {
+  color: #EF4523;
+  background: white;
+}
+
+/* Code for Firefox */
+.home-orange-bg p::-moz-selection {
+  color: #EF4523;
+  background: white;
+}
+
 @media only screen and (min-width: 1550px) and (max-width: 1800px) {
 
   .home-ourdesign-content {
