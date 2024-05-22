@@ -112,7 +112,7 @@ nav ul li:hover:after {
   /* top: 65%; */
 
   /* left: auto; */
-  right: -300%;
+  right: -550%;
   /* width: 150px; */
   background-color: #1e1e1e;
   z-index: 100;
@@ -156,9 +156,9 @@ nav ul li a {
 
 .dropdown-menu hr {
   transform: rotate(90deg);
-  height: 70px;
-  top: -35px;
-  right: 130px;
+  height: 100px;
+  top: -50px;
+  right: 310px;
   border: 0;
   width: 90px;
   background: transparent;
@@ -169,7 +169,7 @@ nav ul li a {
   position: absolute;
 }
 
-.dropdown-menu a:hover {
+a:hover {
   background-color: #333;
 }
 

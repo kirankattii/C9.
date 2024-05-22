@@ -69,9 +69,22 @@ import packaging_v1 from "./videos/package_v1.mp4"
 import packaging_v2 from "./videos/package_v2.mp4"
 import packaging_v3 from "./videos/package_v3.mp4"
 import packaging_v4 from "./videos/package_v4.mp4"
+import packaging_v5 from "./videos/package v5.mov"
+import socialMedia_v1 from "./videos/socialMedia_v1.mp4"
+import socialMedia_v2 from "./videos/socialMedia_v2.mp4"
+import socialMedia_v3 from "./videos/socialMedia_v3.mp4"
+import socialMedia_v4 from "./videos/socialMedia_v4.mp4"
+import socialMedia_v5 from "./videos/socialMedia_v5.mp4"
+import socialMedia_v6 from "./videos/socialMedia_v6.mp4"
+import socialMedia_v7 from "./videos/socialMedia_v7.mp4"
 import packag_img1 from "./package_img1.png"
 import packag_img2 from "./packaging_img2.png"
 import packag_img3 from "./packagingImg3.png"
+import se0_img1 from "./seo Img.png"
+import seo_img2 from "./seoimg2.png"
+import seo_img3 from "./seoimg3.png"
+import seo_img4 from "./seoimg4.png"
+import socialMedia_img from "./socialMediaImg.png"
 
 export const assets = {
 	c9logo,
@@ -143,11 +156,24 @@ export const assets = {
 	packaging_v2,
 	packaging_v3,
 	packaging_v4,
+	packaging_v5,
 	packaging_bg1,
 	packaging_bg2,
 	packag_img1,
 	packag_img2,
 	packag_img3,
+	se0_img1,
+	seo_img2,
+	seo_img3,
+	seo_img4,
+	socialMedia_img,
+	socialMedia_v1,
+	socialMedia_v2,
+	socialMedia_v3,
+	socialMedia_v4,
+	socialMedia_v5,
+	socialMedia_v6,
+	socialMedia_v7,
 }
 
 export const homeCorosal = [

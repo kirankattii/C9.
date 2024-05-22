@@ -124,7 +124,7 @@ const Navbar = () => {
 								<Link>Web Development</Link>
 								<hr />
 
-								<Link>Social Media Marketing</Link>
+								<Link to="/social-media-marketing">Social Media Marketing</Link>
 								<hr />
 							</div>
 						)}

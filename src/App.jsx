@@ -20,6 +20,7 @@ import SubPage4 from "./Components/Home/subpages/subpage4/subpage4"
 import Blog from "./Components/Blog/Blog"
 import Packaging2 from "./Components/Packaging/Packaging2"
 import Seo from "./Components/Seo/Seo"
+import SocialMedia from "./Components/SocialMedia/SocialMedia"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -87,6 +88,10 @@ const App = () => {
 				<Route
 					path="/seo"
 					element={<Seo />}
+				/>
+				<Route
+					path="/social-media-marketing"
+					element={<SocialMedia />}
 				/>
 
 				<Route

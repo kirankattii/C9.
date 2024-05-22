@@ -95,10 +95,22 @@ const Packaging2 = () => {
 							competitors.
 						</p>
 					</div>
-					<img
+					{/* <img
 						src={assets.packag_img1}
 						alt=""
-					/>
+					/> */}
+					<video
+						id="myVideo4"
+						autoPlay
+						muted
+						loop
+						// controls
+					>
+						<source
+							src={assets.packaging_v5}
+							type="video/mp4"
+						/>
+					</video>
 					<div className="package2-subContainer1-content2">
 						<span>Communicates Brand Values</span>
 						<p>

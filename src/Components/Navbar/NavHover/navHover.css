@@ -36,7 +36,7 @@
     /* top: 65%; */
 
 
-    right: -350%;
+    /* right: -350%; */
 
     background-color: #1e1e1e;
     z-index: 100;
@@ -96,10 +96,7 @@
     width: 50px;
   }
 
-  .dropdown-menu {
-    right: -380%;
 
-  }
 }
 
 @media(max-width:820px) {

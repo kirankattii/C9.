@@ -42,7 +42,7 @@
   margin-top: 50px;
   color: #fff;
   width: 65%;
-  font-size: 17px;
+  font-size: 18px;
   letter-spacing: 1px;
   line-height: 1.3;
   font-weight: 300;
@@ -52,4 +52,323 @@
 
 
 
+}
+
+/* ================seo-subContainer1=============== */
+.seo-subContainer1 {
+  display: flex;
+  flex-direction: column;
+  padding: 140px 120px;
+  color: #FFF;
+  gap: 50px;
+}
+
+.seo-subContainer1 div {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+
+.seo-subContainer1 div ul {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  list-style-type: circle;
+}
+
+.seo-subContainer1 div img {
+  width: 70%;
+}
+
+.seo-subContainer1 span {
+  font-family: 'MadeTommyMedium';
+  font-size: 18.5px;
+  letter-spacing: 0.6px;
+}
+
+.seo-subContainer1 p {
+  font-family: 'MadeTommySoft';
+  font-weight: 500;
+  letter-spacing: 1px;
+  font-size: 18px;
+}
+
+/* =====.seo-subContainer2 ============= */
+
+
+.seo-subContainer2 {
+  padding: 120px;
+  padding-top: 0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.seo-subContainer2 h2 {
+  font-family: 'MadeTommyMedium';
+  margin-bottom: -30px;
+  font-weight: 300;
+  font-size: 30px;
+}
+
+.seo-subContainer2 span {
+  font-family: 'MadeTommyMedium';
+
+  font-size: 18.5px;
+  font-weight: 200;
+  letter-spacing: 1px;
+
+}
+
+.seo-subContainer2 p {
+  font-family: 'MadeTommySoft';
+  font-size: 18px;
+  margin-top: 30px;
+  width: 75%;
+  line-height: 1.35;
+  /* letter-spacing: 0.8px; */
+}
+
+/* ========choose-seo============= */
+
+
+.choose-seo {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.choose-seo h1 {
+  font-family: 'MadeTommyMedium';
+  letter-spacing: 1px;
+  font-weight: normal;
+}
+
+.choose-seo ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  list-style-type: circle;
+  font-family: 'MadeTommySoft';
+  letter-spacing: 0.8px;
+  font-size: 18px;
+  width: 75%;
+  line-height: 1.35;
+
+}
+
+/* ==========seo-images========== */
+
+.seo-images {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 50px;
+  padding-right: 0;
+  margin-top: -50px;
+  gap: 80px;
+}
+
+.seo-images img {
+  width: 150px;
+}
+
+/* =======elevateBrandWithC9======== */
+
+.elevateBrandWithC9 {
+  width: 100%;
+  margin-bottom: 150px;
+}
+
+.elevateBrandWithC9 h3 {
+  font-family: 'MadeTommyMedium';
+  font-weight: 200;
+  letter-spacing: 1.5px;
+  font-size: 24px;
+
+}
+
+.elevateBrandWithC9 p {
+  width: 100%;
+  letter-spacing: 1.5px;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+@media(max-width:1300px) {
+  .seo-subContainer1 div {
+    gap: 0px;
+  }
+
+  .seo-subContainer1 div ul {
+    width: 70%;
+  }
+}
+
+@media(max-width:1000px) {
+  .seo-header hr {
+    width: 90%;
+  }
+
+  .seo-header p {
+    width: 90%;
+  }
+
+  .seo-header {
+    padding-top: 35vh;
+  }
+
+  .seo-subContainer1 {
+    padding: 140px 20px;
+    padding-bottom: 0px;
+    /* padding-top: 100px; */
+  }
+
+  .seo-subContainer2 {
+    padding: 120px 20px;
+
+  }
+
+  .seo-images {
+    justify-content: center;
+    padding: 20px;
+
+    margin-top: 0px;
+    gap: 50px;
+  }
+
+  .seo-subContainer2 p {
+
+    width: 90%;
+
+  }
+
+  .choose-seo ul {
+    padding-left: 20px;
+    width: 90%;
+  }
+}
+
+
+@media(max-width:700px) {
+
+  .seo-header p {
+    margin-top: 30px;
+    font-size: 17.5px;
+  }
+
+  .seo-header {
+    padding-top: 25vh;
+  }
+
+
+
+  .seo-subContainer1 div {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .seo-subContainer1 div ul {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    list-style-type: circle;
+  }
+
+  .seo-subContainer1 div img {
+    width: 80%;
+  }
+
+  .choose-seo ul {}
+
+  .seo-images {
+
+
+    gap: 20px;
+  }
+
+  .seo-images img {
+    width: 120px;
+  }
+
+  .seo-subContainer1 {
+    padding: 60px 20px;
+    padding-bottom: 0px;
+    /* padding-top: 100px; */
+  }
+}
+
+
+@media(max-width:500px) {
+  .seo-header {
+    padding-top: 23vh;
+    gap: 20px;
+  }
+
+  .seo-header hr {
+    width: 85%;
+    height: 28px;
+
+
+  }
+
+  .seo-header h2 {
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .seo-images img {
+    width: 100px;
+  }
+
+  .seo-subContainer2 {
+    gap: 0px;
+  }
+
+  .seo-subContainer1 span {
+    font-size: 18px;
+  }
+
+  .seo-subContainer1 p {
+
+    font-size: 17.5px;
+  }
+
+  .seo-subContainer2 h2 {
+
+    font-size: 26px;
+  }
+
+  .choose-seo ul {
+    font-size: 17.5px;
+  }
+
+  .choose-seo h1 {
+    font-size: 28px;
+    margin-top: 0px;
+  }
+
+  .elevateBrandWithC9 {
+    margin-top: 30px;
+    margin-bottom: 50px;
+  }
+
+  .elevateBrandWithC9 h3 {
+
+    font-size: 22px;
+
+  }
+
+  .elevateBrandWithC9 p {
+    width: 100%;
+    letter-spacing: 1px;
+    font-size: 17.5px;
+    margin-top: 10px;
+  }
 }

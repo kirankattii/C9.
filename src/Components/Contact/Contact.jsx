@@ -99,7 +99,7 @@ const Contact = () => {
 								</div>
 								<div>
 									<h3>Chat To Us</h3>
-									<p>Business@c9ads.com</p>
+									<p>akshtam@C9ads.au</p>
 								</div>
 								<div>
 									<h3>Contact To Us</h3>

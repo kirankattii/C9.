@@ -163,10 +163,10 @@
   /* align-items: center; */
 }
 
-.package2-subContainer1 img {
-  width: 60%;
+.package2-subContainer1 video {
+  width: 100%;
   margin: auto;
-  margin-top: -180px;
+  /* margin-top: -180px; */
 }
 
 .package2-subContainer1 span {
@@ -189,7 +189,7 @@
 
 .package2-subContainer1-content2 {
   text-align: right;
-  margin-top: -150px;
+  margin-top: -00px;
 }
 
 

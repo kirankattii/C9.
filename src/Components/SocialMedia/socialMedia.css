@@ -1,0 +1,139 @@
+.socialMedia {
+  width: 100%;
+  min-height: 100vh;
+  background: #1e1e1e;
+  color: #fff;
+}
+
+.socialMedia-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  min-height: 100vh;
+}
+
+.socialMedia-header .socialMedia-img1 {
+  width: 93%;
+  padding-top: 60px;
+}
+
+.socialMedia-header p {
+  margin-top: -19%;
+  width: 95%;
+  letter-spacing: 1px;
+  font-size: 17.5px;
+  font-family: 'MadeTommySoft';
+  text-align: center;
+}
+
+/* ===========socialmedia-subContainer1 ============== */
+
+.socialmedia-subContainer1 {
+  width: 100%;
+  position: relative;
+}
+
+.socialMedai-bgVideo {
+  display: flex;
+  justify-content: center;
+  /* Center horizontally */
+  align-items: center;
+  position: relative;
+  transition: width 0.3s ease;
+  /* position: relative; */
+
+}
+
+.socialMedai-bgVideo video {
+  margin-top: 250px;
+
+
+  z-index: 1;
+}
+
+.socialMedia-bgVideo video {
+  width: 100%;
+  /* Make the video take the full width of the container */
+}
+
+.socialMedia-content1 {
+  width: 50%;
+  position: absolute;
+  top: 11%;
+  text-align: center;
+  font-family: 'MadeTommySoft';
+  font-size: 18px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  z-index: 2;
+}
+
+.socialmedia-videoContent1 {
+  width: 100%;
+  /* left: 50%; */
+  /* transform: translateX(-50%); */
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  top: 10%;
+  z-index: 2;
+}
+
+.socialmedia-videoContent1-left {
+  display: flex;
+  flex-direction: column;
+  margin-top: -20px;
+
+}
+
+.socialmedia-videoContent1-left video {
+  width: 100%;
+  height: 45vh;
+}
+
+.socialmedia-videoContent1-left video:last-child {
+  margin-top: 50px;
+}
+
+.socialmedia-videoContent1-right video {
+  width: 100%;
+  height: 90vh;
+}
+
+.socialmedia-videoContent1-middle {
+  top: 50px;
+
+
+  /* position: absolute; */
+  background: rgba(0, 0, 0, 0.8);
+  margin-top: 350px;
+  width: 35%;
+  height: 60vh;
+
+}
+
+.socialmedia-videoContent1-middle ul {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 20px;
+  gap: 50px;
+  text-align: center;
+}
+
+.socialmedia-videoContent1-middle ul p {
+  font-family: 'MadeTommySoft';
+  letter-spacing: 0.8px;
+  font-size: 15px;
+}
+
+.socialmedia-videoContent1-middle ul h2 {
+  font-family: 'MadeTommySoft';
+  letter-spacing: 0.8px;
+  font-weight: 100;
+  font-size: 22px;
+}

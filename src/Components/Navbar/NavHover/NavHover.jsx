@@ -8,7 +8,10 @@ const NavHover = () => {
 	const navigate = useNavigate()
 	return (
 		<div className="navhover">
-			<motion.div whileHover={{ scale: 0.85 }}>
+			<motion.div
+				whileHover={{ scale: 0.85 }}
+				onClick={() => navigate("/social-media-marketing")}
+			>
 				<img
 					src={assets.aboutService1}
 					alt=""
