@@ -1,0 +1,325 @@
+.packaging2 {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.packaging2-header {
+  /* padding-top: 80px; */
+  height: 100vh;
+  background: #1e1e1e;
+  /* background: url("../../assets/packaging_bg1.png"); */
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.packaging2-header div {
+  color: #fff;
+  margin-top: 100px;
+  margin-left: 120px;
+
+  position: relative;
+  /* padding-left: 100px; */
+  font-family: 'MadeTommyLight';
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  font-weight: 100;
+
+}
+
+.package-bg1 {
+  width: 75%;
+
+}
+
+.packaging2-header p {
+  width: 80%;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+.package-bg2 {
+  position: absolute;
+  width: 45%;
+  top: 20%;
+  left: 15%;
+}
+
+#myVideo {
+
+  /* padding-left: 280px; */
+  margin-top: 80px;
+  border-radius: 100%;
+  margin-right: -80px;
+  height: 110vh;
+
+  box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
+  /* Add a shadow */
+  /* margin: ; */
+  z-index: 5;
+  /* Center the video and add some margin */
+  /* display: block; */
+
+  /* Ensure the video is displayed as a block element */
+}
+
+
+/* ================packaging-container================== */
+
+.packaging2-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #1e1e1e;
+  position: relative;
+
+}
+
+.package2-CaptureAttention {
+  width: 100%;
+  padding: 0 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 250px;
+  align-items: center;
+
+}
+
+.package2-CaptureAttention-right {
+  margin-top: 150px;
+  /* padding-top: 50%; */
+  display: flex;
+  width: 100%;
+  color: #fff;
+  margin-bottom: 180px;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.package2-CaptureAttention-right h2 {
+  font-size: 65px;
+  letter-spacing: 3px;
+  font-weight: 200;
+  font-family: 'MadeTommyLight';
+
+}
+
+.package2-CaptureAttention-right p {
+  font-size: 26px;
+  font-family: 'MadeTommyLight';
+  letter-spacing: 2px;
+  font-weight: 200;
+  width: 50%;
+}
+
+.package2-CaptureAttention-rightDown {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.package-bg3 {
+  position: absolute;
+  width: 30%;
+  top: 15%;
+  left: 40%;
+
+}
+
+#myVideo1 {
+  width: 80%;
+  height: 100vh;
+  border-radius: 30%;
+  padding: 100px 0;
+  margin-left: 80px;
+  /* padding: 30px 0; */
+  /* height: 80px; */
+}
+
+#myVideo2 {
+  width: 35%;
+  height: 50%;
+  border-radius: 100%;
+  z-index: 10;
+}
+
+
+
+
+
+/* +===============package2-subContainer=================== */
+
+.package2-subContainer1 {
+  width: 100%;
+  padding: 100px 150px;
+  display: flex;
+  flex-direction: column;
+  /* gap: 10px; */
+  color: #fff;
+  font-family: 'MadeTommyLight';
+
+  /* align-items: center; */
+}
+
+.package2-subContainer1 img {
+  width: 60%;
+  margin: auto;
+  margin-top: -180px;
+}
+
+.package2-subContainer1 span {
+  font-size: 34px;
+  /* font-weight: 200; */
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+.package2-subContainer1 p {
+  font-size: 24px;
+  font-weight: 200;
+  /* width: 20%; */
+  letter-spacing: 2px;
+}
+
+.package2-subContainer1-content1 {
+  text-align: left;
+}
+
+.package2-subContainer1-content2 {
+  text-align: right;
+  margin-top: -150px;
+}
+
+
+
+
+/* =============================package2-subContainer2==================== */
+
+.package2-subContainer2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 150px;
+  font-family: 'MadeTommyLight';
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+#myVideo4 {
+  z-index: 1;
+  width: 30%;
+  border-radius: 100%;
+}
+
+.package2-subContainer2-left {
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.package2-subContainer2-left h2 {
+  font-size: 40px;
+}
+
+.package2-subContainer2-left p {
+  font-size: 20px;
+  line-height: 1.7;
+  width: 70%;
+}
+
+
+
+/* ===========package2-subContainer3============== */
+
+
+.package2-subContainer3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0 140px;
+
+}
+
+.package2-subContainer3 div {
+  margin: auto;
+  width: 45%;
+  margin-top: -200px;
+  color: #fff;
+  font-family: 'MadeTommyLight';
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+}
+
+.package2-subContainer3 div span {
+  font-size: 32px;
+}
+
+.package2-subContainer3 div p {
+  font-size: 18px;
+  letter-spacing: 0.6px;
+  line-height: 1.5;
+}
+
+.package2-subContainer3 img {
+  width: 250px;
+}
+
+.package2-subContainer3 img:nth-child(1) {
+  margin-left: 80%;
+  /* margin-top: 250px; */
+}
+
+.package2-subContainer3 img:nth-child(3) {
+
+  margin-top: -180px;
+  /* margin-top: 250px; */
+}
+
+
+
+/* =====================image scroll=============== */
+
+
+.package2-subContainer4 {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 100px 0;
+}
+
+.package2-subContainer4 div {
+  display: flex;
+  gap: 10px;
+  position: relative;
+
+
+}
+
+
+.package-imageContainer {
+  border: 1px solid #fff;
+  position: absolute;
+  margin-top: 10px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.08);
+  /* Light background color with some transparency */
+  backdrop-filter: blur(10px);
+  /* Adjust the blur radius as needed */
+  z-index: 1;
+}
+
+.package2-subContainer4 img {
+  width: 110px;
+  height: 150px;
+  padding: 20px;
+}
+
+.image-container2 {
+  margin-left: -100%;
+}

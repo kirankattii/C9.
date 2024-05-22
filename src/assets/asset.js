@@ -62,6 +62,16 @@ import grid2 from "./grid2.png"
 import grid3 from "./grid3.png"
 import grid4 from "./grid4.png"
 import arrow45 from "./Arrow.png"
+import packaging from "./PACKAGING.svg"
+import packaging_bg1 from "./packaging_bg1.png"
+import packaging_bg2 from "./packaging_bg2.png"
+import packaging_v1 from "./videos/package_v1.mp4"
+import packaging_v2 from "./videos/package_v2.mp4"
+import packaging_v3 from "./videos/package_v3.mp4"
+import packaging_v4 from "./videos/package_v4.mp4"
+import packag_img1 from "./package_img1.png"
+import packag_img2 from "./packaging_img2.png"
+import packag_img3 from "./packagingImg3.png"
 
 export const assets = {
 	c9logo,
@@ -128,6 +138,16 @@ export const assets = {
 	grid3,
 	grid4,
 	arrow45,
+	packaging,
+	packaging_v1,
+	packaging_v2,
+	packaging_v3,
+	packaging_v4,
+	packaging_bg1,
+	packaging_bg2,
+	packag_img1,
+	packag_img2,
+	packag_img3,
 }
 
 export const homeCorosal = [
@@ -251,4 +271,68 @@ export const questionnarie = [
 		id: 3,
 		name: "Digital",
 	},
+]
+
+// Importing all packaging images
+import pack1 from "./pack1.png"
+import pack2 from "./pack2.png"
+import pack3 from "./pack3.png"
+import pack4 from "./pack4.png"
+import pack5 from "./pack5.png"
+import pack6 from "./pack6.png"
+import pack7 from "./pack7.png"
+import pack8 from "./pack8.png"
+import pack10 from "./pack10.png"
+import pack11 from "./pack11.png"
+import pack12 from "./pack12.png"
+import pack13 from "./pack13.png"
+import pack14 from "./pack14.png"
+import pack15 from "./pack15.png"
+import pack16 from "./pack16.png"
+import pack17 from "./pack17.png"
+import pack18 from "./pack18.png"
+import pack19 from "./pack19.png"
+import pack20 from "./pack20.png"
+import pack21 from "./pack21.png"
+import pack22 from "./pack22.png"
+import pack23 from "./pack23.png"
+import pack24 from "./pack24.png"
+import pack25 from "./pack25.png"
+import pack26 from "./pack26.png"
+import pack27 from "./pack27.png"
+import pack28 from "./pack28.png"
+import pack29 from "./pack29.png"
+import pack30 from "./pack30.png"
+
+// Exporting packaging images as an array
+export const packagingImages = [
+	{ img: pack1 },
+	{ img: pack2 },
+	{ img: pack3 },
+	{ img: pack4 },
+	{ img: pack5 },
+	{ img: pack6 },
+	{ img: pack7 },
+	{ img: pack8 },
+	{ img: pack10 },
+	{ img: pack11 },
+	{ img: pack12 },
+	{ img: pack13 },
+	{ img: pack14 },
+	{ img: pack15 },
+	{ img: pack16 },
+	{ img: pack17 },
+	{ img: pack18 },
+	{ img: pack19 },
+	{ img: pack20 },
+	{ img: pack21 },
+	{ img: pack22 },
+	{ img: pack23 },
+	{ img: pack24 },
+	{ img: pack25 },
+	{ img: pack26 },
+	{ img: pack27 },
+	{ img: pack28 },
+	{ img: pack29 },
+	{ img: pack30 },
 ]

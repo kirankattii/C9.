@@ -71,6 +71,38 @@
    src: local('AllerDisplay'), url('../src/assets/fonts/AllerDisplay.woff') format('woff');
  }
 
+ @font-face {
+   font-family: 'MadeTommyLight';
+   font-style: normal;
+   font-weight: normal;
+   src: local('madeTommyLight'), url('../src/assets/fonts/madeTommyLight.otf') format('woff');
+ }
+
+
+
+
+ @font-face {
+   font-family: 'MadeTommyBold';
+   font-style: normal;
+   font-weight: normal;
+   src: local('madeTommyBold'), url('../src/assets/fonts/madeTommyBold.otf') format('woff');
+ }
+
+
+
+ @font-face {
+   font-family: 'MadeTommyMedium';
+   font-style: normal;
+   font-weight: normal;
+   src: local('madeTommyMedium'), url('../src/assets/fonts/madeTommyMedium.otf') format('woff');
+ }
+
+ @font-face {
+   font-family: 'MadeTommySoft';
+   font-style: normal;
+   font-weight: normal;
+   src: local('madeTommySoft'), url('../src/assets/fonts/madeTommySoft.otf') format('woff');
+ }
 
 
 

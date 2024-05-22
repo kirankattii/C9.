@@ -22,7 +22,10 @@ const NavHover = () => {
 				/>
 				<p>WEB DEVELOPMENT</p>
 			</motion.div>
-			<motion.div whileHover={{ scale: 0.85 }}>
+			<motion.div
+				whileHover={{ scale: 0.85 }}
+				onClick={() => navigate("/seo")}
+			>
 				<img
 					src={assets.aboutService3}
 					alt=""

@@ -118,7 +118,7 @@ const Navbar = () => {
 									PACKAGING
 									<hr />
 								</Link>
-								<Link>SEO</Link>
+								<Link to="/seo">SEO</Link>
 								<hr />
 
 								<Link>Web Development</Link>

@@ -19,6 +19,7 @@ import SubPage3 from "./Components/Home/subpages/subPage3/SubPage3"
 import SubPage4 from "./Components/Home/subpages/subpage4/subpage4"
 import Blog from "./Components/Blog/Blog"
 import Packaging2 from "./Components/Packaging/Packaging2"
+import Seo from "./Components/Seo/Seo"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -83,6 +84,11 @@ const App = () => {
 					path="/packaging2"
 					element={<Packaging2 />}
 				/>
+				<Route
+					path="/seo"
+					element={<Seo />}
+				/>
+
 				<Route
 					path="/values"
 					element={<Values />}
