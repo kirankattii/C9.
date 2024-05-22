@@ -113,7 +113,7 @@ const Navbar = () => {
 								<hr />
 								<Link
 									// onClick={() => setMobileMenu(false)}
-									to="/packaging"
+									to="/packaging2"
 								>
 									PACKAGING
 									<hr />

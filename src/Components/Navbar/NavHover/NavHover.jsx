@@ -44,7 +44,7 @@ const NavHover = () => {
 			</motion.div>
 			<motion.div
 				whileHover={{ scale: 0.85 }}
-				onClick={() => navigate("/packaging")}
+				onClick={() => navigate("/packaging2")}
 			>
 				<img
 					src={assets.aboutService5}
