@@ -1,24 +1,43 @@
 import React, { useEffect, useRef } from "react"
 import "./packaging2.css"
-import { motion, useTransform, useScroll } from "framer-motion"
-
+import { gsap } from "gsap"
+import { ScrollTrigger } from "gsap/ScrollTrigger"
 import { assets, packagingImages } from "../../assets/asset"
 
 const Packaging2 = () => {
-	const targetRef = useRef(null)
-	const { scrollYProgress } = useScroll({
-		target: targetRef,
-	})
+	const sectionRef1 = useRef(null)
 
-	const x = useTransform(scrollYProgress, [0.7, 1], ["0%", "-125%"])
-	const xx = useTransform(scrollYProgress, [0, 1], ["0%", "80%"])
-	const xxx = useTransform(scrollYProgress, [0.8, 1], ["5%", "-75%"])
-	const transition = {
-		type: "spring",
-		stiffness: 50, // Adjust the stiffness to make the animation smoother
-		damping: 20, // Adjust the damping to control the overshooting
-		duration: 2, // You can set a duration if needed
-	}
+	const triggerRef = useRef(null)
+
+	gsap.registerPlugin(ScrollTrigger)
+
+	useEffect(() => {
+		const pin = gsap.fromTo(
+			[sectionRef1.current],
+			{
+				translateX: 0,
+			},
+			{
+				translateX: "-132vw",
+				ease: "none",
+				duration: 1,
+				scrollTrigger: {
+					trigger: triggerRef.current,
+					start: "top top",
+					end: "2000 top",
+					scrub: 0.6,
+					pin: true,
+				},
+			}
+		)
+		return () => {
+			{
+				/* A return function for killing the animation on component unmount */
+			}
+			pin.kill()
+		}
+	}, [])
+
 	return (
 		<div className="packaging2">
 			<div className="packaging2-header">
@@ -60,10 +79,7 @@ const Packaging2 = () => {
 					/>
 				</video>
 			</div>
-			<div
-				className="packaging2-container"
-				ref={targetRef}
-			>
+			<div className="packaging2-container">
 				<img
 					className="package-bg3"
 					src={assets.packaging_bg2}
@@ -185,13 +201,16 @@ const Packaging2 = () => {
 						alt=""
 					/>
 				</div>
-				<div className="package2-subContainer4">
-					<motion.div
+				<div
+					className="package2-subContainer4"
+					ref={triggerRef}
+				>
+					<div
 						className="image-container"
-						style={{ x }}
+						ref={sectionRef1}
 					>
 						{packagingImages.map((items, index) => (
-							<div className="package-imageContainer">
+							<div className="package-imageContainer scroll-section-inner">
 								<img
 									key={index}
 									src={items.img}
@@ -199,10 +218,10 @@ const Packaging2 = () => {
 								/>
 							</div>
 						))}
-					</motion.div>
-					<motion.div
+					</div>
+					<div
 						className="image-container image-container2"
-						style={{ x: xx }}
+						// ref={sectionRef2}
 					>
 						{packagingImages.map((items, index) => (
 							<div className="package-imageContainer">
@@ -213,10 +232,10 @@ const Packaging2 = () => {
 								/>
 							</div>
 						))}
-					</motion.div>
-					<motion.div
+					</div>
+					<div
 						className="image-container"
-						style={{ x: xxx }}
+						// ref={sectionRef3}
 					>
 						{packagingImages.map((items, index) => (
 							<div className="package-imageContainer">
@@ -227,7 +246,7 @@ const Packaging2 = () => {
 								/>
 							</div>
 						))}
-					</motion.div>
+					</div>
 				</div>
 			</div>
 		</div>

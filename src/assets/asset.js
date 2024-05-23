@@ -85,6 +85,12 @@ import seo_img2 from "./seoimg2.png"
 import seo_img3 from "./seoimg3.png"
 import seo_img4 from "./seoimg4.png"
 import socialMedia_img from "./socialMediaImg.png"
+import webpage1 from "./webpage1.png"
+import webpage2 from "./webpage2.png"
+import webpage3 from "./webpage3.png"
+import webpage4 from "./webpage4.png"
+import webpage5 from "./webpage5.png"
+import webpage6 from "./webpage6.png"
 
 export const assets = {
 	c9logo,
@@ -174,6 +180,12 @@ export const assets = {
 	socialMedia_v5,
 	socialMedia_v6,
 	socialMedia_v7,
+	webpage1,
+	webpage2,
+	webpage3,
+	webpage4,
+	webpage5,
+	webpage6,
 }
 
 export const homeCorosal = [
@@ -296,6 +308,33 @@ export const questionnarie = [
 	{
 		id: 3,
 		name: "Digital",
+	},
+]
+
+export const parallaxEffect = [
+	{
+		id: 1,
+		img: webpage1,
+	},
+	{
+		id: 2,
+		img: webpage2,
+	},
+	{
+		id: 3,
+		img: webpage3,
+	},
+	{
+		id: 4,
+		img: webpage4,
+	},
+	{
+		id: 5,
+		img: webpage5,
+	},
+	{
+		id: 6,
+		img: webpage6,
 	},
 ]
 

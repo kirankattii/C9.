@@ -18,7 +18,10 @@ const NavHover = () => {
 				/>
 				<p>SOCIAL MEDIA MARKETING</p>
 			</motion.div>
-			<motion.div whileHover={{ scale: 0.85 }}>
+			<motion.div
+				whileHover={{ scale: 0.85 }}
+				onClick={() => navigate("/web-development")}
+			>
 				<img
 					src={assets.aboutService2}
 					alt=""

@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion"
 
 const SocialMedia = () => {
 	const videoRef = useRef(null)
+	const headlineRef = useRef(null)
 
 	useEffect(() => {
 		const handleScroll = () => {
@@ -38,6 +39,25 @@ const SocialMedia = () => {
 	const md = useTransform(scrollYProgress, [0, 1], [0, -550])
 
 	const lg = useTransform(scrollYProgress, [0, 1], [0, -250])
+
+	useEffect(() => {
+		const handleScroll = () => {
+			const headline = headlineRef.current
+			const rect = headline.getBoundingClientRect()
+
+			if (rect.bottom <= window.innerHeight) {
+				headline.style.animation = "shrinkAndMove 2s forwards"
+			} else {
+				headline.style.animation = ""
+			}
+		}
+
+		window.addEventListener("scroll", handleScroll)
+
+		return () => {
+			window.removeEventListener("scroll", handleScroll)
+		}
+	}, [])
 
 	return (
 		<div
@@ -73,6 +93,7 @@ const SocialMedia = () => {
 							autoPlay
 							loop
 							controls
+							muted
 						>
 							<source
 								src={assets.socialMedia_v1}
@@ -98,6 +119,7 @@ const SocialMedia = () => {
 								<video
 									autoPlay
 									muted
+									loop
 								>
 									<source
 										src={assets.socialMedia_v3}
@@ -146,7 +168,110 @@ const SocialMedia = () => {
 								</video>
 							</div>
 						</div>
+						<div className="socialmedia-videoContent2">
+							<div className="socialmedia-videoContent2-left">
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v5}
+										type="video/mp4"
+									/>
+								</video>
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v6}
+										type="video/mp4"
+									/>
+								</video>
+							</div>
+							<div className="socialmedia-videoContent2-middle">
+								<h2>Our Digital Marketing Process</h2>
+								<ul>
+									<li>
+										<h3>Strategic Branding and Positioning: </h3>
+										<p>
+											We define a compelling brand identity and strategy based
+											on deep industry and competitor analysis for maximum
+											impact.
+										</p>
+									</li>
+									<li>
+										<h3>Website Optimization and Content Marketing: </h3>
+										<p>
+											We enhance your website’s design, functionality, and SEO,
+											and create engaging content to establish your thought
+											leadership.
+										</p>
+									</li>
+									<li>
+										<h3>
+											Targeted Social Media Campaigns and Digital Advertising:
+										</h3>
+										<p>
+											We execute targeted social media and digital advertising
+											campaigns to broaden your reach and engage potential
+											customers.
+										</p>
+									</li>
+								</ul>
+							</div>
+							<div className="socialmedia-videoContent2-right">
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v7}
+										type="video/mp4"
+									/>
+								</video>
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v3}
+										type="video/mp4"
+									/>
+								</video>
+							</div>
+						</div>
 					</div>
+				</div>
+				<div className="socialMedia-connect">
+					<div>
+						<h1 ref={headlineRef}>Connect With C9 Ads Today</h1>
+						<p>
+							Ready to transform your digital marketing strategy and see
+							tangible results? Connect with C9 Ads today.  Let’s discuss how we
+							can elevate your online presence and turn digital channels into
+							pathways of growth for your business.
+						</p>
+					</div>
+					<form>
+						<label htmlFor="">Company Name</label>
+						<input type="text" />
+						<label htmlFor="">Email</label>
+						<input type="text" />
+						<label htmlFor="">Phone</label>
+						<input type="text" />
+						<label htmlFor="">Message</label>
+						<textarea
+							name=""
+							id=""
+							rows={4}
+						/>
+						<button>Send Message</button>
+					</form>
 				</div>
 			</div>
 		</div>

@@ -121,7 +121,7 @@ const Navbar = () => {
 								<Link to="/seo">SEO</Link>
 								<hr />
 
-								<Link>Web Development</Link>
+								<Link to="/web-development">Web Development</Link>
 								<hr />
 
 								<Link to="/social-media-marketing">Social Media Marketing</Link>

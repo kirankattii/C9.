@@ -21,6 +21,7 @@ import Blog from "./Components/Blog/Blog"
 import Packaging2 from "./Components/Packaging/Packaging2"
 import Seo from "./Components/Seo/Seo"
 import SocialMedia from "./Components/SocialMedia/SocialMedia"
+import Web from "./Components/Web/Web"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -93,7 +94,10 @@ const App = () => {
 					path="/social-media-marketing"
 					element={<SocialMedia />}
 				/>
-
+				<Route
+					path="/web-development"
+					element={<Web />}
+				/>
 				<Route
 					path="/values"
 					element={<Values />}

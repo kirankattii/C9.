@@ -1,0 +1,9 @@
+.parallaxEffect div {
+  display: flex;
+  height: 100vh;
+}
+
+.parallaxEffect div img {
+  object-fit: cover;
+  width: 16.6%;
+}
