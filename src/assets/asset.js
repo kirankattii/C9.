@@ -77,6 +77,9 @@ import socialMedia_v4 from "./videos/socialMedia_v4.mp4"
 import socialMedia_v5 from "./videos/socialMedia_v5.mp4"
 import socialMedia_v6 from "./videos/socialMedia_v6.mp4"
 import socialMedia_v7 from "./videos/socialMedia_v7.mp4"
+import web_v1 from "./videos/web_v1.mp4"
+import web_v2 from "./videos/web_v2.mp4"
+import web_v3 from "./videos/web_v3.mp4"
 import packag_img1 from "./package_img1.png"
 import packag_img2 from "./packaging_img2.png"
 import packag_img3 from "./packagingImg3.png"
@@ -186,6 +189,9 @@ export const assets = {
 	webpage4,
 	webpage5,
 	webpage6,
+	web_v1,
+	web_v2,
+	web_v3,
 }
 
 export const homeCorosal = [
