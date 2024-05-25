@@ -106,7 +106,7 @@ const Navbar = () => {
 							<div className="media-dropdown">
 								<Link
 									// onClick={() => setMobileMenu(false)}
-									to="/work"
+									to="/logo"
 								>
 									LOGO
 								</Link>

@@ -1,0 +1,1577 @@
+.logo-work {
+  width: 100%;
+  /* margin-top: 10vh; */
+  min-height: 100vh;
+  position: relative;
+  background: #1e1e1e;
+  /* background: url('../../assets/LOGO.svg'); */
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: -2;
+  /* overflow-x: hidden; */
+
+}
+
+.work-logo {
+  background: #1e1e1e;
+  height: 100vh;
+
+  position: fixed;
+  font-size: 700px;
+  display: flex;
+  padding-top: 35vh;
+  letter-spacing: 50px;
+  align-items: center;
+  width: 100%;
+  padding-left: 75px;
+  font-family: 'AmazDooMLeft';
+  z-index: -1;
+  color: #c63e23;
+
+  justify-content: center;
+}
+
+.logo-work-container {
+  width: 100%;
+  padding-top: 20px;
+  min-height: 100vh;
+  /* overflow-y: auto; */
+
+  color: #fff;
+  z-index: 10;
+  position: relative;
+}
+
+.logo1, .logo2, .logo3, .logo4, .logo5, .logo6, .logo7 {
+  /* background-color: rgba(0, 0, 0, 0.); */
+  z-index: 20;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+
+}
+
+.logo-content8, .logo-content6 {
+  z-index: 20;
+  position: absolute;
+}
+
+.logo-work-container div h2 {
+
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* bottom: 150px; */
+  color: #4d4d4d;
+  /* color: #000; */
+  font-family: 'AfterglowRegular';
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+
+
+
+.logo-work-container div img {
+  /* z-index: 10; */
+  /* position: absolute; */
+  /* width: 280px; */
+}
+
+.logo-work-container p {
+  color: #fff;
+  position: absolute;
+  font-size: 20px;
+  letter-spacing: 0.8px;
+  font-family: 'AfterglowRegular';
+  line-height: 1.3;
+}
+
+.logo-content6 ol {
+
+  font-size: 20px;
+  line-height: 1.3;
+  font-family: 'AfterglowRegular';
+  letter-spacing: 0.8px;
+  list-style-type: decimal;
+  margin-left: 20px;
+  /* Use decimal numbering (1, 2, 3, ...) */
+}
+
+.logo-content6 ol li {
+  margin-bottom: 10px;
+}
+
+.logo-content6 h3, .logo-content8 h3 {
+  font-size: 32px;
+  padding-bottom: 10px;
+}
+
+.logo-content6 span, .logo-content8 span {
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 1.3;
+  font-family: 'AfterglowRegular';
+  letter-spacing: 0.8px;
+}
+
+.logo-content1 {
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  text-align: center;
+  display: flex;
+  margin: auto;
+  word-spacing: 4px;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.4);
+
+}
+
+.logo-content2 {
+  top: 85%;
+  width: 55%;
+  right: 10%;
+}
+
+.logo-content3 {
+  top: 125%;
+  width: 30%;
+  left: 35%;
+  text-align: justify;
+}
+
+.logo-content4 {
+  top: 172%;
+  width: 30%;
+  right: 5%;
+}
+
+.logo-content5 {
+  top: 185%;
+  width: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 100px 50px;
+}
+
+.logo-content6 {
+  top: 280%;
+  width: 50%;
+  right: 10%;
+}
+
+.logo-content7 {
+  top: 350%;
+  left: 50%;
+  width: 60%;
+  transform: translateX(-50%);
+}
+
+.logo-content8 {
+  top: 390%;
+  left: 5%;
+  width: 90%;
+  /* padding-bottom: 150px; */
+}
+
+.logo1 {
+  /* right: 250px; */
+  top: 40%;
+  right: 15%;
+}
+
+.logo1 img {
+  width: 450px;
+}
+
+.logo1 h2 {
+  bottom: 225px;
+}
+
+.logo2 {
+  /* top: 210px; */
+  /* left: 100px; */
+  top: 60%;
+  left: 6%;
+}
+
+.logo2 img {
+  width: 410px;
+
+}
+
+.logo2 img::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  /* Adjust the values as needed */
+  z-index: 1;
+  /* Set z-index to place the shadow on top */
+}
+
+.logo2 h2 {
+  bottom: 205px;
+}
+
+.logo3 {
+  /* top: 600px;
+  right: 50px; */
+  right: 5%;
+  top: 105%
+}
+
+.logo3 img {
+  width: 450px;
+}
+
+.logo3 h2 {
+  bottom: 270px
+}
+
+.logo4 {
+  top: 150%;
+  left: 25%;
+}
+
+.logo4 h2 {
+  bottom: 150px;
+}
+
+.logo4 img {
+  width: 500px;
+}
+
+.logo5 {
+  top: 200%;
+  right: 5%;
+}
+
+.logo5 img {
+  width: 380px;
+}
+
+.logo5 h2 {
+  bottom: 155px;
+}
+
+.logo6 {
+  top: 200%;
+  left: 3%;
+}
+
+.logo6 img {
+  width: 450px;
+}
+
+.logo6 h2 {
+  bottom: 155px;
+}
+
+.logo7 {
+  top: 220%;
+  left: 35%;
+}
+
+.logo7 img {
+  width: 450px;
+}
+
+.logo7 h2 {
+  bottom: 150px;
+}
+
+.logo-footer {
+  position: absolute;
+  top: 420%;
+  width: 100%;
+}
+
+@media(max-width:1300px) {
+
+  .logo-content1 {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    word-spacing: 4px;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.4);
+
+  }
+
+  .logo-content2 {
+    top: 85%;
+    width: 55%;
+    right: 4%;
+  }
+
+  .logo-content3 {
+    top: 125%;
+    width: 40%;
+    left: 8%;
+    text-align: justify;
+  }
+
+  .logo-content4 {
+    top: 190%;
+    width: 40%;
+    right: 5%;
+  }
+
+  .logo-content5 {
+    top: 185%;
+    width: 45%;
+    left: 00%;
+    transform: translateX(0%);
+    padding: 100px 50px;
+  }
+
+  .logo-content6 {
+    top: 310%;
+    width: 60%;
+    right: 05%;
+  }
+
+  .logo-content7 {
+    top: 385%;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+  }
+
+  .logo-content8 {
+    top: 420%;
+    left: 5%;
+    width: 80%;
+    /* padding-bottom: 150px; */
+  }
+
+  .logo1 {
+    /* right: 250px; */
+    top: 40%;
+    right: 0%;
+  }
+
+  .logo1 img {
+    width: 450px;
+  }
+
+  .logo1 h2 {
+    bottom: 225px;
+  }
+
+  .logo2 {
+    /* top: 210px; */
+    /* left: 100px; */
+    top: 60%;
+    left: 0%;
+  }
+
+  .logo2 img {
+    width: 410px;
+
+  }
+
+  .logo2 img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Adjust the values as needed */
+    z-index: 1;
+    /* Set z-index to place the shadow on top */
+  }
+
+  .logo2 h2 {
+    bottom: 205px;
+  }
+
+  .logo3 {
+    /* top: 600px;
+  right: 50px; */
+    right: 0%;
+    top: 125%
+  }
+
+  .logo3 img {
+    width: 450px;
+  }
+
+  .logo3 h2 {
+    bottom: 270px
+  }
+
+  .logo4 {
+    top: 150%;
+    left: 0;
+  }
+
+  .logo4 h2 {
+    bottom: 150px;
+  }
+
+  .logo4 img {
+    width: 500px;
+  }
+
+  .logo5 {
+    top: 210%;
+    right: 5%;
+  }
+
+  .logo5 img {
+    width: 380px;
+  }
+
+  .logo5 h2 {
+    bottom: 155px;
+  }
+
+  .logo6 {
+    top: 225%;
+    left: 0%;
+  }
+
+  .logo6 img {
+    width: 450px;
+  }
+
+  .logo6 h2 {
+    bottom: 155px;
+  }
+
+  .logo7 {
+    top: 260%;
+    left: 53%;
+  }
+
+  .logo7 img {
+    width: 450px;
+  }
+
+  .logo7 h2 {
+    bottom: 150px;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 310%;
+    width: 100%;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 455%;
+    width: 100%;
+  }
+}
+
+@media(max-width:1000px) {
+  .work-logo {
+    background: #1e1e1e;
+    height: 100vh;
+
+    position: fixed;
+    font-size: 500px;
+
+    display: flex;
+    padding-top: 35vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 20px;
+    padding-left: 50px;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 355%;
+    width: 100%;
+  }
+
+  .logo-work-container div h2 {
+    font-size: 16.5px;
+  }
+
+  .logo-work-container p {
+    color: #fff;
+    position: absolute;
+    font-size: 18px;
+    letter-spacing: 0.8px;
+    font-family: 'AfterglowRegular';
+    line-height: 1.3;
+  }
+
+  .logo-content6 ol {
+
+    font-size: 18px;
+    line-height: 1.3;
+    font-family: 'AfterglowRegular';
+    letter-spacing: 0.8px;
+    list-style-type: decimal;
+    margin-left: 20px;
+    /* Use decimal numbering (1, 2, 3, ...) */
+  }
+
+  .logo-content6 ol li {
+    margin-bottom: 10px;
+  }
+
+  .logo-content6 h3, .logo-content8 h3 {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  .logo-content6 span, .logo-content8 span {
+    font-size: 18px;
+    margin-top: 10px;
+    line-height: 1.3;
+    font-family: 'AfterglowRegular';
+    letter-spacing: 0.8px;
+  }
+
+  .logo-content1 {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    word-spacing: 4px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+
+  }
+
+  .logo-content2 {
+    top: 75%;
+    width: 50%;
+    right: 4%;
+  }
+
+  .logo-content3 {
+    top: 120%;
+    width: 40%;
+    left: 8%;
+    text-align: justify;
+  }
+
+  .logo-content4 {
+    top: 185%;
+    width: 50%;
+    right: 5%;
+  }
+
+  .logo-content5 {
+    top: 195%;
+    width: 70%;
+    left: 00%;
+    transform: translateX(0%);
+    padding: 100px 50px;
+  }
+
+  .logo-content6 {
+    top: 310%;
+    width: 80%;
+    right: 0%;
+    transform: translateX(-15%);
+  }
+
+  .logo-content7 {
+    top: 385%;
+    left: 50%;
+    width: 60%;
+    transform: translateX(-50%);
+  }
+
+  .logo-content8 {
+    top: 420%;
+    left: 5%;
+    width: 80%;
+    /* padding-bottom: 150px; */
+  }
+
+  .logo1 {
+    /* right: 250px; */
+    top: 40%;
+    right: 0%;
+  }
+
+  .logo1 img {
+    width: 360px;
+  }
+
+  .logo1 h2 {
+    bottom: 180px;
+  }
+
+  .logo2 {
+    /* top: 210px; */
+    /* left: 100px; */
+    top: 60%;
+    left: 0%;
+  }
+
+  .logo2 img {
+    width: 320px;
+
+  }
+
+  .logo2 img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Adjust the values as needed */
+    z-index: 1;
+    /* Set z-index to place the shadow on top */
+  }
+
+  .logo2 h2 {
+    bottom: 165px;
+  }
+
+  .logo3 {
+    /* top: 600px;
+  right: 50px; */
+    right: 0%;
+    top: 120%
+  }
+
+  .logo3 img {
+    width: 380px;
+  }
+
+  .logo3 h2 {
+    bottom: 230px
+  }
+
+  .logo4 {
+    top: 150%;
+    left: 0;
+  }
+
+  .logo4 h2 {
+    bottom: 120px;
+  }
+
+  .logo4 img {
+    width: 380px;
+  }
+
+  .logo5 {
+    top: 220%;
+    right: 0%;
+  }
+
+  .logo5 img {
+    width: 350px;
+  }
+
+  .logo5 h2 {
+    bottom: 155px;
+  }
+
+  .logo6 {
+    top: 230%;
+    left: 0%;
+  }
+
+  .logo6 img {
+    width: 380px;
+  }
+
+  .logo6 h2 {
+    bottom: 155px;
+  }
+
+  .logo7 {
+    top: 270%;
+    left: 53%;
+  }
+
+  .logo7 img {
+    width: 300px;
+  }
+
+  .logo7 h2 {
+    bottom: 105px;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 310%;
+    width: 100%;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 460%;
+    width: 100%;
+  }
+
+}
+
+
+
+@media(max-width:700px) {
+  .work-logo {
+    background: #1e1e1e;
+
+    position: fixed;
+    font-size: 400px;
+    height: 100vh;
+    display: flex;
+    padding-top: 13vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 10px;
+    padding-left: 35px;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 300%;
+    width: 100%;
+  }
+
+  .logo-work-container div h2 {
+    font-size: 14px;
+  }
+
+  .logo-work-container {
+    padding-top: 80px;
+  }
+
+  .logo-work-container p {
+    font-size: 18px;
+    /* text-align: ; */
+  }
+
+
+
+  .logo-work-container div h2 {
+    font-size: 15.5px;
+  }
+
+  .logo-work-container p {
+    color: #fff;
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-family: 'AfterglowRegular';
+    line-height: 1.2;
+  }
+
+  .logo-content6 ol {
+
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'AfterglowRegular';
+    letter-spacing: 0.8px;
+    list-style-type: decimal;
+    margin-left: 20px;
+    /* Use decimal numbering (1, 2, 3, ...) */
+  }
+
+  .logo-content6 ol li {
+    margin-bottom: 10px;
+  }
+
+  .logo-content6 h3, .logo-content8 h3 {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  .logo-content6 span, .logo-content8 span {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.2;
+    font-family: 'AfterglowRegular';
+    letter-spacing: 0.8px;
+  }
+
+  .logo-content1 {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 95%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    word-spacing: 4px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+
+  }
+
+  .logo-content2 {
+    top: 75%;
+    width: 50%;
+    right: 4%;
+  }
+
+  .logo-content3 {
+    top: 122%;
+    width: 60%;
+    left: 8%;
+    text-align: left;
+  }
+
+  .logo-content4 {
+    top: 215%;
+    width: 60%;
+    right: 5%;
+  }
+
+  .logo-content5 {
+    top: 255%;
+    width: 75%;
+    left: 00%;
+    transform: translateX(0%);
+    padding: 100px 50px;
+  }
+
+  .logo-content6 {
+    top: 385%;
+    width: 80%;
+    right: 0%;
+    transform: translateX(-15%);
+  }
+
+  .logo-content7 {
+    top: 450%;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+  }
+
+  .logo-content8 {
+    top: 480%;
+    left: 8%;
+    width: 85%;
+    /* padding-bottom: 150px; */
+  }
+
+  .logo1 {
+    /* right: 250px; */
+    top: 45%;
+    right: 0%;
+  }
+
+  .logo1 img {
+    width: 320px;
+  }
+
+  .logo1 h2 {
+    bottom: 160px;
+  }
+
+  .logo2 {
+    /* top: 210px; */
+    /* left: 100px; */
+    top: 70%;
+    left: 0%;
+  }
+
+  .logo2 img {
+    width: 250px;
+
+  }
+
+  .logo2 img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Adjust the values as needed */
+    z-index: 1;
+    /* Set z-index to place the shadow on top */
+  }
+
+  .logo2 h2 {
+    bottom: 130px;
+  }
+
+  .logo3 {
+    /* top: 600px;
+  right: 50px; */
+    right: 5%;
+    top: 135%
+  }
+
+  .logo3 img {
+    width: 350px;
+  }
+
+  .logo3 h2 {
+    bottom: 230px
+  }
+
+  .logo4 {
+    top: 185%;
+    left: 0;
+  }
+
+  .logo4 h2 {
+    bottom: 120px;
+  }
+
+  .logo4 img {
+    width: 320px;
+  }
+
+  .logo5 {
+    top: 230%;
+    right: 0%;
+  }
+
+  .logo5 img {
+    width: 350px;
+  }
+
+  .logo5 h2 {
+    bottom: 155px;
+  }
+
+  .logo6 {
+    top: 290%;
+    left: 0%;
+  }
+
+  .logo6 img {
+    width: 350px;
+  }
+
+  .logo6 h2 {
+    bottom: 155px;
+  }
+
+  .logo7 {
+    top: 350%;
+    left: 35%;
+  }
+
+  .logo7 img {
+    width: 300px;
+  }
+
+  .logo7 h2 {
+    bottom: 105px;
+  }
+
+
+
+  .logo-footer {
+    position: absolute;
+    top: 520%;
+    width: 100%;
+  }
+
+}
+
+
+
+
+@media(max-width:500px) {
+  .work-logo {
+    background: #1e1e1e;
+
+    position: fixed;
+    font-size: 280px;
+    height: 100vh;
+    display: flex;
+    padding-top: 13vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 10px;
+    padding-left: 25px;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 370%;
+    width: 100%;
+  }
+
+
+
+  .logo-work-container div h2 {
+    font-size: 14px;
+  }
+
+  .logo-work-container {
+    padding-top: 80px;
+  }
+
+  .logo-work-container p {
+    font-size: 18px;
+    /* text-align: ; */
+  }
+
+
+
+  .logo-work-container div h2 {
+    font-size: 15.5px;
+  }
+
+  .logo-work-container p {
+    color: #fff;
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-family: 'AfterglowRegular';
+    line-height: 1.2;
+  }
+
+  .logo-content6 ol {
+
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'AfterglowRegular';
+    letter-spacing: 0.8px;
+    list-style-type: decimal;
+    margin-left: 20px;
+    /* Use decimal numbering (1, 2, 3, ...) */
+  }
+
+  .logo-content6 ol li {
+    margin-bottom: 10px;
+  }
+
+  .logo-content6 h3, .logo-content8 h3 {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  .logo-content6 span, .logo-content8 span {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.2;
+    font-family: 'AfterglowRegular';
+    letter-spacing: 0.8px;
+  }
+
+  .logo-content1 {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    word-spacing: 4px;
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.4);
+
+  }
+
+  .logo-content2 {
+    top: 85%;
+    width: 90%;
+    right: 4%;
+  }
+
+  .logo-content3 {
+    top: 160%;
+    width: 80%;
+    left: 10%;
+    text-align: right;
+  }
+
+  .logo-content4 {
+    top: 230%;
+    width: 80%;
+    right: 10%;
+  }
+
+  .logo-content5 {
+    top: 270%;
+    width: 100%;
+    left: 00%;
+    text-align: right;
+    transform: translateX(0%);
+    padding: 100px 50px;
+  }
+
+  .logo-content6 {
+    top: 435%;
+    width: 80%;
+    right: 0%;
+    transform: translateX(-15%);
+  }
+
+  .logo-content7 {
+    top: 515%;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+  }
+
+  .logo-content8 {
+    top: 550%;
+    left: 8%;
+    width: 85%;
+    /* padding-bottom: 150px; */
+  }
+
+  .logo1 {
+    /* right: 250px; */
+    top: 52%;
+    right: 0%;
+  }
+
+  .logo1 img {
+    width: 350px;
+  }
+
+  .logo1 h2 {
+    bottom: 175px;
+  }
+
+  .logo2 {
+    /* top: 210px; */
+    /* left: 100px; */
+    top: 115%;
+    left: 0%;
+  }
+
+  .logo2 img {
+    width: 300px;
+
+  }
+
+  .logo2 img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Adjust the values as needed */
+    z-index: 1;
+    /* Set z-index to place the shadow on top */
+  }
+
+  .logo2 h2 {
+    bottom: 150px;
+  }
+
+  .logo3 {
+    /* top: 600px;
+  right: 50px; */
+    right: 0%;
+    top: 175%
+  }
+
+  .logo3 img {
+    width: 350px;
+  }
+
+  .logo3 h2 {
+    bottom: 230px
+  }
+
+  .logo4 {
+    top: 250%;
+    left: 0;
+  }
+
+  .logo4 h2 {
+    bottom: 120px;
+  }
+
+  .logo4 img {
+    width: 320px;
+  }
+
+  .logo5 {
+    top: 300%;
+    right: 0%;
+  }
+
+  .logo5 img {
+    width: 350px;
+  }
+
+  .logo5 h2 {
+    bottom: 155px;
+  }
+
+  .logo6 {
+    top: 345%;
+    left: 0%;
+  }
+
+  .logo6 img {
+    width: 300px;
+  }
+
+  .logo6 h2 {
+    bottom: 110px;
+  }
+
+  .logo7 {
+    top: 400%;
+    left: 15%;
+  }
+
+  .logo7 img {
+    width: 300px;
+  }
+
+  .logo7 h2 {
+    bottom: 105px;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 310%;
+    width: 100%;
+  }
+
+
+  .logo-footer {
+    position: absolute;
+    top: 600%;
+    width: 100%;
+  }
+
+}
+
+@media(max-width:450px) {
+  .work-logo {
+    background: #1e1e1e;
+
+    position: fixed;
+    font-size: 280px;
+    height: 100vh;
+    display: flex;
+    padding-top: 13vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 10px;
+    padding-left: 25px;
+    justify-content: center;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 370%;
+    width: 100%;
+  }
+
+
+
+  .logo-work-container div h2 {
+    font-size: 14px;
+  }
+
+  .logo-work-container {
+    padding-top: 80px;
+  }
+
+  .logo-work-container p {
+    font-size: 18px;
+    /* text-align: ; */
+  }
+
+
+
+  .logo-work-container div h2 {
+    font-size: 15.5px;
+  }
+
+  .logo-work-container p {
+    color: #fff;
+    position: absolute;
+    font-size: 16px;
+    letter-spacing: 0.8px;
+    font-family: 'AfterglowRegular';
+    line-height: 1.2;
+  }
+
+  .logo-content6 ol {
+
+    font-size: 16px;
+    line-height: 1.2;
+    font-family: 'AfterglowRegular';
+    letter-spacing: 0.8px;
+    list-style-type: decimal;
+    margin-left: 20px;
+    /* Use decimal numbering (1, 2, 3, ...) */
+  }
+
+  .logo-content6 ol li {
+    margin-bottom: 10px;
+  }
+
+  .logo-content6 h3, .logo-content8 h3 {
+    font-size: 32px;
+    padding-bottom: 10px;
+  }
+
+  .logo-content6 span, .logo-content8 span {
+    font-size: 16px;
+    margin-top: 10px;
+    line-height: 1.2;
+    font-family: 'AfterglowRegular';
+    letter-spacing: 0.8px;
+  }
+
+  .logo-content1 {
+    top: 15%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    display: flex;
+    margin: auto;
+    word-spacing: 4px;
+    margin-top: 20px;
+    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.4);
+
+  }
+
+  .logo-content2 {
+    top: 108%;
+    width: 90%;
+    right: 4%;
+  }
+
+  .logo-content3 {
+    top: 205%;
+    width: 80%;
+    left: 10%;
+    text-align: right;
+  }
+
+  .logo-content4 {
+    top: 294%;
+    width: 80%;
+    right: 10%;
+  }
+
+  .logo-content5 {
+    top: 340%;
+    width: 100%;
+    left: 00%;
+    text-align: right;
+    transform: translateX(0%);
+    padding: 100px 50px;
+  }
+
+  .logo-content6 {
+    top: 535%;
+    width: 80%;
+    right: 0%;
+    transform: translateX(-15%);
+  }
+
+  .logo-content7 {
+    top: 635%;
+    left: 50%;
+    width: 80%;
+    transform: translateX(-50%);
+  }
+
+  .logo-content8 {
+    top: 675%;
+    left: 8%;
+    width: 85%;
+   
+  }
+
+  .logo1 {
+    /* right: 250px; */
+    top: 64%;
+    right: 0%;
+  }
+
+  .logo1 img {
+    width: 350px;
+  }
+
+  .logo1 h2 {
+    bottom: 175px;
+  }
+
+  .logo2 {
+    /* top: 210px; */
+    /* left: 100px; */
+    top: 148%;
+    left: 0%;
+  }
+
+  .logo2 img {
+    width: 300px;
+
+  }
+
+  .logo2 img::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    /* Adjust the values as needed */
+    z-index: 1;
+    /* Set z-index to place the shadow on top */
+  }
+
+  .logo2 h2 {
+    bottom: 150px;
+  }
+
+  .logo3 {
+    /* top: 600px;
+  right: 50px; */
+    right: 0%;
+    top: 225%
+  }
+
+  .logo3 img {
+    width: 350px;
+  }
+
+  .logo3 h2 {
+    bottom: 230px
+  }
+
+  .logo4 {
+    top: 318%;
+    left: 0;
+  }
+
+  .logo4 h2 {
+    bottom: 120px;
+  }
+
+  .logo4 img {
+    width: 320px;
+  }
+
+  .logo5 {
+    top: 375%;
+    right: 0%;
+  }
+
+  .logo5 img {
+    width: 330px;
+  }
+
+  .logo5 h2 {
+    bottom: 155px;
+  }
+
+  .logo6 {
+    top: 425%;
+    left: 0%;
+  }
+
+  .logo6 img {
+    width: 300px;
+  }
+
+  .logo6 h2 {
+    bottom: 110px;
+  }
+
+  .logo7 {
+    top: 490%;
+    left: 15%;
+  }
+
+  .logo7 img {
+    width: 300px;
+  }
+
+  .logo7 h2 {
+    bottom: 105px;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 310%;
+    width: 100%;
+  }
+
+  .logo-footer {
+    position: absolute;
+    top: 735%;
+    width: 100%;
+  }
+
+}
+
+
+@media(max-width:400px) {
+  .work-logo {
+    background: #1e1e1e;
+
+    position: fixed;
+    font-size: 250px;
+    height: 100vh;
+    display: flex;
+    padding-top: 13vh;
+
+    align-items: center;
+    width: 100%;
+
+    font-family: 'AmazDooMLeft';
+    z-index: -1;
+    color: #c63e23;
+    letter-spacing: 10px;
+    padding-left: 25px;
+    justify-content: center;
+  }
+}

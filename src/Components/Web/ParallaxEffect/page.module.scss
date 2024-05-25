@@ -1,0 +1,61 @@
+.gallery {
+	height: 250vh;
+	background: rgb(45, 45, 45);
+	position: relative;
+	display: flex;
+	// gap: 2vw;
+	// padding: 2vw;
+	box-sizing: border-box;
+	overflow: hidden;
+	.column {
+		position: relative;
+		height: 100%;
+		width: 20%;
+		min-width: 250px;
+		display: flex;
+		flex-direction: column;
+		gap: 2vw;
+		.imageContainer {
+			height: 100%;
+			width: 100%;
+			position: relative;
+			border-radius: 1vw;
+			overflow: hidden;
+			img {
+				object-fit: cover;
+				margin-left: -10px;
+			}
+		}
+		&:nth-of-type(1) {
+			top: -24%;
+		}
+		&:nth-of-type(2) {
+			top: -68%;
+		}
+		&:nth-of-type(3) {
+			top: -25%;
+		}
+		&:nth-of-type(4) {
+			top: -102%;
+		}
+		&:nth-of-type(5) {
+			top: -25%;
+		}
+	}
+}
+.spacer {
+	height: 20vh;
+}
+.spacer2 {
+	height: 25vh;
+	width: 100%;
+	h1 {
+		color: #fff;
+		font-size: 120px;
+		font-family: "MadeTommyMedium";
+
+		white-space: nowrap; /* Prevent text from wrapping */
+		overflow: hidden; /* Optional: Hide overflow if container is too small */
+		// text-overflow: ellipsis; /* Optional: Add ellipsis for overflow text */
+	}
+}

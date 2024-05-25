@@ -22,6 +22,7 @@ import Packaging2 from "./Components/Packaging/Packaging2"
 import Seo from "./Components/Seo/Seo"
 import SocialMedia from "./Components/SocialMedia/SocialMedia"
 import Web from "./Components/Web/Web"
+import Logo from "./Components/Logo/Logo"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -75,8 +76,8 @@ const App = () => {
 					element={<Contact />}
 				/>
 				<Route
-					path="/work"
-					element={<LogoWork />}
+					path="/logo"
+					element={<Logo />}
 				/>
 				{/* <Route
 					path="/packaging"

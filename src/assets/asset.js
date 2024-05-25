@@ -25,13 +25,13 @@ import social_media_marketing from "./social-media-marketing.png"
 import seo from "./seo.png"
 import logo_design from "./logo-design.png"
 import packaging_design from "./packaging-design.png"
-import logo1 from "./logo1.png"
-import logo2 from "./logo2.png"
-import logo3 from "./logo3.png"
-import logo4 from "./logo4.png"
-import logo5 from "./logo5.png"
-import logo6 from "./logo6.png"
-import logo7 from "./logo7.png"
+// import logo1 from "./logo1.png"
+// import logo2 from "./logo2.png"
+// import logo3 from "./logo3.png"
+// import logo4 from "./logo4.png"
+// import logo5 from "./logo5.png"
+// import logo6 from "./logo6.png"
+// import logo7 from "./logo7.png"
 import packaging1 from "./packaging1.png"
 import packaging2 from "./packaging2.png"
 import packaging3 from "./packaging3.png"
@@ -77,6 +77,7 @@ import socialMedia_v4 from "./videos/socialMedia_v4.mp4"
 import socialMedia_v5 from "./videos/socialMedia_v5.mp4"
 import socialMedia_v6 from "./videos/socialMedia_v6.mp4"
 import socialMedia_v7 from "./videos/socialMedia_v7.mp4"
+import logo_v1 from "./videos/logo_v1.mp4"
 import web_v1 from "./videos/web_v1.mp4"
 import web_v2 from "./videos/web_v2.mp4"
 import web_v3 from "./videos/web_v3.mp4"
@@ -94,6 +95,49 @@ import webpage3 from "./webpage3.png"
 import webpage4 from "./webpage4.png"
 import webpage5 from "./webpage5.png"
 import webpage6 from "./webpage6.png"
+
+import logos1 from "./logos/logo1.png"
+import logos2 from "./logos/logo2.png"
+import logos3 from "./logos/logo3.png"
+import logos4 from "./logos/logo4.png"
+import logos5 from "./logos/logo5.png"
+import logos6 from "./logos/logo6.png"
+import logos7 from "./logos/logo7.png"
+import logos8 from "./logos/logo8.png"
+import logos9 from "./logos/logo9.png"
+import logos10 from "./logos/logo10.png"
+import logos11 from "./logos/logo11.png"
+import logos12 from "./logos/logo12.png"
+import logos13 from "./logos/logo13.png"
+import logos14 from "./logos/logo14.png"
+import logos15 from "./logos/logo15.png"
+import logos16 from "./logos/logo16.png"
+import logos17 from "./logos/logo17.png"
+import logos18 from "./logos/logo18.png"
+import logos19 from "./logos/logo19.png"
+import logos20 from "./logos/logo20.png"
+import logos21 from "./logos/logo21.png"
+import logos22 from "./logos/logo22.png"
+import logos23 from "./logos/logo23.png"
+import logos24 from "./logos/logo24.png"
+import logos25 from "./logos/logo25.png"
+import logos26 from "./logos/logo26.png"
+import logos27 from "./logos/logo27.png"
+import logos28 from "./logos/logo28.png"
+import logos29 from "./logos/logo29.png"
+import logos30 from "./logos/logo30.png"
+import logos31 from "./logos/logo31.png"
+import logos32 from "./logos/logo32.png"
+import logos33 from "./logos/logo33.png"
+import logos34 from "./logos/logo34.png"
+import logos35 from "./logos/logo35.png"
+import logos36 from "./logos/logo36.png"
+import logos37 from "./logos/logo38.png"
+import logos38 from "./logos/logo39.png"
+import logos39 from "./logos/logo40.png"
+import logos40 from "./logos/logo41.png"
+import logos41 from "./logos/logo42.png"
+import logos42 from "./logos/logo45.png"
 
 export const assets = {
 	c9logo,
@@ -123,13 +167,48 @@ export const assets = {
 	seo,
 	logo_design,
 	packaging_design,
-	logo1,
-	logo2,
-	logo3,
-	logo4,
-	logo5,
-	logo6,
-	logo7,
+	logos1,
+	logos2,
+	logos3,
+	logos4,
+	logos5,
+	logos6,
+	logos7,
+	logos8,
+	logos9,
+	logos10,
+	logos11,
+	logos12,
+	logos13,
+	logos14,
+	logos15,
+	logos16,
+	logos17,
+	logos18,
+	logos19,
+	logos20,
+	logos21,
+	logos22,
+	logos23,
+	logos24,
+	logos25,
+	logos26,
+	logos27,
+	logos28,
+	logos29,
+	logos30,
+	logos31,
+	logos32,
+	logos33,
+	logos34,
+	logos35,
+	logos36,
+	logos37,
+	logos38,
+	logos39,
+	logos40,
+	logos41,
+	logos42,
 	packaging1,
 	packaging2,
 	packaging3,
@@ -192,6 +271,7 @@ export const assets = {
 	web_v1,
 	web_v2,
 	web_v3,
+	logo_v1,
 }
 
 export const homeCorosal = [
@@ -318,30 +398,19 @@ export const questionnarie = [
 ]
 
 export const parallaxEffect = [
-	{
-		id: 1,
-		img: webpage1,
-	},
-	{
-		id: 2,
-		img: webpage2,
-	},
-	{
-		id: 3,
-		img: webpage3,
-	},
-	{
-		id: 4,
-		img: webpage4,
-	},
-	{
-		id: 5,
-		img: webpage5,
-	},
-	{
-		id: 6,
-		img: webpage6,
-	},
+	webpage1,
+	webpage2,
+	webpage3,
+	webpage4,
+
+	// {
+	// 	id: 5,
+	// 	img: webpage5,
+	// },
+	// {
+	// 	id: 6,
+	// 	img: webpage6,
+	// },
 ]
 
 // Importing all packaging images
@@ -407,3 +476,5 @@ export const packagingImages = [
 	{ img: pack29 },
 	{ img: pack30 },
 ]
+
+export const logos = []

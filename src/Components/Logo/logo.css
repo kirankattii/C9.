@@ -1,0 +1,154 @@
+.logo2-container {
+  width: 100%;
+  min-height: 100vh;
+  font-size: 100px;
+}
+
+.logo-header {
+  width: 100%;
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  background: #1e1e1e;
+  justify-content: space-evenly;
+}
+
+.logo-header h1 {
+  white-space: nowrap;
+  font-size: 150px;
+  font-family: 'MadeTommySoft';
+  letter-spacing: 2px;
+  color: #EF4523;
+  /* text-align: center; */
+}
+
+.logo-subContainer1 {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+
+.video-wrapper {
+  position: relative;
+  /* Make this relative to apply the overlay correctly */
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  /* Ensure the video doesn't overflow */
+}
+
+.video-wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+  /* Ensure the overlay is above the video */
+}
+
+.video-wrapper video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  /* Ensure the video is below the overlay */
+}
+
+.logo-content1 {
+  position: absolute;
+  bottom: 50px;
+  width: 60%;
+  margin-left: 100px;
+  color: #fff;
+  z-index: 2;
+}
+
+.logo-content1 p {
+  font-family: 'MadeTommySoft';
+  font-size: 22px;
+  letter-spacing: 1.5px;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+.logo-content1 h2 {
+  color: #EF4523;
+  font-family: 'AllerDisplay';
+  font-size: 120px;
+  font-weight: 300;
+}
+
+.logo-content1 p:last-child {
+  margin-top: -20px;
+
+}
+
+.logo-subContainer2 {
+  background: #1e1e1e;
+  width: 100%;
+  min-height: 70vh;
+  font-family: 'MadeTommySoft';
+  color: #fff;
+  padding: 50px;
+  padding-top: 100px;
+  padding-left: 100px;
+
+}
+
+.logo-subContainer2 h1 {
+  font-size: 26px;
+  font-weight: 300;
+}
+
+.logo-subContainer2 p {
+  width: 55%;
+  padding: 15px 0;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.logo-subContainer2 ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-left: 20px;
+  width: 53%;
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 300;
+  list-style-type: circle;
+}
+
+
+.logo-subContaine3 {
+  min-height: 80vh;
+  background: #1e1e1e;
+  color: #fff;
+  font-family: 'AllerDisplay';
+  position: relative;
+}
+
+.logo-subContaine3 div {
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+
+.logo-subContaine3 div h2 {
+  font-size: 30px;
+  font-weight: 300;
+  color: #EF4523;
+}
+
+
+.logo-subContaine3 div p {
+  font-size: 23px;
+  width: 60%;
+  font-weight: 300;
+
+}
