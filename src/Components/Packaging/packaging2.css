@@ -211,6 +211,12 @@
 
 #myVideo4 {
   z-index: 1;
+  width: 50%;
+  border-radius: 100%;
+}
+
+#myVideo5 {
+  z-index: 1;
   width: 30%;
   border-radius: 100%;
 }

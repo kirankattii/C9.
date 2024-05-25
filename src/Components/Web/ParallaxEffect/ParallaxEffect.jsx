@@ -81,7 +81,10 @@ export default function Home() {
 				/>
 			</div>
 			<div className={styles.spacer2}>
-				<h1>Begin Your Digital Transformation Today</h1>
+				<div className={styles.scrollingText}>
+					<h1>Begin Your Digital Transformation Today</h1>
+					<h1>Begin Your Digital Transformation Today</h1>
+				</div>
 			</div>
 		</main>
 	)

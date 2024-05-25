@@ -152,14 +152,14 @@ const Packaging2 = () => {
 						</p>
 					</div>
 					<video
-						id="myVideo4"
+						id="myVideo5"
 						// width="200"
 						autoPlay
 						muted
 						loop
 						// controls
 					>
-						<source
+						<source3
 							src={assets.packaging_v4}
 							type="video/mp4"
 						/>
