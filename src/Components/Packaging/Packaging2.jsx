@@ -48,7 +48,7 @@ const Packaging2 = () => {
 				</div>
 				<video
 					id="myVideo"
-					width="600"
+					// width="600"
 					autoPlay
 					muted
 					loop
@@ -70,6 +70,8 @@ const Packaging2 = () => {
 					alt=""
 				/>
 				<div className="package2-CaptureAttention">
+					<h2 className="media-capture-attention">Captures Attention</h2>
+
 					<div className="package2-CaptureAttention-left">
 						<video
 							id="myVideo1"
@@ -159,7 +161,7 @@ const Packaging2 = () => {
 						loop
 						// controls
 					>
-						<source3
+						<source
 							src={assets.packaging_v4}
 							type="video/mp4"
 						/>

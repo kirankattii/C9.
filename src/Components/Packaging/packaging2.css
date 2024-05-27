@@ -18,20 +18,16 @@
   color: #fff;
   margin-top: 100px;
   margin-left: 120px;
-
   position: relative;
-  /* padding-left: 100px; */
   font-family: 'MadeTommyLight';
   display: flex;
   flex-direction: column;
   gap: 70px;
   font-weight: 100;
-
 }
 
 .package-bg1 {
   width: 75%;
-
 }
 
 .packaging2-header p {
@@ -48,21 +44,12 @@
 }
 
 #myVideo {
-
-  /* padding-left: 280px; */
   margin-top: 80px;
   border-radius: 100%;
   margin-right: -80px;
-  height: 110vh;
-
+  height: 110%;
   box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
-  /* Add a shadow */
-  /* margin: ; */
   z-index: 5;
-  /* Center the video and add some margin */
-  /* display: block; */
-
-  /* Ensure the video is displayed as a block element */
 }
 
 
@@ -186,11 +173,12 @@
 
 .package2-subContainer1-content1 {
   text-align: left;
+  margin-bottom: 10px;
 }
 
 .package2-subContainer1-content2 {
   text-align: right;
-  margin-top: -00px;
+  margin-top: 20px;
 }
 
 
@@ -211,7 +199,7 @@
 
 #myVideo4 {
   z-index: 1;
-  width: 50%;
+  width: 60%;
   border-radius: 100%;
 }
 
@@ -336,4 +324,521 @@
   /* padding-left: -200%; */
   align-items: start;
   justify-content: start;
+}
+
+.media-capture-attention {
+  display: none;
+
+}
+
+@media(max-width:1300px) {
+  .packaging2-header div {
+
+    margin-top: 100px;
+    margin-left: 60px;
+
+  }
+
+  .package-bg1 {
+    width: 75%;
+
+  }
+
+  .packaging2-header p {
+    width: 95%;
+  }
+
+  .package-bg2 {
+    width: 50%;
+  }
+
+  #myVideo {
+
+
+    margin-top: 130px;
+
+    margin-right: -130px;
+    height: 90%;
+
+  }
+
+
+
+  .package2-CaptureAttention {
+    padding: 0 0vh;
+  }
+
+  .package2-subContainer1 {
+    padding: 100px 50px;
+  }
+
+  .package2-subContainer2 {
+    display: flex;
+    width: 100%;
+
+    padding: 50px;
+
+  }
+
+  .package2-subContainer2-left p {
+
+    width: 100%;
+  }
+
+  .package2-CaptureAttention {
+    width: 100%;
+    padding: 0vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    align-items: center;
+
+  }
+
+  .package2-subContainer3 img {
+    width: 200px;
+  }
+
+  .package2-subContainer3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 40px;
+    margin-bottom: 100px;
+  }
+
+  .package2-CaptureAttention-right h2 {
+    font-size: 45px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-family: 'MadeTommyLight';
+
+  }
+
+  .package2-CaptureAttention-right p {
+    font-size: 20px;
+    font-family: 'MadeTommyLight';
+    letter-spacing: 2px;
+    font-weight: 200;
+    width: 50%;
+  }
+
+}
+
+
+@media(max-width:1000px) {
+  .packaging2-header div {
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 30px;
+    position: relative;
+    font-family: 'MadeTommyLight';
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    font-weight: 100;
+
+  }
+
+  .package-bg1 {
+    width: 75%;
+
+  }
+
+  .packaging2-header p {
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 18px;
+  }
+
+  .package-bg2 {
+    position: absolute;
+    width: 50%;
+    top: 20%;
+    left: 15%;
+  }
+
+  #myVideo {
+
+    /* padding-left: 280px; */
+    margin-top: 220px;
+    border-radius: 100%;
+    margin-right: -130px;
+    height: 75%;
+    box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
+    /* Add a shadow */
+    /* margin: ; */
+    z-index: 5;
+  }
+
+  .package2-CaptureAttention-right {
+    gap: 10px;
+  }
+
+  .package2-CaptureAttention-right p {
+    font-size: 20px;
+    font-family: 'MadeTommyLight';
+    letter-spacing: 2px;
+    font-weight: 200;
+    width: 100%;
+  }
+
+  .package2-CaptureAttention-rightDown {
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  #myVideo2 {
+    margin: auto;
+  }
+
+  #myVideo2 {
+    width: 60%;
+    height: 50%;
+    border-radius: 100%;
+    z-index: 10;
+  }
+
+  #myVideo5 {
+    z-index: 1;
+    width: 40%;
+    border-radius: 100%;
+  }
+
+  .package2-subContainer3 img {
+    width: 150px;
+  }
+
+}
+
+@media(max-width:800px) {
+  .packaging2-header {
+    flex-direction: column;
+  }
+
+  .packaging2-header {
+    /* padding-top: 80px; */
+    padding-top: 0px;
+    height: 170vh;
+    background: #1e1e1e;
+    /* background: url("../../assets/packaging_bg1.png"); */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+  }
+
+  .packaging2-header div {
+    gap: 30px;
+  }
+
+  #myVideo {
+    width: 70%;
+    border-radius: 100%;
+    margin: auto;
+    height: 42%;
+    box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
+    margin-top: 30px;
+    z-index: 5;
+  }
+
+  #myVideo1 {
+    width: 70%;
+    height: 70vh;
+    border-radius: 30%;
+    padding: 30px 0;
+    margin-left: 20px;
+    /* padding: 30px 0; */
+    /* height: 80px; */
+  }
+
+
+  .package2-CaptureAttention-right h2 {
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 200;
+    font-family: 'MadeTommyLight';
+
+  }
+
+  .package2-CaptureAttention-right p {
+    font-size: 20px;
+    font-family: 'MadeTommyLight';
+    letter-spacing: 2px;
+    font-weight: 200;
+
+  }
+
+  .package2-CaptureAttention-right {
+    margin-left: -80px;
+    padding-right: 20px;
+  }
+
+  .package2-CaptureAttention-right {
+    margin-top: 0px;
+
+    display: flex;
+    width: 100%;
+    color: #fff;
+    margin-bottom: 50px;
+    flex-direction: column;
+
+  }
+
+  .package2-subContainer1 span {
+    font-size: 26px;
+    /* font-weight: 200; */
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .package2-subContainer1 p {
+    font-size: 20px;
+    font-weight: 200;
+    /* width: 20%; */
+    letter-spacing: 2px;
+  }
+
+  .package2-subContainer2 {
+    padding: 30px;
+    flex-direction: column-reverse;
+    gap: 50px;
+  }
+
+  #myVideo5 {
+    z-index: 1;
+    width: 60%;
+    border-radius: 100%;
+  }
+
+  .package2-subContainer2-left {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .package2-subContainer2-left h2 {
+    font-size: 30px;
+  }
+
+  .package2-subContainer2-left p {
+    font-size: 19px;
+    line-height: 1.7;
+    width: 100%;
+  }
+
+  .package2-subContainer3 div {
+    margin: auto;
+    width: 100%;
+    margin-top: 00px;
+    color: #fff;
+    font-family: 'MadeTommyLight';
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+  }
+
+  .package2-subContainer3 img:nth-child(1) {
+    margin-left: 62%;
+    /* margin-top: 250px; */
+  }
+
+  .package2-subContainer3 img:nth-child(3) {
+
+    margin-top: 0px;
+    /* margin-top: 250px; */
+  }
+
+  .package2-subContainer1 br {
+    display: none;
+  }
+
+  .package2-subContainer1 {
+    width: 100%;
+    padding: 50px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    color: #fff;
+    font-family: 'MadeTommyLight';
+  }
+
+  .package2-subContainer3 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+
+  }
+
+  .packaging2-header div {
+    color: #fff;
+    margin-top: 150px;
+    margin-left: 30px;
+    position: relative;
+    font-family: 'MadeTommyLight';
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    font-weight: 100;
+
+  }
+
+
+}
+
+@media(max-width:600px) {
+
+  #myVideo {
+    width: 70%;
+    border-radius: 100%;
+    margin: auto;
+    height: 30%;
+    box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
+    margin-top: 50px;
+    z-index: 5;
+  }
+}
+
+@media(max-width:500px) {
+  #myVideo {
+    margin-top: 20px;
+    height: 28%;
+  }
+
+  #myVideo1 {
+    width: 70%;
+    height: 70vh;
+    border-radius: 0 50% 50% 0;
+    padding: 30px 0;
+    margin-left: -10px;
+    /* padding: 30px 0; */
+    /* height: 80px; */
+  }
+
+  #myVideo2 {
+    width: 90%;
+  }
+
+  .packaging2-header div {
+    color: #fff;
+    margin-top: 100px;
+    margin-left: 30px;
+
+
+  }
+
+  .package2-CaptureAttention-right {
+    margin-left: -120px;
+  }
+
+  .package2-CaptureAttention-right h2 {
+    display: none;
+
+  }
+
+  .package2-CaptureAttention-right p {
+    font-size: 18px;
+    font-family: 'MadeTommyLight';
+    letter-spacing: 2px;
+    font-weight: 200;
+
+  }
+
+  .media-capture-attention {
+    /* display: flex; */
+    width: 100%;
+    display: block;
+    position: absolute;
+    top: 0.5%;
+    margin: auto;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    letter-spacing: 3px;
+    /* font-weight: 200; */
+    font-family: 'MadeTommyLight';
+  }
+
+  .packaging2-container {
+    padding-top: 50px;
+  }
+
+  .package2-subContainer3 img:nth-child(1) {
+    margin-left: 55%;
+    /* margin-top: 250px; */
+  }
+
+  .package2-subContainer1 span {
+    font-size: 24px;
+    /* font-weight: 200; */
+    font-weight: 500;
+    letter-spacing: 1px;
+  }
+
+  .package2-subContainer1 p {
+    font-size: 18px;
+    font-weight: 200;
+    /* width: 20%; */
+    letter-spacing: 2px;
+  }
+
+  #myVideo4 {
+    width: 90%;
+  }
+
+  #myVideo5 {
+    z-index: 1;
+    width: 80%;
+    border-radius: 100%;
+  }
+
+  .package2-subContainer2-left {
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .package2-subContainer2-left h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+  }
+
+  .package2-subContainer2-left p {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .package2-subContainer2 {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    font-family: 'MadeTommyLight';
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .package2-subContainer3 div span {
+    font-size: 26px;
+  }
+
+  .package2-subContainer3 div p {
+    font-size: 18px;
+    letter-spacing: 0.6px;
+    line-height: 1.5;
+  }
+
+  .package-bg1 {
+    width: 90%;
+
+  }
+
 }

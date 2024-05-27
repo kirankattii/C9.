@@ -331,3 +331,10 @@
   cursor: pointer;
 
 }
+
+
+@media(max-width:1300px) {
+  .socialmedia-videoContent2 {
+    margin-top: 150px;
+  }
+}

@@ -12,7 +12,7 @@ const Web = () => {
 	const handleScroll = () => {
 		if (videoRef.current) {
 			const videoTop = videoRef.current.getBoundingClientRect().top
-			if (videoTop <= 200) {
+			if (videoTop <= 600) {
 				setIsScrolled(true)
 			} else {
 				setIsScrolled(false)
