@@ -304,6 +304,63 @@ const Web = () => {
 									</div>
 								</div>
 							</div>
+							<div className="web-content5-media">
+								<h1>Our Web Development Process</h1>
+								<ul>
+									<li>
+										<h2>Discovery and Planning</h2>
+										<p>
+											We begin by thoroughly understanding your business, goals,
+											and target audience. This allows us to create a detailed
+											project plan and timeline that align with your objectives.
+										</p>
+									</li>
+									<li>
+										<h2>Ongoing Support</h2>
+										<p>
+											Our commitment to your success extends beyond the launch.
+											We provide ongoing support and maintenance to keep your
+											website secure, up-to-date, and performing optimally.
+										</p>
+									</li>
+									<li>
+										<h2>Design and Prototyping</h2>
+										<p>
+											Our designers develop wireframes and prototypes to
+											visualize the layout and functionality of your website. We
+											refine these designs based on your feedback to ensure they
+											meet your vision.
+										</p>
+									</li>
+									<li>
+										{" "}
+										<h2>Launch and Optimization</h2>
+										<p>
+											Upon completion, we deploy your website to the live server
+											and monitor its performance. We continue to make
+											optimizations to ensure the best possible user experience.
+										</p>
+									</li>
+
+									<li>
+										<h2>Development</h2>
+										<p>
+											Our developers bring the designs to life using the latest
+											coding standards and technologies, ensuring your website
+											is fast, responsive, and SEO-friendly.
+										</p>
+									</li>
+									<li>
+										<h2>Testing</h2>
+										<p>
+											We conduct rigorous testing across various browsers and
+											devices to ensure flawless performance. We address any
+											bugs or usability issues to ensure a seamless user
+											experience
+										</p>
+									</li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>

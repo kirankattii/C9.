@@ -387,6 +387,8 @@
   align-items: center;
   color: #fff;
   margin-top: 150px;
+  font-family: 'MadeTommySoft';
+
 }
 
 .web-text-content5 .web-text-innerContent5 {
@@ -417,7 +419,7 @@
   font-family: 'AllerDisplay';
   font-weight: 300;
   font-size: 26px;
-
+  text-align: center;
 }
 
 .web-text-content5 h3 {
@@ -506,6 +508,55 @@
 
   .web-text-content2 {
     margin-top: 50px;
+  }
+
+  .web-text-content5 {
+    display: none;
+  }
+
+  .web-content5-media {
+    width: 100%;
+    min-height: 90vh;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 0;
+    font-family: 'MadeTommySoft';
+
+  }
+
+  .web-content5-media h1 {
+    color: #EF4523;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    text-align: center;
+  }
+
+  .web-content5-media ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+  }
+
+  .web-content5-media ul li {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .web-content5-media ul li h2 {
+    color: #EF4523;
+    font-size: 20px;
+  }
+
+  .web-content5-media ul li p {
+    width: 80%;
   }
 }
 
@@ -608,12 +659,24 @@
 
   .main-content-video3 {
     width: 45%;
-    top: 61%;
+    top: 58%;
     left: 20%;
   }
 
   .main-content-video2.scrolled-down2 {
-    top: 55%;
+    top: 50%;
+  }
+
+  .web-content5-media ul li p {
+    width: 95%;
+  }
+
+  .web-content5-media {
+    margin-top: 50px;
+  }
+
+  .main-content-video1.content2-reached {
+    top: 44%;
   }
 
 }
