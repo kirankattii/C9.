@@ -35,7 +35,7 @@
   position: relative;
   /* Make this relative to apply the overlay correctly */
   width: 100%;
-  height: 100%;
+  height: 100vh;
   overflow: hidden;
   /* Ensure the video doesn't overflow */
 }
@@ -49,17 +49,19 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
   z-index: 1;
-  /* Ensure the overlay is above the video */
+
+
 }
 
 .video-wrapper video {
-  width: 100%;
-  height: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 0;
-  /* Ensure the video is below the overlay */
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  transform: translate(-50%, -50%);
+
+
 }
 
 .logo-content1 {

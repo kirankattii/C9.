@@ -42,6 +42,7 @@
   position: relative;
   transition: width 0.3s ease;
   /* position: relative; */
+  width: 100%;
 
 }
 
@@ -81,6 +82,7 @@
   /* transform: translateX(-50%); */
   position: absolute;
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
   top: 10%;
   z-index: 2;
@@ -89,33 +91,29 @@
 .socialmedia-videoContent1-left {
   display: flex;
   flex-direction: column;
-  margin-top: -20px;
-
 }
 
 .socialmedia-videoContent1-left video {
-  width: 100%;
-  height: 45vh;
+  width: 240px;
 }
 
 .socialmedia-videoContent1-left video:last-child {
-  margin-top: 50px;
+  margin-top: 10px;
 }
 
 .socialmedia-videoContent1-right video {
-  width: 100%;
-  height: 90vh;
+  width: 280px;
 }
 
 .socialmedia-videoContent1-middle {
-  top: 50px;
-
-
-  /* position: absolute; */
   background: rgba(0, 0, 0, 0.8);
-  margin-top: 350px;
   width: 35%;
-  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 220px;
+  align-items: center;
+  font-family: 'MadeTommySoft';
 
 }
 
@@ -161,7 +159,6 @@
 .socialmedia-videoContent2-left {
   display: flex;
   width: 30%;
-
   flex-direction: column;
   /* margin-top: -20px; */
   /* margin-left: 100px; */
@@ -172,17 +169,6 @@
   display: flex;
   flex-direction: column;
   width: 30%;
-
-}
-
-.socialmedia-videoContent2-middle {
-  background: rgba(0, 0, 0, 0.8);
-  width: 35%;
-  display: flex;
-  flex-direction: column;
-  padding: 15px;
-  align-items: center;
-  font-family: 'MadeTommySoft';
 
 }
 
@@ -197,6 +183,18 @@
 .socialmedia-videoContent2-right video {
   width: 70%;
   margin-left: 50px;
+}
+
+.socialmedia-videoContent2-middle {
+  background: rgba(0, 0, 0, 0.8);
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin-top: 250px;
+  align-items: center;
+  font-family: 'MadeTommySoft';
+
 }
 
 
@@ -214,6 +212,7 @@
 
 .socialmedia-videoContent2-middle h2 {
   font-size: 26px;
+  text-align: center;
 }
 
 .socialmedia-videoContent2-middle ul h3 {
@@ -300,6 +299,7 @@
 
 .socialMedia-connect form input, .socialMedia-connect form textarea {
   width: 100%;
+  min-width: 300px;
   background: transparent;
   border: 1px solid #fff;
   outline: 0;
@@ -329,12 +329,420 @@
   font-size: 15px;
   border-radius: 20px;
   cursor: pointer;
-
+  text-align: center;
 }
 
+.socialmedia-mediaContant1, .socialmedia-allVideos, .socialmedia-mediaContant2, .socialmedia-allVideos2 {
+  display: none;
+}
 
 @media(max-width:1300px) {
   .socialmedia-videoContent2 {
     margin-top: 150px;
+  }
+
+  .socialMedia-header .socialMedia-img1 {
+    width: 93%;
+    height: 70%;
+    padding-top: 60px;
+  }
+
+  .socialMedia-header p {
+    margin-top: -18%;
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 17.5px;
+    font-family: 'MadeTommySoft';
+    text-align: center;
+  }
+
+
+}
+
+@media(max-width:1000px) {
+  .socialmedia-videoContent2, .socialmedia-videoContent1 {
+    /* display: none; */
+  }
+
+  .socialMedia-header .socialMedia-img1 {
+    width: 93%;
+    height: 55vh;
+    padding-top: 60px;
+  }
+
+  .socialMedia-header p {
+    margin-top: -22%;
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 17.5px;
+    font-family: 'MadeTommySoft';
+    text-align: center;
+  }
+
+  .socialmedia-videoContent1-middle {
+    /* display: none; */
+  }
+
+  .socialmedia-mediaVideos {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    gap: 10px;
+    top: 100px;
+    align-items: center;
+  }
+
+  .socialmedia-mediaVideos div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .socialmedia-mediaVideos div video {
+    width: 250px;
+  }
+
+  .socialmedia-mediaVideos div video:last-child {
+    width: 250px;
+    margin-top: 0px;
+  }
+
+  .socialmedia-media-v3 {
+    width: 300px;
+  }
+
+  .socialmedia-mediaVideos2 {
+    display: flex;
+    z-index: 1;
+    position: absolute;
+    gap: 10px;
+    top: 60%;
+    align-items: center;
+    margin: auto;
+    width: 100%;
+  }
+
+  .socialmedia-mediaVideos2 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    gap: 50px;
+  }
+
+  .socialmedia-mediaVideos2 video {
+    width: 200px;
+  }
+}
+
+
+@media(max-width:900px) {
+  .socialMedia-header .socialMedia-img1 {
+    width: 93%;
+    height: 50vh;
+    padding-top: 60px;
+  }
+
+  .socialMedia-header p {
+    margin-top: -27%;
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 17.5px;
+    font-family: 'MadeTommySoft';
+    text-align: center;
+  }
+
+
+  .socialmedia-videoContent2-middle {
+    background: rgba(0, 0, 0, 0.8);
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin-top: 250px;
+    align-items: center;
+    font-family: 'MadeTommySoft';
+
+  }
+
+  .socialmedia-videoContent2-middle h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .socialmedia-videoContent2-middle ul h3 {
+    font-size: 19px;
+  }
+
+  .socialmedia-videoContent2-middle ul p {
+    font-size: 16px;
+  }
+
+  .socialmedia-videoContent1-middle ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .socialMedia-connect form {
+    margin-top: 50px;
+    width: 30%;
+    display: flex;
+    font-family: 'AfterglowRegular';
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    margin-right: 0;
+    margin-left: 60%;
+    margin: auto;
+
+  }
+
+  .socialMedia-connect form {
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    font-family: 'AfterglowRegular';
+    flex-direction: column;
+    justify-content: end;
+    align-items: start;
+    margin-right: 0;
+    margin-left: 0%;
+
+  }
+}
+
+
+
+@media(max-width:800px) {
+  .socialmedia-videoContent2, .socialmedia-videoContent1 {
+    display: none;
+  }
+
+  .socialMedia-header .socialMedia-img1 {
+    width: 93%;
+    height: 45vh;
+    padding-top: 60px;
+  }
+
+  .socialMedia-header p {
+    margin-top: -15%;
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 17.5px;
+    font-family: 'MadeTommySoft';
+    text-align: center;
+  }
+
+  .socialMedia-content1 {
+    width: 80%;
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    font-family: 'MadeTommySoft';
+    font-size: 18px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    z-index: 2;
+  }
+
+
+  .socialmedia-mediaContant1, .socialmedia-mediaContant2 {
+    background: rgba(0, 0, 0, 0.8);
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 50px 0;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'MadeTommySoft';
+
+  }
+
+
+  .socialmedia-mediaContant1 ul, .socialmedia-mediaContant2 ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .socialmedia-mediaContant1 h2, .socialmedia-mediaContant2 h2 {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .socialmedia-mediaContant1 ul h3, .socialmedia-mediaContant2 ul h3 {
+    font-size: 19px;
+  }
+
+  .socialmedia-mediaContant1 ul p, .socialmedia-mediaContant2 ul p {
+    font-size: 16px;
+  }
+
+
+  .socialmedia-allVideos {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .socialmedia-allVideos2 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .socialmedia-allVideos2 div {
+    display: flex;
+
+  }
+
+  .socialmedia-allVideos2 video {
+    width: 45%;
+    /* gap: 0px; */
+    margin: auto;
+  }
+
+  .socialmedia-allVideos video {
+    width: 70%;
+    /* gap: 0px; */
+    margin: auto;
+  }
+}
+
+@media(max-width:650px) {
+  .socialMedia-header .socialMedia-img1 {
+    width: 93%;
+    height: 40vh;
+    padding-top: 60px;
+  }
+
+  .socialMedia-header p {
+    margin-top: -16%;
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 17.5px;
+    font-family: 'MadeTommySoft';
+    text-align: center;
+  }
+
+}
+
+@media(max-width:500px) {
+  .socialMedia-header .socialMedia-img1 {
+    width: 93%;
+    height: 40vh;
+    padding-top: 60px;
+  }
+
+  .socialMedia-header p {
+    margin-top: -25%;
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 17.5px;
+    font-family: 'MadeTommySoft';
+    text-align: center;
+
+  }
+
+  .socialmedia-subContainer1 {
+    margin-top: 80px;
+  }
+
+  .socialMedia-connect {
+    font-family: 'AllerDisplay';
+    padding: 20px;
+    padding-top: 0px;
+  }
+
+  .socialMedia-content1 {
+    width: 95%;
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    font-family: 'MadeTommySoft';
+    font-size: 17px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    z-index: 2;
+  }
+
+  .socialMedia-connect h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 200;
+    padding: 30px 0px;
+  }
+
+  .socialmedia-allVideos {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .socialmedia-mediaContant1 ul, .socialmedia-mediaContant2 ul {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .socialmedia-mediaContant1, .socialmedia-mediaContant2 {
+    background: rgba(0, 0, 0, 0.8);
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 50px 0;
+    align-items: center;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-family: 'MadeTommySoft';
+
+  }
+}
+
+@media(max-width:430px) {
+  .socialMedia-header .socialMedia-img1 {
+    width: 93%;
+    height: 40vh;
+    padding-top: 60px;
+  }
+
+  .socialMedia-header p {
+    margin-top: -25%;
+    width: 95%;
+    letter-spacing: 1px;
+    font-size: 17.5px;
+    font-family: 'MadeTommySoft';
+    text-align: center;
   }
 }

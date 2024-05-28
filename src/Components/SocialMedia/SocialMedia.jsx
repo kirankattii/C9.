@@ -92,7 +92,6 @@ const SocialMedia = () => {
 							ref={videoRef}
 							autoPlay
 							loop
-							controls
 							muted
 						>
 							<source
@@ -107,7 +106,7 @@ const SocialMedia = () => {
 						</p>
 						<div className="socialmedia-videoContent1">
 							<motion.div className="socialmedia-videoContent1-left">
-								<motion.video
+								<video
 									autoPlay
 									muted
 								>
@@ -115,7 +114,7 @@ const SocialMedia = () => {
 										src={assets.socialMedia_v2}
 										type="video/mp4"
 									/>
-								</motion.video>
+								</video>
 								<video
 									autoPlay
 									muted
@@ -245,34 +244,236 @@ const SocialMedia = () => {
 								</video>
 							</div>
 						</div>
+						{/* <div className="socialmedia-mediaVideos">
+							<div>
+								<video
+									autoPlay
+									muted
+								>
+									<source
+										src={assets.socialMedia_v2}
+										type="video/mp4"
+									/>
+								</video>
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v3}
+										type="video/mp4"
+									/>
+								</video>
+							</div>
+							<video
+								className="socialmedia-media-v3"
+								autoPlay
+								muted
+								loop
+							>
+								<source
+									src={assets.socialMedia_v4}
+									type="video/mp4"
+								/>
+							</video>
+						</div>
+						<div className="socialmedia-mediaVideos2">
+							<div>
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v5}
+										type="video/mp4"
+									/>
+								</video>
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v6}
+										type="video/mp4"
+									/>
+								</video>
+							</div>
+							<div>
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v7}
+										type="video/mp4"
+									/>
+								</video>
+								<video
+									autoPlay
+									muted
+									loop
+								>
+									<source
+										src={assets.socialMedia_v3}
+										type="video/mp4"
+									/>
+								</video>
+							</div>
+						</div> */}
 					</div>
 				</div>
-				<div className="socialMedia-connect">
-					<div>
-						<h1 ref={headlineRef}>Connect With C9 Ads Today</h1>
+				<div className="socialmedia-mediaContant1">
+					<ul>
+						<li>
+							<h2>Social Advertising</h2>
+							<p>
+								Using platforms like Facebook, Instagram, and LinkedIn, we
+								strategically position your brand to maximize reach and
+								engagement.
+							</p>
+						</li>
+						<li>
+							<h2>Content Marketing</h2>
+							<p>
+								We create and distribute valuable content—from blogs to
+								videos—to attract and retain your target audience, driving
+								profitable actions.
+							</p>
+						</li>
+						<li>
+							<h2>Your Dedicated Digital Partner</h2>
+							<p>
+								Whether you're a startup or an established business, C9 Ads is
+								your dedicated digital marketing partner, allowing you to focus
+								on running your business.
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div className="socialmedia-allVideos">
+				<video
+					autoPlay
+					muted
+					loop
+				>
+					<source
+						src={assets.socialMedia_v4}
+						type="video/mp4"
+					/>
+				</video>
+				<video
+					autoPlay
+					muted
+				>
+					<source
+						src={assets.socialMedia_v2}
+						type="video/mp4"
+					/>
+				</video>
+			</div>
+
+			<div className="socialmedia-mediaContant2">
+				<h2>Our Digital Marketing Process</h2>
+				<ul>
+					<li>
+						<h3>Strategic Branding and Positioning: </h3>
 						<p>
-							Ready to transform your digital marketing strategy and see
-							tangible results? Connect with C9 Ads today.  Let’s discuss how we
-							can elevate your online presence and turn digital channels into
-							pathways of growth for your business.
+							We define a compelling brand identity and strategy based on deep
+							industry and competitor analysis for maximum impact.
 						</p>
-					</div>
-					<form>
-						<label htmlFor="">Company Name</label>
-						<input type="text" />
-						<label htmlFor="">Email</label>
-						<input type="text" />
-						<label htmlFor="">Phone</label>
-						<input type="text" />
-						<label htmlFor="">Message</label>
-						<textarea
-							name=""
-							id=""
-							rows={4}
+					</li>
+					<li>
+						<h3>Website Optimization and Content Marketing: </h3>
+						<p>
+							We enhance your website’s design, functionality, and SEO, and
+							create engaging content to establish your thought leadership.
+						</p>
+					</li>
+					<li>
+						<h3>Targeted Social Media Campaigns and Digital Advertising:</h3>
+						<p>
+							We execute targeted social media and digital advertising campaigns
+							to broaden your reach and engage potential customers.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div className="socialmedia-allVideos2">
+				<div>
+					<video
+						autoPlay
+						muted
+						loop
+					>
+						<source
+							src={assets.socialMedia_v5}
+							type="video/mp4"
 						/>
-						<button>Send Message</button>
-					</form>
+					</video>
+					<video
+						autoPlay
+						muted
+						loop
+					>
+						<source
+							src={assets.socialMedia_v6}
+							type="video/mp4"
+						/>
+					</video>
 				</div>
+				<div>
+					<video
+						autoPlay
+						muted
+						loop
+					>
+						<source
+							src={assets.socialMedia_v7}
+							type="video/mp4"
+						/>
+					</video>
+					<video
+						autoPlay
+						muted
+						loop
+					>
+						<source
+							src={assets.socialMedia_v3}
+							type="video/mp4"
+						/>
+					</video>
+				</div>
+			</div>
+			<div className="socialMedia-connect">
+				<div>
+					<h1 ref={headlineRef}>Connect With C9 Ads Today</h1>
+					<p>
+						Ready to transform your digital marketing strategy and see tangible
+						results? Connect with C9 Ads today.  Let’s discuss how we can
+						elevate your online presence and turn digital channels into pathways
+						of growth for your business.
+					</p>
+				</div>
+				<form>
+					<label htmlFor="">Company Name</label>
+					<input type="text" />
+					<label htmlFor="">Email</label>
+					<input type="text" />
+					<label htmlFor="">Phone</label>
+					<input type="text" />
+					<label htmlFor="">Message</label>
+					<textarea
+						name=""
+						id=""
+						rows={4}
+					/>
+					<button>Send Message</button>
+				</form>
 			</div>
 		</div>
 	)
