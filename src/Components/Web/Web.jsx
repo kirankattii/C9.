@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react"
 import "./web.css"
 import { assets } from "../../assets/asset"
+import { motion } from "framer-motion"
 import ParallaxEffect from "./ParallaxEffect/ParallaxEffect"
 const Web = () => {
 	const videoRef = useRef(null)
@@ -167,9 +168,31 @@ const Web = () => {
 						</div>
 						<div className="horizontal-text-content">
 							<div className="web-text-content2">
-								<h1>Our Comprehensive Web Development Services</h1>
+								<motion.h1
+									initial={{ scale: 0.7, opacity: 0 }}
+									whileInView={{ scale: 1, opacity: 1 }}
+									transition={{
+										delay: 0,
+										x: { type: "spring", stiffness: 60 },
+										opacity: { duration: 0.4 },
+										ease: "easeIn",
+										duration: 0.8,
+									}}
+								>
+									Our Comprehensive Web Development Services
+								</motion.h1>
 								<ul>
-									<li>
+									<motion.li
+										initial={{ x: 100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											x: { type: "spring", stiffness: 60 },
+											opacity: { duration: 1 },
+											ease: "easeIn",
+											duration: 0.8,
+										}}
+									>
 										<h2>Custom Website Design</h2>
 										<p>
 											Our custom website design services ensure your website
@@ -178,8 +201,18 @@ const Web = () => {
 											with your brand identity and engage your audience
 											effectively.
 										</p>
-									</li>
-									<li>
+									</motion.li>
+									<motion.li
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											x: { type: "spring", stiffness: 60 },
+											opacity: { duration: 1 },
+											ease: "easeIn",
+											duration: 1,
+										}}
+									>
 										<h2>E-commerce Development </h2>
 										<p>
 											Revolutionize your online store with our robust e-commerce
@@ -187,13 +220,35 @@ const Web = () => {
 											e-commerce platforms designed to enhance the shopping
 											experience and drive sales growth.
 										</p>
-									</li>
+									</motion.li>
 								</ul>
 							</div>
 							<div className="web-text-content3">
-								<h1>Our Comprehensive Web Development Services</h1>
+								<motion.h1
+									initial={{ scale: 0.7, opacity: 0 }}
+									whileInView={{ scale: 1, opacity: 1 }}
+									transition={{
+										delay: 0,
+										x: { type: "spring", stiffness: 60 },
+										opacity: { duration: 0.4 },
+										ease: "easeIn",
+										duration: 0.8,
+									}}
+								>
+									Our Comprehensive Web Development Services
+								</motion.h1>
 								<ul>
-									<li>
+									<motion.li
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											x: { type: "spring", stiffness: 60 },
+											opacity: { duration: 1 },
+											ease: "easeIn",
+											duration: 1,
+										}}
+									>
 										<h2>Content Management Systems (CMS)</h2>
 										<p>
 											Manage your website content effortlessly with our CMS
@@ -201,8 +256,18 @@ const Web = () => {
 											CMS platforms such as WordPress, Joomla, and Drupal,
 											providing you with full control over your site
 										</p>
-									</li>
-									<li>
+									</motion.li>
+									<motion.li
+										initial={{ x: 100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											x: { type: "spring", stiffness: 60 },
+											opacity: { duration: 1 },
+											ease: "easeIn",
+											duration: 1,
+										}}
+									>
 										<h2>Responsive Web Design </h2>
 										<p>
 											In an increasingly mobile world, responsive design is
@@ -210,13 +275,35 @@ const Web = () => {
 											performance and appearance across all devices, from
 											desktops to smartphones.
 										</p>
-									</li>
+									</motion.li>
 								</ul>
 							</div>
 							<div className="web-text-content4">
-								<h1>Our Comprehensive Web Development Services</h1>
+								<motion.h1
+									initial={{ scale: 0.7, opacity: 0 }}
+									whileInView={{ scale: 1, opacity: 1 }}
+									transition={{
+										delay: 0,
+										x: { type: "spring", stiffness: 60 },
+										opacity: { duration: 0.4 },
+										ease: "easeIn",
+										duration: 0.8,
+									}}
+								>
+									Our Comprehensive Web Development Services
+								</motion.h1>
 								<ul>
-									<li>
+									<motion.li
+										initial={{ x: 100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											x: { type: "spring", stiffness: 60 },
+											opacity: { duration: 1 },
+											ease: "easeIn",
+											duration: 1,
+										}}
+									>
 										<h2>Web Application Development</h2>
 										<p>
 											Optimize your business operations and boost user
@@ -224,8 +311,18 @@ const Web = () => {
 											powerful, bespoke web applications tailored to meet your
 											specific business needs.
 										</p>
-									</li>
-									<li>
+									</motion.li>
+									<motion.li
+										initial={{ x: -100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											x: { type: "spring", stiffness: 60 },
+											opacity: { duration: 1 },
+											ease: "easeIn",
+											duration: 1,
+										}}
+									>
 										<h2>Search Engine Optimization (SEO) </h2>
 										<p>
 											A visually appealing website is only as good as its
@@ -233,8 +330,18 @@ const Web = () => {
 											practices, ensuring your site ranks highly on search
 											engines and attracts valuable organic traffic.
 										</p>
-									</li>
-									<li>
+									</motion.li>
+									<motion.li
+										initial={{ x: 100, opacity: 0 }}
+										whileInView={{ x: 0, opacity: 1 }}
+										transition={{
+											delay: 0.2,
+											x: { type: "spring", stiffness: 60 },
+											opacity: { duration: 1 },
+											ease: "easeIn",
+											duration: 1,
+										}}
+									>
 										<h2>Website Maintenance and Support</h2>
 										<p>
 											Ensure your website remains functional and secure with our
@@ -242,7 +349,7 @@ const Web = () => {
 											updates, security checks, and performance optimizations to
 											keep your site running smoothly.
 										</p>
-									</li>
+									</motion.li>
 								</ul>
 							</div>
 							<div className="web-text-content5">

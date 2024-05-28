@@ -1,5 +1,5 @@
 import React from "react"
-import { Routes, Route, useLocation } from "react-router-dom"
+import { Routes, Route, useLocation, Router } from "react-router-dom"
 import Navbar from "./Components/Navbar/Navbar"
 import Home from "./Components/Home/Home"
 import Footer from "./Components/Footer/Footer"
@@ -23,6 +23,7 @@ import Seo from "./Components/Seo/Seo"
 import SocialMedia from "./Components/SocialMedia/SocialMedia"
 import Web from "./Components/Web/Web"
 import Logo from "./Components/Logo/Logo"
+import NotFound from "./Components/NotFound/NotFound"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -34,10 +35,18 @@ const App = () => {
 	const isLogoWorkPage = location.pathname === "/work"
 	const isPackagingPage = location.pathname === "/packaging"
 	const isAboutPage = location.pathname === "/about-us"
+	const isNotFound = location.pathname === "*"
+	const isSpecialPage = [
+		"/story",
+		"/work",
+		"/packaging",
+		"/about-us",
+		"*",
+	].includes(location.pathname)
 
 	return (
 		<div>
-			{!isStoryPage && <Navbar />}
+			{!isSpecialPage && <Navbar />}
 			<Routes>
 				<Route
 					index
@@ -111,11 +120,14 @@ const App = () => {
 					path="/animate"
 					element={<Animate />}
 				/>
+				<Route
+					path="*"
+					element={<NotFound />}
+				/>
 			</Routes>
+
 			{/* {!isStoryPage && <Footer />} */}
-			{!isStoryPage && !isLogoWorkPage && !isPackagingPage && !isAboutPage && (
-				<Footer />
-			)}
+			{!isSpecialPage && <Footer />}
 		</div>
 	)
 }
