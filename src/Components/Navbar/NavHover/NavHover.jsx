@@ -14,7 +14,7 @@ const NavHover = () => {
 			>
 				<img
 					src={assets.aboutService1}
-					alt=""
+					alt="SOCIAL MEDIA MARKETING"
 				/>
 				<p>SOCIAL MEDIA MARKETING</p>
 			</motion.div>
@@ -24,7 +24,7 @@ const NavHover = () => {
 			>
 				<img
 					src={assets.aboutService2}
-					alt=""
+					alt="WEB DEVELOPMENT"
 				/>
 				<p>WEB DEVELOPMENT</p>
 			</motion.div>
@@ -34,7 +34,7 @@ const NavHover = () => {
 			>
 				<img
 					src={assets.aboutService3}
-					alt=""
+					alt="SEARCH ENGINE OPTIMIZATION"
 				/>
 				<p>SEARCH ENGINE OPTIMIZATION</p>
 			</motion.div>
@@ -44,7 +44,7 @@ const NavHover = () => {
 			>
 				<img
 					src={assets.aboutService4}
-					alt=""
+					alt="LOGO DESIGNING"
 				/>
 				<p>LOGO DESIGNING</p>
 			</motion.div>
@@ -54,7 +54,7 @@ const NavHover = () => {
 			>
 				<img
 					src={assets.aboutService5}
-					alt=""
+					alt="PACKAGING DESIGNING"
 				/>
 				<p>PACKAGING DESIGNING</p>
 			</motion.div>

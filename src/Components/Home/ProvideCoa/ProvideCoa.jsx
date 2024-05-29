@@ -39,7 +39,7 @@ const ProvideCoa = () => {
 					>
 						<img
 							src={assets.certigicate_coa}
-							alt=""
+							alt="certigicate Image"
 						/>
 					</Tilt>
 				</div>

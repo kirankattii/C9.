@@ -264,7 +264,7 @@ const Home = () => {
 									</motion.p>
 									<img
 										src={assets.right_arrow}
-										alt=""
+										alt="Arrow Image"
 									/>
 								</motion.div>
 							))}
@@ -412,7 +412,7 @@ const Home = () => {
 							>
 								<img
 									src={assets.homefeatures1}
-									alt=""
+									alt="Features"
 								/>
 								<div>
 									<h3>Maximizing Social Media ROI for Small Businesses</h3>
@@ -432,7 +432,7 @@ const Home = () => {
 							>
 								<img
 									src={assets.homefeatures2}
-									alt=""
+									alt="Features"
 								/>
 								<div>
 									<h3>Maximizing Social Media ROI for Small Businesses</h3>
@@ -463,7 +463,7 @@ const Home = () => {
 								</div>{" "}
 								<img
 									src={assets.homefeatures3}
-									alt=""
+									alt="Features"
 								/>
 							</motion.div>
 							<motion.div
@@ -480,10 +480,10 @@ const Home = () => {
 										on investment (ROI). Include tips on identifying the right
 										social media channels....................
 									</p>
-								</div>{" "}
+								</div>
 								<img
 									src={assets.homefeatures4}
-									alt=""
+									alt="Features"
 								/>
 							</motion.div>
 						</div>
@@ -517,7 +517,7 @@ const Home = () => {
 								initial={{ opacity: 0, x: -100 }}
 								transition={{ duration: 0.8 }}
 								src={assets.user1}
-								alt=""
+								alt="Users Image"
 							/>
 						</div>
 						<motion.div

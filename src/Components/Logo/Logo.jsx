@@ -1,7 +1,7 @@
 import React from "react"
 import "./logo.css"
 import { assets } from "../../assets/asset"
-
+import { motion } from "framer-motion"
 import LogoParallax from "./LogoParallax/LogoParallax"
 
 const Logo = () => {
@@ -9,7 +9,13 @@ const Logo = () => {
 		<div className="logo2">
 			<div className="logo-container">
 				<div className="logo-header">
-					<h1>LOGO DESIGN</h1>
+					<motion.h1
+						whileInView={{ scale: 1, opacity: 1 }}
+						initial={{ scale: 0, opacity: 0 }}
+						transition={{ duration: 0.5 }}
+					>
+						LOGO DESIGN
+					</motion.h1>
 				</div>
 				<div className="logo-subContainer1">
 					<div className="video-wrapper">
@@ -25,7 +31,12 @@ const Logo = () => {
 							/>
 						</video>
 					</div>
-					<div className="logo-content1">
+					<motion.div
+						whileInView={{ scale: 1, opacity: 1, x: 0 }}
+						initial={{ scale: 0.94, opacity: 0, x: -50 }}
+						transition={{ duration: 0.6 }}
+						className="logo-content1"
+					>
 						<p>
 							At C9 Ads, located in the heart of Perth, we specialise in logo
 							design as a trusted branding partner in Australia, crafting logos
@@ -37,15 +48,29 @@ const Logo = () => {
 						</p>
 						<h2>Logo Design</h2>
 						<p>Designing the Face of Your Brand</p>
-					</div>
+					</motion.div>
 				</div>
 				<div className="logo-subContainer2">
-					<h1>Why Effective Logo Design is Crucial?</h1>
-					<p>
+					<motion.h1
+						whileInView={{ scale: 1, opacity: 1, x: 0 }}
+						initial={{ scale: 0.94, opacity: 0, x: -50 }}
+						transition={{ duration: 0.4 }}
+					>
+						Why Effective Logo Design is Crucial?
+					</motion.h1>
+					<motion.p
+						whileInView={{ scale: 1, opacity: 1, x: 0 }}
+						initial={{ scale: 0.94, opacity: 0, x: -50 }}
+						transition={{ duration: 0.5 }}
+					>
 						Your logo is more than just a symbol; it’s a communication tool.
 						Effective logo design:
-					</p>
-					<ul>
+					</motion.p>
+					<motion.ul
+						whileInView={{ scale: 1, opacity: 1, x: 0 }}
+						initial={{ scale: 0.94, opacity: 0, x: -50 }}
+						transition={{ duration: 0.6 }}
+					>
 						<li>
 							Captures Attention: Makes your brand stand out in a crowded
 							marketplace.
@@ -58,19 +83,32 @@ const Logo = () => {
 							Establishes Brand Recognition: Creates a memorable impression that
 							fosters consumer loyalty.
 						</li>
-					</ul>
+					</motion.ul>
+				</div>
+				<div className="logo-vault">
+					<h1>Logo Vault</h1>
 				</div>
 				<LogoParallax />
 				<div className="logo-subContaine3">
 					<div>
-						<h2>Start Your Logo Design Journey with C9 Ads</h2>
-						<p>
+						<motion.h2
+							whileInView={{ scale: 1, opacity: 1, x: 0 }}
+							initial={{ scale: 0.94, opacity: 0, x: -50 }}
+							transition={{ duration: 0.4 }}
+						>
+							Start Your Logo Design Journey with C9 Ads
+						</motion.h2>
+						<motion.p
+							whileInView={{ scale: 1, opacity: 1, x: 0 }}
+							initial={{ scale: 0.94, opacity: 0, x: -50 }}
+							transition={{ duration: 0.6 }}
+						>
 							Are you ready to give your brand the logo it deserves? Contact C9
 							Ads to discover how our dedicated team of designers can transform
 							your logo into a powerful brand ambassador. Let's craft a logo
 							that not only represents your brand but also captures attention
 							and fosters recognition.
-						</p>
+						</motion.p>
 					</div>
 				</div>
 			</div>

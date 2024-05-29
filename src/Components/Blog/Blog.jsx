@@ -18,7 +18,7 @@ const Blog = () => {
 						<div className="leftTop-blog-content">
 							<img
 								src={assets.grid}
-								alt=""
+								alt="Blogging"
 							/>
 							<div className="blog-left-innerContent">
 								<span>
@@ -45,7 +45,7 @@ const Blog = () => {
 										>
 											<img
 												src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-												alt=""
+												alt="Blog"
 											/>
 										</a>
 										<div class="tooltip">Smith</div>
@@ -73,7 +73,7 @@ const Blog = () => {
 										>
 											<img
 												src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-												alt=""
+												alt="Blog Image"
 											/>
 										</a>
 										<div class="tooltip">Smith</div>
@@ -101,12 +101,12 @@ const Blog = () => {
 							<div id="div1">
 								<img
 									src={assets.arrow45}
-									alt=""
+									alt="arrow Img"
 									className="arrow45"
 								/>
 								<img
 									src={assets.grid1}
-									alt=""
+									alt="Blog"
 								/>
 								<div>
 									<span>Video Marketing Mastery</span>
@@ -122,7 +122,7 @@ const Blog = () => {
 								<h3>READ BLOG</h3>
 								<img
 									src={assets.grid2}
-									alt=""
+									alt="AI in Marketing"
 								/>
 								<div>
 									<span>AI in Marketing</span>
@@ -132,7 +132,7 @@ const Blog = () => {
 							<div id="div5">
 								<img
 									src={assets.grid4}
-									alt=""
+									alt="Journey Mapping"
 								/>
 								<div>
 									<span>Customer Journey Mapping</span>
@@ -142,7 +142,7 @@ const Blog = () => {
 							<div id="div6">
 								<img
 									src={assets.grid3}
-									alt=""
+									alt="Brand Building Image"
 								/>
 								<div>
 									<span>Brand Building in the Digital Age</span>

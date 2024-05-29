@@ -35,18 +35,31 @@ const App = () => {
 	const isLogoWorkPage = location.pathname === "/work"
 	const isPackagingPage = location.pathname === "/packaging"
 	const isAboutPage = location.pathname === "/about-us"
-	const isNotFound = location.pathname === "*"
-	const isSpecialPage = [
-		"/story",
-		"/work",
-		"/packaging",
-		"/about-us",
-		"*",
-	].includes(location.pathname)
+	// const isNotFound = location.pathname === "*"
 
+	const validPaths = [
+		"/",
+		"/about-us",
+		"/services",
+		"/our-service1",
+		"/our-service2",
+		"/our-service3",
+		"/our-service4",
+		"/contact",
+		"/logo",
+		"/packaging2",
+		"/seo",
+		"/social-media-marketing",
+		"/web-development",
+		"/values",
+		"/blogs",
+		"/animate",
+	]
+
+	const isNotFound = !validPaths.includes(location.pathname)
 	return (
 		<div>
-			{!isSpecialPage && <Navbar />}
+			{!isNotFound && <Navbar />}
 			<Routes>
 				<Route
 					index
@@ -127,7 +140,7 @@ const App = () => {
 			</Routes>
 
 			{/* {!isStoryPage && <Footer />} */}
-			{!isSpecialPage && <Footer />}
+			{!isAboutPage && <Footer />}
 		</div>
 	)
 }

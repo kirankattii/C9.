@@ -26,7 +26,7 @@ const Packaging2 = () => {
 					<img
 						className="package-bg1"
 						src={assets.packaging}
-						alt=""
+						alt="Packaging"
 					/>
 					<p>
 						At C9 Ads, located in the heart of Perth, we specialise in digital
@@ -43,7 +43,7 @@ const Packaging2 = () => {
 					<img
 						className="package-bg2"
 						src={assets.packaging_bg1}
-						alt=""
+						alt="Packaging"
 					/>
 				</div>
 				<video
@@ -67,7 +67,7 @@ const Packaging2 = () => {
 				<img
 					className="package-bg3"
 					src={assets.packaging_bg2}
-					alt=""
+					alt="Packaging"
 				/>
 				<div className="package2-CaptureAttention">
 					<h2 className="media-capture-attention">Captures Attention</h2>
@@ -115,10 +115,7 @@ const Packaging2 = () => {
 							competitors.
 						</p>
 					</div>
-					{/* <img
-						src={assets.packag_img1}
-						alt=""
-					/> */}
+
 					<video
 						id="myVideo4"
 						autoPlay
@@ -155,11 +152,9 @@ const Packaging2 = () => {
 					</div>
 					<video
 						id="myVideo5"
-						// width="200"
 						autoPlay
 						muted
 						loop
-						// controls
 					>
 						<source
 							src={assets.packaging_v4}
@@ -170,7 +165,7 @@ const Packaging2 = () => {
 				<div className="package2-subContainer3">
 					<img
 						src={assets.packag_img2}
-						alt=""
+						alt="Packaging"
 					/>
 					<div>
 						<span>Our Design Principles and Process</span>
@@ -184,7 +179,7 @@ const Packaging2 = () => {
 					</div>
 					<img
 						src={assets.packag_img3}
-						alt=""
+						alt="Packaging"
 					/>
 				</div>
 				<div className="package2-subContainer4">
@@ -197,7 +192,7 @@ const Packaging2 = () => {
 								<img
 									key={index}
 									src={items.img}
-									alt=""
+									alt="Packaging"
 								/>
 							</div>
 						))}
@@ -211,7 +206,7 @@ const Packaging2 = () => {
 								<img
 									key={index}
 									src={items.img}
-									alt=""
+									alt="Packaging"
 								/>
 							</div>
 						))}
@@ -225,7 +220,7 @@ const Packaging2 = () => {
 								<img
 									key={index}
 									src={items.img}
-									alt=""
+									alt="Packaging"
 								/>
 							</div>
 						))}

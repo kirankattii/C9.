@@ -77,11 +77,16 @@ const Web = () => {
 	return (
 		<div className="web">
 			<div className="web-container">
-				<div className="web-header">
+				<motion.div
+					whileInView={{ scale: 1, opacity: 1, x: 0 }}
+					initial={{ scale: 0.94, opacity: 0, x: -50 }}
+					transition={{ duration: 0.6 }}
+					className="web-header"
+				>
 					<h1>Transform Your Online Presence with Expert Web Development</h1>
 					<h3>Building Digital Experiences, One Pixel at a Time.</h3>
 					<p>Elevate Your Digital Impact</p>
-				</div>
+				</motion.div>
 				<div className="web-content-video">
 					<div
 						className={`web-v1 ${isScrolled ? "scrolled" : ""}`}

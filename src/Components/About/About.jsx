@@ -111,7 +111,7 @@ const About = () => {
 					>
 						<img
 							src={assets.aboutcontent1}
-							alt=""
+							alt="About Us Image"
 						/>
 						<h3>Understands Your Vision</h3>
 						<p>
@@ -126,7 +126,7 @@ const About = () => {
 					>
 						<img
 							src={assets.aboutcontent2}
-							alt=""
+							alt="About Us Image"
 						/>
 						<h3>Delivers Measurable vision</h3>
 						<p>
@@ -141,7 +141,7 @@ const About = () => {
 					>
 						<img
 							src={assets.aboutcontent3}
-							alt=""
+							alt="About Us Image"
 						/>
 						<h3>Offers Comprehensive Solutions</h3>
 						<p>
@@ -169,8 +169,8 @@ const About = () => {
 						>
 							<img
 								src={assets.aboutService1}
-								alt=""
-							/>{" "}
+								alt="About Us Image"
+							/>
 							<img
 								src={assets.aboutService3}
 								alt=""
@@ -206,7 +206,7 @@ const About = () => {
 								duration: 1,
 							}}
 							src={assets.aboutService2}
-							alt=""
+							alt="About Us"
 						/>
 						<motion.div
 							initial={{ opacity: 0 }}
@@ -238,7 +238,7 @@ const About = () => {
 								duration: 1,
 							}}
 							src={assets.aboutService4}
-							alt=""
+							alt="About Us"
 						/>
 						<motion.div
 							initial={{ opacity: 0 }}
@@ -270,7 +270,7 @@ const About = () => {
 								duration: 1,
 							}}
 							src={assets.aboutService5}
-							alt=""
+							alt="About Us"
 						/>
 						<motion.div
 							initial={{ opacity: 0 }}

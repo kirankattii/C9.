@@ -3,10 +3,11 @@
   width: 100%;
   height: 100vh;
   overflow: auto;
+  z-index: 1;
 }
 
 .background-cover {
-  background-size: cover !important;
+  background-size: cover;
   /* background-color: red; */
   /* Debugging: Change background color to red */
 }

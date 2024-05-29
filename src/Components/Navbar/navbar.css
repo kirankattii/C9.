@@ -170,7 +170,7 @@ nav ul li a {
 }
 
 a:hover {
-  background-color: #333;
+  /* background-color: #333; */
 }
 
 .media-dropdown {

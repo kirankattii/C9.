@@ -139,7 +139,7 @@ const HomeSlides = () => {
 						<div className="home-slides">
 							<img
 								src={assets.web_development}
-								alt=""
+								alt="web development"
 							/>
 							<h2
 								onClick={() => {

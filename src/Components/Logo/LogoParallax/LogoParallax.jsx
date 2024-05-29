@@ -212,7 +212,7 @@ const Column = ({ images, y }) => {
 						<img
 							// src={`/images/${src}`}
 							src={src}
-							alt="image"
+							alt="Logos"
 							fill
 						/>
 					</div>

@@ -50,7 +50,7 @@ const Navbar = () => {
 				<img
 					className="logo"
 					src={assets.c9logo}
-					alt=""
+					alt="C9 logo"
 					onClick={() => navigate("/")}
 				/>
 				<ul className={moblieMenu ? "" : "hide-mobile-menu "}>
@@ -146,7 +146,7 @@ const Navbar = () => {
 				</ul>
 				<img
 					src={assets.menu_icon}
-					alt=""
+					alt="Menu Icon"
 					className="menu-icon"
 					onClick={toggleMenu}
 				/>

@@ -3,6 +3,7 @@
   min-height: 100vh;
   background: #1e1e1e;
   color: #fff;
+  overflow: hidden;
 }
 
 .socialMedia-header {

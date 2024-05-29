@@ -162,6 +162,22 @@
 
 }
 
+.logo-vault {
+  background: #fff;
+  color: #EF4523;
+  text-align: center;
+}
+
+.logo-vault {
+  padding: 10px;
+  font-size: 50px;
+  font-family: 'MadeTommyLight';
+  letter-spacing: 30px;
+  /* font-weight: 200; */
+  text-transform: uppercase;
+
+}
+
 @media(max-width:1000px) {
   .logo-content1 {
     position: absolute;
@@ -212,6 +228,14 @@
 
   }
 
+  .logo-vault {
+    padding: 10px;
+    font-size: 30px;
+    font-family: 'MadeTommyLight';
+    letter-spacing: 20px;
+    /* font-weight: 200; */
+
+  }
 }
 
 
@@ -312,13 +336,21 @@
     margin-top: 10px;
 
   }
+
+  .logo-vault {
+    padding: 10px;
+    font-size: 24px;
+    font-family: 'MadeTommyLight';
+    letter-spacing: 6px;
+
+
+  }
 }
 
 @media(max-width:400px) {
 
   .logo-header h1 {
     width: 100%;
-    /* white-space: nowrap; */
     font-size: 80px;
     font-family: 'MadeTommySoft';
     letter-spacing: 2px;
@@ -327,4 +359,12 @@
     text-align: center;
   }
 
+  .logo-vault {
+    padding: 10px;
+    font-size: 22px;
+    font-family: 'MadeTommyLight';
+    letter-spacing: 5px;
+
+
+  }
 }

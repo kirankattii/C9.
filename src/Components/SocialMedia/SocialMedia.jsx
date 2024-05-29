@@ -69,7 +69,7 @@ const SocialMedia = () => {
 					<img
 						className="socialMedia-img1"
 						src={assets.socialMedia_img}
-						alt=""
+						alt="Social Media Images"
 					/>
 					<motion.p style={{ y: sm }}>
 						In today's digital age, where consumer choices are shaped by online
@@ -356,7 +356,10 @@ const SocialMedia = () => {
 				</div>
 			</div>
 			<div className="socialmedia-allVideos">
-				<video
+				<motion.video
+					whileInView={{ scale: 1, opacity: 1 }}
+					initial={{ scale: 0.6, opacity: 0 }}
+					transition={{ duration: 0.4 }}
 					autoPlay
 					muted
 					loop
@@ -365,8 +368,11 @@ const SocialMedia = () => {
 						src={assets.socialMedia_v4}
 						type="video/mp4"
 					/>
-				</video>
-				<video
+				</motion.video>
+				<motion.video
+					whileInView={{ scale: 1, opacity: 1 }}
+					initial={{ scale: 0.6, opacity: 0 }}
+					transition={{ duration: 0.4 }}
 					autoPlay
 					muted
 				>
@@ -374,7 +380,7 @@ const SocialMedia = () => {
 						src={assets.socialMedia_v2}
 						type="video/mp4"
 					/>
-				</video>
+				</motion.video>
 			</div>
 
 			<div className="socialmedia-mediaContant2">
@@ -405,7 +411,10 @@ const SocialMedia = () => {
 			</div>
 			<div className="socialmedia-allVideos2">
 				<div>
-					<video
+					<motion.video
+						whileInView={{ opacity: 1, y: 0, x: 0 }}
+						initial={{ opacity: 0, y: -150, x: -150 }}
+						transition={{ duration: 0.6 }}
 						autoPlay
 						muted
 						loop
@@ -414,8 +423,11 @@ const SocialMedia = () => {
 							src={assets.socialMedia_v5}
 							type="video/mp4"
 						/>
-					</video>
-					<video
+					</motion.video>
+					<motion.video
+						whileInView={{ opacity: 1, y: 0, x: 0 }}
+						initial={{ opacity: 0, y: -150, x: 150 }}
+						transition={{ duration: 0.6 }}
 						autoPlay
 						muted
 						loop
@@ -424,10 +436,13 @@ const SocialMedia = () => {
 							src={assets.socialMedia_v6}
 							type="video/mp4"
 						/>
-					</video>
+					</motion.video>
 				</div>
 				<div>
-					<video
+					<motion.video
+						whileInView={{ opacity: 1, y: 0, x: 0 }}
+						initial={{ opacity: 0, y: 150, x: -150 }}
+						transition={{ duration: 0.6 }}
 						autoPlay
 						muted
 						loop
@@ -436,8 +451,11 @@ const SocialMedia = () => {
 							src={assets.socialMedia_v7}
 							type="video/mp4"
 						/>
-					</video>
-					<video
+					</motion.video>
+					<motion.video
+						whileInView={{ opacity: 1, y: 0, x: 0 }}
+						initial={{ opacity: 0, y: 150, x: 150 }}
+						transition={{ duration: 0.6 }}
 						autoPlay
 						muted
 						loop
@@ -446,7 +464,7 @@ const SocialMedia = () => {
 							src={assets.socialMedia_v3}
 							type="video/mp4"
 						/>
-					</video>
+					</motion.video>
 				</div>
 			</div>
 			<div className="socialMedia-connect">
