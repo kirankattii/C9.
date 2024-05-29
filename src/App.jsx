@@ -3,14 +3,14 @@ import { Routes, Route, useLocation, Router } from "react-router-dom"
 import Navbar from "./Components/Navbar/Navbar"
 import Home from "./Components/Home/Home"
 import Footer from "./Components/Footer/Footer"
-import Story from "./Components/Story/Story"
+// import Story from "./Components/Story/Story"
 
 import "locomotive-scroll/dist/locomotive-scroll.css"
 import Contact from "./Components/Contact/Contact"
 import Services from "./Components/Services/Services"
-import Animate from "./Components/Animate"
-import LogoWork from "./Components/LogoWork/LogoWork"
-import Packaging from "./Components/Packaging/Packaging"
+
+// import LogoWork from "./Components/LogoWork/LogoWork"
+// import Packaging from "./Components/Packaging/Packaging"
 import Values from "./Components/Values/Values"
 import About from "./Components/About/About"
 import SubPage1 from "./Components/Home/subpages/SubPage1/SubPage1"
@@ -129,10 +129,7 @@ const App = () => {
 					path="/blogs"
 					element={<Blog />}
 				/>
-				<Route
-					path="/animate"
-					element={<Animate />}
-				/>
+
 				<Route
 					path="*"
 					element={<NotFound />}

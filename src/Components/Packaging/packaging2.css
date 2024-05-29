@@ -1,6 +1,7 @@
 .packaging2 {
   width: 100%;
   min-height: 100vh;
+  overflow: hidden;
 }
 
 .packaging2-header {
@@ -115,9 +116,13 @@
 
 }
 
+.package2-CaptureAttention-left {
+  max-width: 50%;
+}
+
 #myVideo1 {
-  width: 80%;
-  height: 100vh;
+  /* width: 80%; */
+  height: 110vh;
   border-radius: 30%;
   padding: 100px 0;
   margin-left: 80px;
@@ -199,7 +204,7 @@
 
 #myVideo4 {
   z-index: 1;
-  width: 60%;
+  width: 50%;
   border-radius: 100%;
 }
 
@@ -517,18 +522,29 @@
 @media(max-width:800px) {
   .packaging2-header {
     flex-direction: column;
+    padding: 0;
+    margin: 0;
+    width: 100%;
   }
 
   .packaging2-header {
     /* padding-top: 80px; */
+    width: 100%;
     padding-top: 0px;
-    height: 170vh;
+    height: 160vh;
     background: #1e1e1e;
     /* background: url("../../assets/packaging_bg1.png"); */
     background-repeat: no-repeat;
     display: flex;
     justify-content: space-between;
     overflow: hidden;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  .package-bg1 {
+    width: 80%;
   }
 
   .packaging2-header div {
@@ -536,17 +552,19 @@
   }
 
   #myVideo {
-    width: 70%;
+    /* width: 65%; */
+    width: 450px;
     border-radius: 100%;
     margin: auto;
-    height: 42%;
+    /* height: 42%; */
+    height: 450px;
     box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
     margin-top: 30px;
     z-index: 5;
   }
 
   #myVideo1 {
-    width: 70%;
+    width: 120%;
     height: 70vh;
     border-radius: 30%;
     padding: 30px 0;
@@ -555,6 +573,19 @@
     /* height: 80px; */
   }
 
+  .package2-CaptureAttention {
+    gap: 50px;
+  }
+
+
+
+  #myVideo2 {
+    width: 50%;
+  }
+
+  .packaging2-header p {
+    margin-top: -40px;
+  }
 
   .package2-CaptureAttention-right h2 {
     font-size: 35px;
@@ -586,6 +617,11 @@
     margin-bottom: 50px;
     flex-direction: column;
 
+  }
+
+  .package2-CaptureAttention-right h2, .package2-CaptureAttention-right p {
+    width: 100%;
+    padding-left: 100px;
   }
 
   .package2-subContainer1 span {
@@ -695,10 +731,12 @@
 @media(max-width:600px) {
 
   #myVideo {
-    width: 70%;
+    /* width: 57.5%; */
+    width: 350px;
     border-radius: 100%;
     margin: auto;
-    height: 30%;
+    /* height: 30%; */
+    height: 350px;
     box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
     margin-top: 50px;
     z-index: 5;
@@ -706,14 +744,11 @@
 }
 
 @media(max-width:500px) {
-  #myVideo {
-    margin-top: 20px;
-    height: 28%;
-  }
+
 
   #myVideo1 {
-    width: 70%;
-    height: 70vh;
+    width: 120%;
+
     border-radius: 0 50% 50% 0;
     padding: 30px 0;
     margin-left: -10px;
@@ -722,7 +757,8 @@
   }
 
   #myVideo2 {
-    width: 90%;
+    width: 60%;
+    margin-left: 110px;
   }
 
   .packaging2-header div {
@@ -841,4 +877,18 @@
 
   }
 
+}
+
+@media(max-width:400px) {
+  #myVideo {
+    /* width: 57.5%; */
+    width: 300px;
+    border-radius: 100%;
+    margin: auto;
+    /* height: 30%; */
+    height: 300px;
+    box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
+    margin-top: 50px;
+    z-index: 5;
+  }
 }
