@@ -746,6 +746,19 @@
 @media(max-width:500px) {
 
 
+
+  #myVideo {
+    /* width: 57.5%; */
+    width: 250px;
+    border-radius: 100%;
+    margin: auto;
+    /* height: 30%; */
+    height: 250px;
+    box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
+    margin-top: 50px;
+    z-index: 5;
+  }
+
   #myVideo1 {
     width: 120%;
 
@@ -882,13 +895,24 @@
 @media(max-width:400px) {
   #myVideo {
     /* width: 57.5%; */
-    width: 300px;
+    width: 280px;
     border-radius: 100%;
     margin: auto;
     /* height: 30%; */
-    height: 300px;
+    height: 280px;
     box-shadow: 100% 0% 0% 100% / 100% 100% 0% 0%;
     margin-top: 50px;
     z-index: 5;
+  }
+
+  .packaging2-header {
+    height: 170vh;
+  }
+
+}
+
+@media(max-width:370px) {
+  .packaging2-header {
+    height: 180vh;
   }
 }

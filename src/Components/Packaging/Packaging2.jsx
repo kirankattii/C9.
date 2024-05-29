@@ -229,9 +229,9 @@ const Packaging2 = () => {
 						// 	ease: "easeIn",
 						// 	duration: 1,
 						// }}
-						whileInView={{ scale: 1, opacity: 1, x: 0, y: 0 }}
-						initial={{ scale: 0.5, opacity: 0, x: 150, y: -100 }}
-						transition={{ duration: 0.6 }}
+						// whileInView={{ scale: 1, opacity: 1, x: 0, y: 0 }}
+						// initial={{ scale: 0.5, opacity: 0, x: 150, y: -100 }}
+						// transition={{ duration: 0.6 }}
 						src={assets.packag_img2}
 						alt=""
 					/>
@@ -250,9 +250,9 @@ const Packaging2 = () => {
 						</p>
 					</motion.div>
 					<motion.img
-						whileInView={{ scale: 1, opacity: 1, x: 0, y: 0 }}
-						initial={{ scale: 0.5, opacity: 0, x: -150, y: 100 }}
-						transition={{ duration: 0.6 }}
+						// whileInView={{ scale: 1, opacity: 1, x: 0, y: 0 }}
+						// initial={{ scale: 0.5, opacity: 0, x: -150, y: 100 }}
+						// transition={{ duration: 0.6 }}
 						src={assets.packag_img3}
 						alt=""
 					/>
