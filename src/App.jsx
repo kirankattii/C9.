@@ -1,5 +1,4 @@
-import React from "react"
-import { Routes, Route, useLocation, Router } from "react-router-dom"
+import { Routes, Route, useLocation } from "react-router-dom"
 import Navbar from "./Components/Navbar/Navbar"
 import Home from "./Components/Home/Home"
 import Footer from "./Components/Footer/Footer"
@@ -24,6 +23,7 @@ import SocialMedia from "./Components/SocialMedia/SocialMedia"
 import Web from "./Components/Web/Web"
 import Logo from "./Components/Logo/Logo"
 import NotFound from "./Components/NotFound/NotFound"
+import SubPage5 from "./Components/Home/subpages/subpage5/SubPage5"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -31,9 +31,9 @@ const App = () => {
 	const location = useLocation()
 
 	// Check if the current location is the Story page
-	const isStoryPage = location.pathname === "/story"
-	const isLogoWorkPage = location.pathname === "/work"
-	const isPackagingPage = location.pathname === "/packaging"
+	// const isStoryPage = location.pathname === "/story"
+	// const isLogoWorkPage = location.pathname === "/work"
+	// const isPackagingPage = location.pathname === "/packaging"
 	const isAboutPage = location.pathname === "/about-us"
 	// const isNotFound = location.pathname === "*"
 
@@ -94,6 +94,10 @@ const App = () => {
 					element={<SubPage4 />}
 				/>
 				<Route
+					path="/our-service5"
+					element={<SubPage5 />}
+				/>
+				<Route
 					path="/contact"
 					element={<Contact />}
 				/>
@@ -129,7 +133,6 @@ const App = () => {
 					path="/blogs"
 					element={<Blog />}
 				/>
-
 				<Route
 					path="*"
 					element={<NotFound />}

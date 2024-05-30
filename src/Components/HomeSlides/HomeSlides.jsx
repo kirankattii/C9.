@@ -1,11 +1,11 @@
-import React, { useEffect, useRef } from "react"
-import {
-	Pagination,
-	Navigation,
-	Scrollbar,
-	A11y,
-	EffectCube,
-} from "swiper/modules"
+import { useEffect, useRef } from "react"
+// import {
+// 	Pagination,
+// 	Navigation,
+// 	Scrollbar,
+// 	A11y,
+// 	EffectCube,
+// } from "swiper/modules"
 import "./homeSlides.css"
 import { register } from "swiper/element/bundle"
 register()

@@ -296,9 +296,15 @@ export const homeCorosal = [
 	},
 	{
 		id: 4,
-		title: "LOGO AND PACKAGING DESIGN",
+		title: "LOGO DESIGN",
 		image: "./whitebgreat.png",
 		link: "./our-service4",
+	},
+	{
+		id: 5,
+		title: "PACKAGING DESIGN",
+		image: "./whitebgreat.png",
+		link: "./our-service5",
 	},
 ]
 

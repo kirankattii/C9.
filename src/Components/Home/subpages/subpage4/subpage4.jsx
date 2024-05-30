@@ -1,5 +1,3 @@
-import React from "react"
-// import "./subPage1.css"
 import { motion } from "framer-motion"
 import { assets } from "../../../../assets/asset"
 

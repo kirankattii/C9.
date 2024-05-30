@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react"
+import { useRef } from "react"
 import "./packaging2.css"
 import { motion, useTransform, useScroll } from "framer-motion"
 
