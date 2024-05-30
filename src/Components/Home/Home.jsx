@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react"
+import { useEffect, useState } from "react"
 import { assets, ourPride } from "../../assets/asset"
 import CountUp from "react-countup"
 import ScrollTrigger from "react-scroll-trigger"
@@ -6,6 +6,7 @@ import "./home.css"
 import { motion } from "framer-motion"
 import HomeSlides from "../HomeSlides/HomeSlides"
 import ProvideCoa from "./ProvideCoa/ProvideCoa"
+import { Link } from "react-router-dom"
 
 const container = (delay) => ({
 	hidden: { x: -100, opacity: 0 },
@@ -102,15 +103,25 @@ const Home = () => {
 				>
 					<p>KNOW MORE</p>
 					<div className="service-tags">
-						<span>Social Media Marketing</span>
+						<span>
+							<Link to={"/social-media-marketing"}>Social Media Marketing</Link>
+						</span>
 						<hr />
-						<span>Web Development</span>
+						<span>
+							<Link to={"/web-development"}>Web Development</Link>
+						</span>
 						<hr />
-						<span>SEO</span>
+						<span>
+							<Link to={"/seo"}>SEO</Link>
+						</span>
 						<hr />
-						<span>Logo Design</span>
+						<span>
+							<Link to={"/logo"}>Logo Design</Link>
+						</span>
 						<hr />
-						<span>Packaging Design</span>
+						<span>
+							<Link to={"/packaging2"}>Packaging Design</Link>
+						</span>
 					</div>
 				</motion.div>
 			</div>
@@ -282,7 +293,9 @@ const Home = () => {
 						</div>
 						<div className="explore-new-forntier-btn">
 							<div className="explore-new-forntier-btn-border">
-								<button>Explore New Frontiers</button>
+								<button>
+									<Link to={"/services"}>Explore New Frontiers</Link>
+								</button>
 							</div>
 						</div>
 					</div>

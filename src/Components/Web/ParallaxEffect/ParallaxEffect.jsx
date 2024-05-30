@@ -54,7 +54,10 @@ export default function Home() {
 
 	return (
 		<main className={styles.main}>
-			<div className={styles.spacer}></div>
+			<div className={styles.spacer}>
+				{" "}
+				<h1>OUR WORK</h1>
+			</div>
 			<div
 				ref={gallery}
 				className={styles.gallery}

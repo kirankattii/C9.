@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react"
+import { useEffect, useRef, useState } from "react"
 import "./web.css"
 import { assets } from "../../assets/asset"
 import { motion } from "framer-motion"
@@ -360,7 +360,9 @@ const Web = () => {
 							<div className="web-text-content5">
 								<div className="web-text-innerContent5">
 									<div>
-										<h3>Discovery and Planning</h3>
+										<h3>
+											<span>1. </span>Discovery and Planning
+										</h3>
 										<p>
 											We begin by thoroughly understanding your business, goals,
 											and target audience. This allows us to create a detailed
@@ -368,7 +370,9 @@ const Web = () => {
 										</p>
 									</div>
 									<div>
-										<h3>Ongoing Support</h3>
+										<h3>
+											<span>6. </span>Ongoing Support
+										</h3>
 										<p>
 											Our commitment to your success extends beyond the launch.
 											We provide ongoing support and maintenance to keep your
@@ -378,7 +382,9 @@ const Web = () => {
 								</div>
 								<div className="web-text-innerContent5 web-text-innerContent55">
 									<div>
-										<h3>Design and Prototyping</h3>
+										<h3>
+											<span>2. </span>Design and Prototyping
+										</h3>
 										<p>
 											Our designers develop wireframes and prototypes to
 											visualize the layout and functionality of your website. We
@@ -388,7 +394,9 @@ const Web = () => {
 									</div>
 									<h2>Our Web Development Process</h2>
 									<div>
-										<h3>Launch and Optimization</h3>
+										<h3>
+											<span>5. </span>Launch and Optimization
+										</h3>
 										<p>
 											Upon completion, we deploy your website to the live server
 											and monitor its performance. We continue to make
@@ -398,7 +406,9 @@ const Web = () => {
 								</div>
 								<div className="web-text-innerContent5 ">
 									<div>
-										<h3>Development</h3>
+										<h3>
+											<span>3. </span>Development
+										</h3>
 										<p>
 											Our developers bring the designs to life using the latest
 											coding standards and technologies, ensuring your website
@@ -406,7 +416,9 @@ const Web = () => {
 										</p>
 									</div>
 									<div>
-										<h3>Testing</h3>
+										<h3>
+											<span>4. </span>Testing
+										</h3>
 										<p>
 											We conduct rigorous testing across various browsers and
 											devices to ensure flawless performance. We address any
@@ -476,8 +488,14 @@ const Web = () => {
 						</div>
 					</div>
 				</div>
+
+				{/* <div className="parallaxweb-ourwork"> */}
+
+				{/* </div> */}
 				{/* <ParallaxEff */}
-				<ParallaxEffect />
+				<div className="web-parallax">
+					<ParallaxEffect />
+				</div>
 			</div>
 		</div>
 	)

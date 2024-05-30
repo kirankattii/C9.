@@ -24,6 +24,7 @@ import Web from "./Components/Web/Web"
 import Logo from "./Components/Logo/Logo"
 import NotFound from "./Components/NotFound/NotFound"
 import SubPage5 from "./Components/Home/subpages/subpage5/SubPage5"
+import Whatsapp from "./Components/Whatsapp/Whatsapp"
 
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
@@ -138,6 +139,7 @@ const App = () => {
 					element={<NotFound />}
 				/>
 			</Routes>
+			<Whatsapp />
 
 			{/* {!isStoryPage && <Footer />} */}
 			{!isAboutPage && <Footer />}

@@ -1,0 +1,40 @@
+.whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  /* Ensure it is on top of other elements */
+}
+
+.whatsapp img {
+  width: 50px;
+  /* Adjust size as needed */
+  height: 50px;
+  /* Adjust size as needed */
+  cursor: pointer;
+}
+
+
+.tooltip {
+  visibility: hidden;
+  width: 80px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  /* Position above the icon */
+  left: 50%;
+  margin-left: -40px;
+  /* Center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.whatsapp a:hover .tooltip {
+  visibility: visible;
+  opacity: 1;
+}
