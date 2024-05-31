@@ -2468,6 +2468,9 @@
   /* Change the color of the active bullet */
 }
 
+.mySwiper2 {
+  height: 80%;
+}
 
 @media(max-width:1000px) {
   .text-custjourny {
