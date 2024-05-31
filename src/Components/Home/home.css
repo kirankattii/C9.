@@ -127,6 +127,7 @@
 
 .service-tags span {
   font-weight: 300;
+  color: #EF4523;
 }
 
 
@@ -2374,6 +2375,7 @@
 
 }
 
+
 .text-freedback {
   font-size: 90px;
   font-weight: 400;
@@ -2394,13 +2396,18 @@
 }
 
 .home-testimonial-exp1-img {
+
   border: 1px solid #EF4523;
   position: relative;
+
+  /* height: 20%; */
 }
 
 .home-testimonial-exp1-img img {
   width: 200px;
 }
+
+
 
 .home-testimonial-exp1-content {
   background: #EF4523;
@@ -2433,7 +2440,34 @@
 
 .home-testimonials-text2 {
   display: none;
+
 }
+
+.mySwiper {
+  position: relative;
+}
+
+.mySwiper .swiper-pagination {
+  position: absolute;
+  top: 10px;
+  /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.mySwiper .swiper-pagination-bullet {
+  background-color: orange;
+  /* Change the color of pagination bullets */
+}
+
+.mySwiper .swiper-pagination-bullet-active {
+  background-color: darkorange;
+  /* Change the color of the active bullet */
+}
+
 
 @media(max-width:1000px) {
   .text-custjourny {

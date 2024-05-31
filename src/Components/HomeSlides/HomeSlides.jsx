@@ -138,7 +138,7 @@ const HomeSlides = () => {
 					<SwiperSlide className="slider-container">
 						<div className="home-slides">
 							<img
-								src={assets.web_development}
+								src={item.image}
 								alt="web development"
 							/>
 							<h2

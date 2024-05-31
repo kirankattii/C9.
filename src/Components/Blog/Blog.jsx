@@ -48,7 +48,7 @@ const Blog = () => {
 												alt="Blog"
 											/>
 										</a>
-										<div class="tooltip">Smith</div>
+										<div class="tooltip1">Smith</div>
 									</li>
 									<li class="icon-content">
 										<a
@@ -62,7 +62,7 @@ const Blog = () => {
 												alt=""
 											/>
 										</a>
-										<div class="tooltip">Smith</div>
+										<div class="tooltip1">Smith</div>
 									</li>
 									<li class="icon-content">
 										<a
@@ -76,7 +76,7 @@ const Blog = () => {
 												alt="Blog Image"
 											/>
 										</a>
-										<div class="tooltip">Smith</div>
+										<div class="tooltip1">Smith</div>
 									</li>
 									<li class="icon-content">
 										<a
@@ -90,7 +90,7 @@ const Blog = () => {
 												alt=""
 											/>
 										</a>
-										<div class="tooltip">Smith</div>
+										<div class="tooltip1">Smith</div>
 									</li>
 								</ul>
 							</main>

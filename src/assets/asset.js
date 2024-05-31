@@ -138,6 +138,11 @@ import logos39 from "./logos/logo40.png"
 import logos40 from "./logos/logo41.png"
 import logos41 from "./logos/logo42.png"
 import logos42 from "./logos/logo45.png"
+import homeslide1 from "./homeSlide/social media slide.svg"
+import homeslide2 from "./homeSlide/webdevlopment slide.svg"
+import homeslide3 from "./homeSlide/seo slide.svg"
+import homeslide4 from "./homeSlide/logo slide.svg"
+import homeslide5 from "./homeSlide/paskaging slide.svg"
 
 export const assets = {
 	c9logo,
@@ -278,33 +283,33 @@ export const homeCorosal = [
 	{
 		id: 1,
 		title: "SOCIAL MEDIA MARKETING",
-		image: "./whitebgreat.png",
-		link: "./our-service1",
+		image: homeslide1,
+		link: "./social-media-marketing",
 	},
 	{
 		id: 2,
 		title: "WEB DEVELOPMENT",
-		image: "./whitebgreat.png",
-		link: "./our-service2",
+		image: homeslide2,
+		link: "./web-development",
 	},
 
 	{
 		id: 3,
 		title: "SEARCH ENGINE OPTIMIZATION",
-		image: "./whitebgreat.png",
-		link: "./our-service3",
+		image: homeslide3,
+		link: "./seo",
 	},
 	{
 		id: 4,
 		title: "LOGO DESIGN",
-		image: "./whitebgreat.png",
-		link: "./our-service4",
+		image: homeslide4,
+		link: "./logo",
 	},
 	{
 		id: 5,
-		title: "PACKAGING DESIGN",
-		image: "./whitebgreat.png",
-		link: "./our-service5",
+		title: "PACKAGING ",
+		image: homeslide5,
+		link: "./packaging2",
 	},
 ]
 
@@ -312,22 +317,27 @@ export const ourPride = [
 	{
 		id: 1,
 		title: "Web Development",
+		link: "./web-development",
 	},
 	{
 		id: 2,
 		title: "Social Media Marketing",
+		link: "./social-media-marketing",
 	},
 	{
 		id: 3,
 		title: "Search Engine Optimization",
+		link: "./seo",
 	},
 	{
 		id: 4,
 		title: "Logo Design",
+		link: "./logo",
 	},
 	{
 		id: 5,
 		title: "Packaging Design",
+		link: "./packaging2",
 	},
 ]
 

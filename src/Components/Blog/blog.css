@@ -374,7 +374,7 @@ ul {
   margin-top: 40px;
 }
 
-.example-1 .icon-content .tooltip {
+.example-1 .icon-content .tooltip1 {
   position: absolute;
   top: -30px;
   left: 50%;
@@ -389,7 +389,7 @@ ul {
   transition: all 0.3s ease;
 }
 
-.example-1 .icon-content:hover .tooltip {
+.example-1 .icon-content:hover .tooltip1 {
   opacity: 1;
   visibility: visible;
   top: -40px;

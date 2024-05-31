@@ -22,7 +22,7 @@
   align-items: center;
 }
 
-.swiper-slide img {
+.slider-container img {
   display: flex;
   width: 60%;
   height: 400px;
@@ -92,6 +92,14 @@
 .swiper-button-prev {
   margin-left: 80px;
 }
+
+.testimonial-slider {}
+
+.mySwiper2 {
+  /* height: 50%; */
+}
+
+@media(max-width: 1250px) {}
 
 @media (max-width: 1000px) {
   .swiper-slide img {

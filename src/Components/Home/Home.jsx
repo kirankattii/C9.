@@ -7,7 +7,12 @@ import { motion } from "framer-motion"
 import HomeSlides from "../HomeSlides/HomeSlides"
 import ProvideCoa from "./ProvideCoa/ProvideCoa"
 import { Link } from "react-router-dom"
-
+import { useNavigate } from "react-router-dom"
+import { Swiper, SwiperSlide } from "swiper/react"
+import { Autoplay, Pagination } from "swiper/modules"
+import "swiper/css"
+import "swiper/css/pagination"
+import "swiper/css/navigation"
 const container = (delay) => ({
 	hidden: { x: -100, opacity: 0 },
 	visible: {
@@ -28,7 +33,9 @@ const container1 = (delay) => ({
 		transition: { duration: 0.5, delay: delay },
 	},
 })
-
+const handleClick = () => {
+	window.scrollTo(0, 0)
+}
 const Home = () => {
 	const [activeIndex, setActiveIndex] = useState(0)
 	const [conterTrigger, setCounterTrigger] = useState(false)
@@ -61,7 +68,7 @@ const Home = () => {
 	const handleMouseLeave = () => {
 		setIsMuted(true) // Mute the video again when mouse leaves
 	}
-
+	const navigate = useNavigate()
 	return (
 		<div>
 			<div className="home">
@@ -164,6 +171,7 @@ const Home = () => {
 				</div>
 				<div className="home-ourdesign-content">
 					<motion.div
+						onClick={() => naviga}
 						whileInView={{ opacity: 1, x: 0 }}
 						initial={{ opacity: 0, x: -100 }}
 						transition={{ duration: 0.5 }}
@@ -255,6 +263,7 @@ const Home = () => {
 						<div className="ourpride-lists">
 							{ourPride.map((num, index) => (
 								<motion.div
+									onClick={() => navigate(num.link)}
 									whileInView={{ opacity: 1, x: 0 }}
 									initial={{ opacity: 0, x: -100 }}
 									transition={{ duration: 0.8 }}
@@ -293,7 +302,7 @@ const Home = () => {
 						</div>
 						<div className="explore-new-forntier-btn">
 							<div className="explore-new-forntier-btn-border">
-								<button>
+								<button onClick={() => handleClick()}>
 									<Link to={"/services"}>Explore New Frontiers</Link>
 								</button>
 							</div>
@@ -523,33 +532,145 @@ const Home = () => {
 						<h3>Delving into customer journeys </h3>
 						<h3>insights through invaluable feedback</h3>
 					</div>
-					<div className="home-testimonial-exp1">
-						<div className="home-testimonial-exp1-img">
-							<motion.img
-								whileInView={{ opacity: 1, x: 0 }}
-								initial={{ opacity: 0, x: -100 }}
-								transition={{ duration: 0.8 }}
-								src={assets.user1}
-								alt="Users Image"
-							/>
-						</div>
-						<motion.div
-							whileInView={{ opacity: 1, x: 0 }}
-							initial={{ opacity: 0, x: 100 }}
-							transition={{ duration: 0.8 }}
-							className="home-testimonial-exp1-content"
-						>
-							<p>
-								Rorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam
-								eu turpis molestie, dictum est a, mattis tellus. Sed dignissim,
-								metus nec fringilla accumsan, risus sem sollicitudin lacus, ut
-								interdum tellus elit sed risus. Maecenas eget condimentum velit,
-								sit amet feugiat lectus. Class aptent taciti sociosqu ad litora
-								torquent per conubia nostra, per inceptos himenaeos.
-							</p>
-							<span>SIMON COLE</span>
-						</motion.div>
-					</div>
+					<Swiper
+						spaceBetween={30}
+						centeredSlides={true}
+						autoplay={{
+							delay: 2500,
+							disableOnInteraction: false,
+						}}
+						pagination={{
+							clickable: true,
+							el: ".swiper-pagination", // Ensure pagination element is specified
+							bulletClass: "swiper-pagination-bullet", // Default class for pagination bullet
+							bulletActiveClass: "swiper-pagination-bullet-active",
+						}}
+						loop={true}
+						modules={[Autoplay, Pagination]}
+						className="mySwiper2"
+					>
+						<SwiperSlide className="testimonial-slider">
+							<div className="home-testimonial-exp1">
+								<div className="home-testimonial-exp1-img">
+									<motion.img
+										whileInView={{ opacity: 1, x: 0 }}
+										initial={{ opacity: 0, x: -100 }}
+										transition={{ duration: 0.8 }}
+										src={assets.user1}
+										alt="Users Image"
+										className="simon-image"
+									/>
+								</div>
+								<motion.div
+									whileInView={{ opacity: 1, x: 0 }}
+									initial={{ opacity: 0, x: 100 }}
+									transition={{ duration: 0.8 }}
+									className="home-testimonial-exp1-content"
+								>
+									<p>
+										Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+										dignissim, metus nec fringilla accumsan, risus sem
+										sollicitudin lacus, ut interdum tellus elit sed risus.
+										Maecenas eget condimentum velit, sit amet feugiat lectus.
+										Class aptent taciti sociosqu ad litora torquent per conubia
+										nostra, per inceptos himenaeos.
+									</p>
+									<span>SIMON COLE</span>
+								</motion.div>
+							</div>
+						</SwiperSlide>
+						<SwiperSlide>
+							<div className="home-testimonial-exp1">
+								<div className="home-testimonial-exp1-img">
+									<motion.img
+										whileInView={{ opacity: 1, x: 0 }}
+										initial={{ opacity: 0, x: -100 }}
+										transition={{ duration: 0.8 }}
+										src={assets.user1}
+										alt="Users Image"
+									/>
+								</div>
+								<motion.div
+									whileInView={{ opacity: 1, x: 0 }}
+									initial={{ opacity: 0, x: 100 }}
+									transition={{ duration: 0.8 }}
+									className="home-testimonial-exp1-content"
+								>
+									<p>
+										Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+										dignissim, metus nec fringilla accumsan, risus sem
+										sollicitudin lacus, ut interdum tellus elit sed risus.
+										Maecenas eget condimentum velit, sit amet feugiat lectus.
+										Class aptent taciti sociosqu ad litora torquent per conubia
+										nostra, per inceptos himenaeos.
+									</p>
+									<span>SIMON COLE</span>
+								</motion.div>
+							</div>
+						</SwiperSlide>{" "}
+						<SwiperSlide>
+							<div className="home-testimonial-exp1">
+								<div className="home-testimonial-exp1-img">
+									<motion.img
+										whileInView={{ opacity: 1, x: 0 }}
+										initial={{ opacity: 0, x: -100 }}
+										transition={{ duration: 0.8 }}
+										src={assets.user1}
+										alt="Users Image"
+									/>
+								</div>
+								<motion.div
+									whileInView={{ opacity: 1, x: 0 }}
+									initial={{ opacity: 0, x: 100 }}
+									transition={{ duration: 0.8 }}
+									className="home-testimonial-exp1-content"
+								>
+									<p>
+										Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+										dignissim, metus nec fringilla accumsan, risus sem
+										sollicitudin lacus, ut interdum tellus elit sed risus.
+										Maecenas eget condimentum velit, sit amet feugiat lectus.
+										Class aptent taciti sociosqu ad litora torquent per conubia
+										nostra, per inceptos himenaeos.
+									</p>
+									<span>SIMON COLE</span>
+								</motion.div>
+							</div>
+						</SwiperSlide>{" "}
+						<SwiperSlide>
+							<div className="home-testimonial-exp1">
+								<div className="home-testimonial-exp1-img">
+									<motion.img
+										whileInView={{ opacity: 1, x: 0 }}
+										initial={{ opacity: 0, x: -100 }}
+										transition={{ duration: 0.8 }}
+										src={assets.user1}
+										alt="Users Image"
+									/>
+								</div>
+								<motion.div
+									whileInView={{ opacity: 1, x: 0 }}
+									initial={{ opacity: 0, x: 100 }}
+									transition={{ duration: 0.8 }}
+									className="home-testimonial-exp1-content"
+								>
+									<p>
+										Rorem ipsum dolor sit amet, consectetur adipiscing elit.
+										Etiam eu turpis molestie, dictum est a, mattis tellus. Sed
+										dignissim, metus nec fringilla accumsan, risus sem
+										sollicitudin lacus, ut interdum tellus elit sed risus.
+										Maecenas eget condimentum velit, sit amet feugiat lectus.
+										Class aptent taciti sociosqu ad litora torquent per conubia
+										nostra, per inceptos himenaeos.
+									</p>
+									<span>SIMON COLE</span>
+								</motion.div>
+							</div>
+						</SwiperSlide>
+					</Swiper>
 				</div>
 				<h2 className="home-testimonal-btn">TESTIMONALS</h2>
 			</div>
