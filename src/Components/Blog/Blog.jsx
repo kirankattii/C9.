@@ -114,7 +114,7 @@ const Blog = ({ url }) => {
 													alt=""
 												/>
 											</a>
-											<div class="tooltip1">Smith</div>
+											{/* <div class="tooltip1">Smith</div> */}
 										</li>
 									</ul>
 								</main>
