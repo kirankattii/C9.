@@ -30,6 +30,8 @@ import ScrollToTop from "./Components/ScrollToTop/ScrollToTop"
 // import LogoWork from "./Components/Work/LogoWork/LogoWork"
 
 const App = () => {
+	const url = "https://c9-backend.onrender.com"
+
 	const location = useLocation()
 
 	// Check if the current location is the Story page
@@ -134,7 +136,7 @@ const App = () => {
 				/>
 				<Route
 					path="/blogs"
-					element={<Blog />}
+					element={<Blog url={url} />}
 				/>
 				<Route
 					path="*"

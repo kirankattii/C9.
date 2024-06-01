@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@studio-freight/lenis": "^1.0.42",
+    "axios": "^1.7.2",
     "framer-motion": "^11.0.28",
     "gsap": "^3.12.5",
     "react": "^18.2.0",
@@ -23,6 +24,7 @@
     "react-scroll-trigger": "^0.6.14",
     "react-slick": "^0.30.2",
     "react-tilt": "^1.0.2",
+    "react-toast": "^1.0.3",
     "sass": "^1.77.2",
     "slick-carousel": "^1.8.1",
     "styled-components": "^6.1.8",
