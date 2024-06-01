@@ -13,12 +13,9 @@ const Blog = ({ url }) => {
 			const response = await axios.get(`${url}/api/blog/list`)
 			if (response.data.success) {
 				setList(response.data.data)
-			} else {
-				toast.error("Error fetching data")
 			}
 		} catch (error) {
 			console.error("Error fetching data:", error)
-			toast.error("Error fetching data")
 		} finally {
 			setLoading(false) // Set loading to false after data fetch completes
 		}
@@ -46,10 +43,10 @@ const Blog = ({ url }) => {
 					<div className="blog-content">
 						<div className="left-blog-content">
 							<div className="leftTop-blog-content">
-								{/* <img
+								<img
 									src={`${url}/images/${list[0].image}`}
 									alt="Blogging"
-								/> */}
+								/>
 								<div className="blog-left-innerContent">
 									<span>{list[0].title}</span>
 									<p>{list[0].description}</p>
@@ -127,10 +124,10 @@ const Blog = ({ url }) => {
 										alt="arrow Img"
 										className="arrow45"
 									/>
-									{/* <img
+									<img
 										src={`${url}/images/${list[1].image}`}
 										alt="Blog"
-									/> */}
+									/>
 									<div>
 										<span>{list[1].title}</span>
 										<p>{list[1].description}</p>
@@ -138,30 +135,30 @@ const Blog = ({ url }) => {
 								</div>
 								<div id="div4">
 									<h3>READ BLOG</h3>
-									{/* <img
+									<img
 										src={`${url}/images/${list[2].image}`}
 										alt="AI in Marketing"
-									/> */}
+									/>
 									<div>
 										<span>{list[2].title}</span>
 										<p>{list[2].description}</p>
 									</div>
 								</div>
 								<div id="div5">
-									{/* <img
+									<img
 										src={`${url}/images/${list[4].image}`}
 										alt="Journey Mapping"
-									/> */}
+									/>
 									<div>
 										<span>{list[4].title}</span>
 										<p>{list[4].description}</p>
 									</div>
 								</div>
 								<div id="div6">
-									{/* <img
+									<img
 										src={`${url}/images/${list[3].image}`}
 										alt="Brand Building Image"
-									/> */}
+									/>
 									<div>
 										<span>{list[3].title}</span>
 										<p>{list[3].description}</p>
