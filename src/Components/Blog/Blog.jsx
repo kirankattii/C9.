@@ -64,11 +64,11 @@ const Blog = ({ url }) => {
 												// href="https://www.spotify.com/"
 											>
 												<img
-													src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+													src={assets.blogProfile1}
 													alt="Blog"
 												/>
 											</a>
-											<div class="tooltip1">Smith</div>
+											{/* <div class="tooltip1">Smith</div> */}
 										</li>
 										<li class="icon-content">
 											<a
@@ -78,11 +78,11 @@ const Blog = ({ url }) => {
 												// href="https://www.pinterest.com/"
 											>
 												<img
-													src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+													src={assets.blogProfile2}
 													alt=""
 												/>
 											</a>
-											<div class="tooltip1">Smith</div>
+											{/* <div class="tooltip1">Smith</div> */}
 										</li>
 										<li class="icon-content">
 											<a
@@ -92,11 +92,11 @@ const Blog = ({ url }) => {
 												// href="https://dribbble.com/"
 											>
 												<img
-													src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+													src={assets.blogProfile3}
 													alt="Blog Image"
 												/>
 											</a>
-											<div class="tooltip1">Smith</div>
+											{/* <div class="tooltip1">Smith</div> */}
 										</li>
 										<li class="icon-content">
 											<a
@@ -106,7 +106,7 @@ const Blog = ({ url }) => {
 												// href="https://telegram.org/"
 											>
 												<img
-													src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+													src={assets.blogProfile4}
 													alt=""
 												/>
 											</a>

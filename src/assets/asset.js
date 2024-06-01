@@ -143,6 +143,10 @@ import homeslide2 from "./homeSlide/webdevlopment slide.svg"
 import homeslide3 from "./homeSlide/seo slide.svg"
 import homeslide4 from "./homeSlide/logo slide.svg"
 import homeslide5 from "./homeSlide/paskaging slide.svg"
+import blogProfile1 from "./blogprofile1.png"
+import blogProfile2 from "./blogprofile2.png"
+import blogProfile3 from "./blogprofile3.png"
+import blogProfile4 from "./blogprofile4.png"
 
 export const assets = {
 	c9logo,
@@ -277,6 +281,10 @@ export const assets = {
 	web_v2,
 	web_v3,
 	logo_v1,
+	blogProfile1,
+	blogProfile2,
+	blogProfile3,
+	blogProfile4,
 }
 
 export const homeCorosal = [
