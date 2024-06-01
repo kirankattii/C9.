@@ -25,6 +25,10 @@ const Blog = ({ url }) => {
 		fetchList()
 	}, [])
 
+	const getImageUrl = (item) => {
+		return item && item.image ? `${url}/images/${item.image}` : null
+	}
+
 	return (
 		<div className="blog">
 			<div className="blog-container">
@@ -44,12 +48,12 @@ const Blog = ({ url }) => {
 						<div className="left-blog-content">
 							<div className="leftTop-blog-content">
 								<img
-									src={`${url}/images/${list[0].image}`}
+									src={getImageUrl(list[0]) || assets.placeholderImage}
 									alt="Blogging"
 								/>
 								<div className="blog-left-innerContent">
-									<span>{list[0].title}</span>
-									<p>{list[0].description}</p>
+									<span>{list[0]?.title || "No Title Available"}</span>
+									<p>{list[0]?.description || "No Description Available"}</p>
 								</div>
 							</div>
 							<div>
@@ -125,43 +129,43 @@ const Blog = ({ url }) => {
 										className="arrow45"
 									/>
 									<img
-										src={`${url}/images/${list[1].image}`}
+										src={getImageUrl(list[1]) || assets.placeholderImage}
 										alt="Blog"
 									/>
 									<div>
-										<span>{list[1].title}</span>
-										<p>{list[1].description}</p>
+										<span>{list[1]?.title || "No Title Available"}</span>
+										<p>{list[1]?.description || "No Description Available"}</p>
 									</div>
 								</div>
 								<div id="div4">
 									<h3>READ BLOG</h3>
 									<img
-										src={`${url}/images/${list[2].image}`}
+										src={getImageUrl(list[2]) || assets.placeholderImage}
 										alt="AI in Marketing"
 									/>
 									<div>
-										<span>{list[2].title}</span>
-										<p>{list[2].description}</p>
+										<span>{list[2]?.title || "No Title Available"}</span>
+										<p>{list[2]?.description || "No Description Available"}</p>
 									</div>
 								</div>
 								<div id="div5">
 									<img
-										src={`${url}/images/${list[4].image}`}
+										src={getImageUrl(list[4]) || assets.placeholderImage}
 										alt="Journey Mapping"
 									/>
 									<div>
-										<span>{list[4].title}</span>
-										<p>{list[4].description}</p>
+										<span>{list[4]?.title || "No Title Available"}</span>
+										<p>{list[4]?.description || "No Description Available"}</p>
 									</div>
 								</div>
 								<div id="div6">
 									<img
-										src={`${url}/images/${list[3].image}`}
+										src={getImageUrl(list[3]) || assets.placeholderImage}
 										alt="Brand Building Image"
 									/>
 									<div>
-										<span>{list[3].title}</span>
-										<p>{list[3].description}</p>
+										<span>{list[3]?.title || "No Title Available"}</span>
+										<p>{list[3]?.description || "No Description Available"}</p>
 									</div>
 								</div>
 							</div>
