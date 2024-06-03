@@ -14,7 +14,8 @@
   display: flex;
   padding: 0 50px;
   /* padding-top: 20vh; */
-  font-family: 'AmazDooMLeft';
+  /* font-family: 'AmazDooMLeft'; */
+  font-family: 'AllerDisplay';
   overflow: hidden;
   color: #fff;
   align-items: center;
@@ -44,40 +45,46 @@
 }
 
 .service-right-text h2 {
-  font-size: 130px;
+  font-size: 80px;
   font-weight: 100;
-  letter-spacing: 3px;
+  letter-spacing: 0px;
 }
 
 .text-uncover {
   font-size: 250px;
-  font-weight: 400;
-  letter-spacing: 5px;
+  font-weight: 300;
+  letter-spacing: 0px;
 }
 
 .services-bottom-right-text h3 {
-  font-family: 'AmazDooMLeft';
-  font-size: 80px;
-  letter-spacing: 2;
+  /* font-family: 'AmazDooMLeft'; */
+  font-family: 'AllerDisplay';
+  margin-top: -20px;
+  font-size: 60px;
+  letter-spacing: 0;
   font-weight: 400;
 
 }
 
-
+.services-bottom-right-text {
+  margin-top: 30px;
+}
 
 .services-bottom-right-text-p1 {
   font-size: 32px;
   font-family: 'AfterglowRegular';
   font-weight: 300;
-  letter-spacing: 0.7px;
+  line-height: 1;
+  letter-spacing: 0px;
 
 }
 
 .services-bottom-right-text-p2 {
-  font-size: 15px;
+  font-size: 20px;
   font-family: 'AfterglowRegular';
   font-weight: 300;
-  letter-spacing: 0.7px;
+  line-height: 1;
+  letter-spacing: 1px;
 
 }
 
@@ -170,6 +177,12 @@
 }
 
 @media(max-width:1000px) {
+  .text-uncover {
+    font-size: 120px;
+    font-weight: 300;
+    letter-spacing: 0px;
+  }
+
   .services-header {
     flex-direction: column;
     gap: 0;
@@ -215,6 +228,10 @@
 }
 
 @media(max-width:600px) {
+  .services-header {
+    padding: 10px;
+  }
+
   .services-bottom-right-text h3 {
 
     font-size: 70px;
@@ -260,64 +277,54 @@
   }
 
   .service-right-text h2 {
-    font-size: 60px;
+    font-size: 50px;
 
   }
 
   .text-uncover {
-    font-size: 120px;
+    font-size: 80px;
     margin-top: 90px;
 
   }
 
   .services-bottom-right-text-p1 {
     /* font-size: 14px; */
-    width: 55%;
-    line-height: 1;
+    margin-top: -5px;
+    width: 80%;
+    line-height: 1.2;
   }
 
   .services-bottom-right-text-p2 {
     font-size: 14px;
-    width: 90%;
+    width: 80%;
     line-height: 1.2;
     margin-top: -06px;
+    padding-right: 10px;
   }
 
 
 }
 
-@media(max-width:370px) {
-  .service-right-text h2 {
-    font-size: 55px;
-
-  }
-
-  .text-uncover {
-    font-size: 90px;
-
-  }
+@media(max-width:415px) {
 
   .services-bottom-right-text-p1 {
-    font-size: 20px;
-    width: 55%;
-    line-height: 1;
+    /* font-size: 14px; */
+    margin-top: -5px;
+    width: 70%;
+    line-height: 1.2;
   }
 
   .services-bottom-right-text-p2 {
     font-size: 14px;
-    width: 90%;
+    width: 65%;
     line-height: 1.2;
     margin-top: -06px;
+    padding-right: 10px;
   }
 
-  .services-bottom-right-text h3 {
-
-    font-size: 55px;
-    letter-spacing: 01px;
-
-
-  }
 }
+
+@media(max-width:370px) {}
 
 /* ===========service content================ */
 .services-content {

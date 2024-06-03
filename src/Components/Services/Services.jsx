@@ -50,8 +50,7 @@ const Services = () => {
 					}}
 					className="service-right-text"
 				>
-					<h2>the array of</h2>
-					<h2>options at your</h2>
+					<h2>the array of options at your disposal</h2>
 					<div className="services-bottom-right-text">
 						<div>
 							<p className="services-bottom-right-text-p1">
@@ -62,7 +61,7 @@ const Services = () => {
 								Crafted for Success
 							</p>
 						</div>
-						<h3>disposal</h3>
+						<h3> </h3>
 					</div>
 				</motion.div>
 			</motion.div>
