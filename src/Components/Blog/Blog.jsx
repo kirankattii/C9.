@@ -48,7 +48,7 @@ const Blog = ({ url }) => {
 						<div className="left-blog-content">
 							<div className="leftTop-blog-content">
 								<img
-									src={getImageUrl(list[0]) || assets.placeholderImage}
+									src={assets.grid}
 									alt="Blogging"
 								/>
 								<div className="blog-left-innerContent">
@@ -129,7 +129,7 @@ const Blog = ({ url }) => {
 										className="arrow45"
 									/>
 									<img
-										src={getImageUrl(list[1]) || assets.placeholderImage}
+										src={assets.grid1}
 										alt="Blog"
 									/>
 									<div>
@@ -140,7 +140,7 @@ const Blog = ({ url }) => {
 								<div id="div4">
 									<h3>READ BLOG</h3>
 									<img
-										src={getImageUrl(list[2]) || assets.placeholderImage}
+										src={assets.grid2}
 										alt="AI in Marketing"
 									/>
 									<div>
@@ -150,7 +150,7 @@ const Blog = ({ url }) => {
 								</div>
 								<div id="div5">
 									<img
-										src={getImageUrl(list[4]) || assets.placeholderImage}
+										src={assets.grid3}
 										alt="Journey Mapping"
 									/>
 									<div>
@@ -160,7 +160,7 @@ const Blog = ({ url }) => {
 								</div>
 								<div id="div6">
 									<img
-										src={getImageUrl(list[3]) || assets.placeholderImage}
+										src={assets.grid4}
 										alt="Brand Building Image"
 									/>
 									<div>
