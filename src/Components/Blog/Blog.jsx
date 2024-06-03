@@ -26,7 +26,7 @@ const Blog = ({ url }) => {
 	}, [])
 
 	const getImageUrl = (item) => {
-		return item && item.image ? `${url}/images/${item.image}` : null
+		return item && item.image ? `${url}/api/blog/image/${item._id}` : null
 	}
 
 	return (
