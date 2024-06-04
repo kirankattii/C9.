@@ -48,7 +48,7 @@ const Blog = ({ url }) => {
 						<div className="left-blog-content">
 							<div className="leftTop-blog-content">
 								<img
-									src={assets.grid}
+									src={list[0].image}
 									alt="Blogging"
 								/>
 								<div className="blog-left-innerContent">
@@ -129,7 +129,7 @@ const Blog = ({ url }) => {
 										className="arrow45"
 									/>
 									<img
-										src={assets.grid1}
+										src={list[1].image}
 										alt="Blog"
 									/>
 									<div>
@@ -140,7 +140,7 @@ const Blog = ({ url }) => {
 								<div id="div4">
 									<h3>READ BLOG</h3>
 									<img
-										src={assets.grid2}
+										src={list[2].image}
 										alt="AI in Marketing"
 									/>
 									<div>
@@ -150,7 +150,7 @@ const Blog = ({ url }) => {
 								</div>
 								<div id="div5">
 									<img
-										src={assets.grid3}
+										src={list[3].image}
 										alt="Journey Mapping"
 									/>
 									<div>
@@ -160,7 +160,7 @@ const Blog = ({ url }) => {
 								</div>
 								<div id="div6">
 									<img
-										src={assets.grid4}
+										src={list[4].image}
 										alt="Brand Building Image"
 									/>
 									<div>
